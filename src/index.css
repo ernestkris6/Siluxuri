@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* ----- Font ----- */
+  --font-primary: "Roboto", sans-serif;
+  
+  /* ----- Brand Colours ----- */
+  --color-magenta: #007589;
+  --color-skyblue: #A0CBD2;
+  --color-orange: #EB6F38;
+
+  /* Neutral Brand Colours */
+  --color-white: #F2F2F2;
+  --color-blue: #2F2E41;
+
+
+  /* ----- Typography ----- */
+
+  /* Font sizes*/
+  --text-title: 2.5rem;          /* 40px */
+  --text-heading: 2rem;          /* 32px */
+  --text-sub-heading: 1.5rem;    /* 24px */
+  --text-body: 1rem;             /* 16px */
+
+  /* Font weights*/
+  --weight-title: 700;           /* Bold */
+  --weight-heading: 500;         /* Medium */
+  --weight-sub-heading: 400;     /* Normal */
+  --weight-body: 300;            /* Light */
+
+  /* Line heights*/
+  --leading-title: 1.2;
+  --leading-heading: 1.3;
+  --leading-sub-heading: 1.4;
+  --leading-body: 1.6;
+
+}
+
+
+body {
+  font-family: var(--font-primary);
+}
+
+@utility title {
+  font-size: var(--text-title);
+  font-weight: var(--weight-title);
+  line-height: var(--leading-title);
+}
+
+@utility heading {
+  font-size: var(--text-heading);
+  font-weight: var(--weight-heading);
+  line-height: var(--leading-heading);
+}
+
+@utility sub-heading {
+  font-size: var(--text-sub-heading);
+  font-weight: var(--weight-sub-heading);
+  line-height: var(--leading-sub-heading);
+}
+
+@utility text-body {
+  font-size: var(--text-body);
+  font-weight: var(--weight-body);
+  line-height: var(--leading-body);
+}
+
+
+

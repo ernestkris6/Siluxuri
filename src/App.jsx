@@ -11,7 +11,7 @@ import Footer from "./UI/Footer";
 
 export default function App() {
   return (
-    <div>
+    <div> 
         <BrowserRouter>
           <Navbar />
           <Routes>

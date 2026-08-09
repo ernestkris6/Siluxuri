@@ -66,7 +66,7 @@ export default function Navbar() {
           ))}
 
           {/* Social Icons */}
-          <div className="flex items-center gap-6 text-base text-blue">
+          <div className="flex items-center gap-6 text-base text-blue pr-6">
             <a
               href="#"
               aria-label="Instagram"
@@ -113,7 +113,7 @@ export default function Navbar() {
                 duration: 0.4,
                 ease: [0.76, 0, 0.24, 1],
               }}
-              className="fixed inset-0 z-40 flex h-screen flex-col overflow-y-auto bg-magenta text-white md:hidden"
+              className="fixed inset-0 z-40 flex h-screen flex-col overflow-y-hidden bg-magenta text-white md:hidden"
             >
 
               {/* Menu Header */}
@@ -172,44 +172,7 @@ export default function Navbar() {
                   </motion.div>
                 ))}
 
-              </div>
-
-              {/* Bottom Section */}
-              <div className="flex items-end justify-between px-6 pb-8">
-
-                {/* Email */}
-                <div>
-                  <p className="mb-2 text-xs uppercase tracking-[0.2em] text-white/50">
-                    Get in touch
-                  </p>
-
-                  <a
-                    href="mailto:siluxuri@gmail.com"
-                    className="text-sm"
-                  >
-                    siluxuri@gmail.com
-                  </a>
-                </div>
-
-                {/* Social Links */}
-                <div className="flex gap-4 text-sm">
-                  <a
-                    href="#"
-                    aria-label="Instagram"
-                  >
-                    Instagram
-                  </a>
-
-                  <a
-                    href="#"
-                    aria-label="LinkedIn"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-
-              </div>
-
+              </div>         
             </motion.div>
           )}
         </AnimatePresence>

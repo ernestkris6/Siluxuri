@@ -20,7 +20,7 @@ export default function Navbar() {
   //px-1 sm:px-3
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white">
       <header className="flex justify-between items-center max-w-7xl">
         <Link to="/">
           <Logo />
@@ -60,7 +60,7 @@ export default function Navbar() {
 
       {/* Mobile Toggle */}
               <button
-                className="md:hidden text-magenta transition cursor-pointer text-4xl pr-3"
+                className="flex md:hidden text-magenta transition cursor-pointer text-4xl pr-3"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {isOpen ? <FiX /> : <FiMenu />  }

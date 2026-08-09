@@ -20,7 +20,7 @@ export default function AboutSection() {
           {/* Heading */}
           <div>
             <h2 className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-              We create ideas
+              We create ideassssssssssssssss
               <span className="block text-skyblue">
                 that move brands forward.
               </span>

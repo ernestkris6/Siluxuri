@@ -1,6 +1,8 @@
 import { NavLink, Link } from "react-router";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
+import { FiMenu, FiX } from "react-icons/fi";
+import { useState } from "react";
 
 
 const navItems = [
@@ -12,6 +14,9 @@ const navItems = [
 ];
 
 export default function Navbar() {
+
+  const [ isOpen, setIsOpen ] = useState(false)
+
   return (
     <div className="bg-white">
       <header className="flex justify-between items-center max-w-7xl px-1 sm:px-3">
@@ -50,6 +55,15 @@ export default function Navbar() {
               )}
         </NavLink>
       ))}
+
+      {/* Mobile Toggle */}
+              <button
+                className="md:hidden text-magenta transition cursor-pointer text-3xl pr-3"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {isOpen ? <FiX /> : <FiMenu />  }
+              </button>
+      
     </nav>
       </header>
     </div>

@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import Team from "./Pages/Team";
 import Error from "./Pages/Error";
 import Navbar from "./UI/Navbar";
+import Footer from "./UI/Footer";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="team" element={<Team />}>Team</Route>
             <Route path="*" element={<Error />}>Error</Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
     </div>
   )

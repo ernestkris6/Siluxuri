@@ -60,12 +60,12 @@ export default function Navbar() {
       ))}
 
               {/* Mobile Toggle */}
-              <button
-                className="flex md:hidden text-magenta transition cursor-pointer text-4xl pr-3"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                {isOpen ? <FiX /> : <FiMenu />  }
-              </button>
+          <button
+              className="flex md:hidden text-magenta transition cursor-pointer text-4xl pr-3"
+              onClick={() => setIsOpen(!isOpen)}
+          >
+              {isOpen ? <FiX /> : <FiMenu />  }
+          </button>
 
               <AnimatePresence>
           {isOpen && (
@@ -77,7 +77,7 @@ export default function Navbar() {
               className="fixed inset-0 z-40 flex min-h-screen flex-col bg-magenta text-white md:hidden"
             >
               {/* Menu Header */}
-              <div className="flex items-center justify-between px-6 py-6">
+              <div className="flex items-center justify-between px-6">
                 <Logo />
                   <button
                     onClick={() => setIsOpen(false)}
@@ -103,7 +103,7 @@ export default function Navbar() {
                     <NavLink
                       to={item.path}
                       onClick={() => setIsOpen(false)}
-                      className="group flex items-center border-b border-white/20 py-4"
+                      className="group flex items-center border-b border-white/20 py-2"
                     >
                       <span className="mr-4 text-sm text-white/50">
                         0{index + 1}

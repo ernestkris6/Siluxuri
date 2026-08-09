@@ -5,9 +5,12 @@ import Logo from "./Logo";
 import { FiMenu, FiX } from "react-icons/fi";
 import {
   FaFacebook,
+  FaFacebookF,
   FaInstagram,
   FaLinkedin,
+  FaLinkedinIn,
 } from "react-icons/fa";
+import Logo2 from "./Logo2";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -21,7 +24,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full pl-2 pr-2">
+    <header className="w-full pl-2">
       <nav className="flex w-full items-center justify-between">
         {/* Logo */}
           <Link to="/">
@@ -95,11 +98,11 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="flex cursor-pointer text-4xl text-magenta transition md:hidden"
+          className="flex cursor-pointer text-4xl text-magenta transition md:hidden pr-6"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {!isOpen && <FiMenu />}
         </button>
 
         {/* Mobile Menu */}
@@ -117,10 +120,8 @@ export default function Navbar() {
             >
 
               {/* Menu Header */}
-              <div className="flex items-center justify-between px-6 py-6">
-
-                <Logo />
-
+              <div className="flex items-center justify-between pl-1 pr-6 py-1">
+                <Logo2 />
                 <button
                   onClick={() => setIsOpen(false)}
                   className="cursor-pointer text-4xl text-white transition"
@@ -172,7 +173,40 @@ export default function Navbar() {
                   </motion.div>
                 ))}
 
-              </div>         
+              </div>
+
+              {/* Bottom Section */}
+              <div className="flex justify-end px-6 pb-8">
+
+                {/* Email */}
+
+
+                {/* Social Links */}
+                <div className="flex gap-4 text-sm">
+                  <a
+                    href="#"
+                    aria-label="Instagram"
+                  >
+                   <FaInstagram />
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="LinkedIn"
+                  > 
+                    <FaLinkedinIn  />
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="LinkedIn"
+                  >
+                    <FaFacebookF/>
+                  </a>
+                </div>
+
+              </div>
+
             </motion.div>
           )}
         </AnimatePresence>

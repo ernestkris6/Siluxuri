@@ -11,6 +11,7 @@ import {
   FaLinkedin,
   FaLinkedinIn,
 } from "react-icons/fa";
+import Silux from "./Silux";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -122,6 +123,7 @@ export default function Navbar() {
               {/* Menu Header */}
               <div className="flex items-center justify-between pl-1 pr-6 py-1">
                 {/* <Logo2 /> */}
+                <Silux />
                 <button
                   onClick={() => setIsOpen(false)}
                   className="cursor-pointer text-4xl text-white transition"

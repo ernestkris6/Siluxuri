@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
 const navItems = [
@@ -11,6 +12,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Team", path: "/team"},
   { name: "Contact", path: "/contact" },
+
 ];
 
 export default function Navbar() {
@@ -56,8 +58,16 @@ export default function Navbar() {
                   )}
                 </>
               )}
+        
         </NavLink>
       ))}
+
+        {/* Nav Socials */}
+        <div className="hidden md:flex flex-row gap-6 items-center text-base text-blue">
+          <FaInstagram />
+          <FaFacebook />
+          <FaLinkedin />
+        </div>
 
               {/* Mobile Toggle */}
           <button

@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="w-full">
           {/* Heading */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Hello, we are your next agency.
+            Hello, we are your next agencyyyyyyyyy.
           </h1>
 
           {/* Description */}

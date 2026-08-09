@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
-import Logo2 from "./Logo2";
+// import Logo2 from "./Logo2";
 import { FiMenu, FiX } from "react-icons/fi";
 import {
   FaFacebook,
@@ -121,7 +121,7 @@ export default function Navbar() {
 
               {/* Menu Header */}
               <div className="flex items-center justify-between pl-1 pr-6 py-1">
-                <Logo2 />
+                {/* <Logo2 /> */}
                 <button
                   onClick={() => setIsOpen(false)}
                   className="cursor-pointer text-4xl text-white transition"

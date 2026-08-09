@@ -74,7 +74,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: "-100%" }}
               transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
-              className="fixed inset-0 z-40 flex min-h-screen flex-col bg-magenta text-white md:hidden"
+              className="fixed inset-0 z-40 flex h-screen flex-col bg-magenta overflow-y-auto text-white md:hidden"
             >
               {/* Menu Header */}
               <div className="flex items-center justify-between px-6">

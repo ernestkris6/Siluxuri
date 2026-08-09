@@ -1,4 +1,5 @@
-import herovideo from "../../assets/herovideo.mp4"
+// import herovideo from "../../assets/herovideo.mp4"
+import herovideo from "../../assets/siluxuri-hero-web.mp4"
 
 export default function HeroSection() {
   return (

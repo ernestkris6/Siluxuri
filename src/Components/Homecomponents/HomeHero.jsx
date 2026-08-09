@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="w-full">
           {/* Heading */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Hello, we are your next agencyyyyyyyyy.
+            Hello, we are your next agency.
           </h1>
 
           {/* Description */}
@@ -18,7 +18,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen mt-[-32px] overflow-hidden">
             {/* Video */}
             <video
                 className="absolute inset-0 w-full h-[380px] md:w-full md:h-[480px] rounded-2xl object-cover"

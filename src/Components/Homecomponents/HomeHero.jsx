@@ -2,7 +2,7 @@ import herovideo from "../../assets/herovideo.mp4"
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-[70vh] text-blue mb-8">
+    <section className="w-full text-blue mb-8">
       <div className="mx-auto flex items-center px-1 py-24">
         
         <div className="w-full">

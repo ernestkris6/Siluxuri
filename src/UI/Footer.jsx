@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-magenta px-6 py-16 text-white sm:px-8 md:px-12 lg:px-16 xl:px-20">
 
-      <div className="mx-auto">
+      <div className="mx-auto max-w-7xl">
 
         {/* CTA */}
         <div className="border-b border-white/20 pb-20">

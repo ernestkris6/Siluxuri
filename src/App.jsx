@@ -4,19 +4,22 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import Team from "./Pages/Team";
-import Logo from "./UI/Logo";
+import Error from "./Pages/Error";
+import Navbar from "./UI/Navbar";
+
 
 export default function App() {
   return (
     <div>
         <BrowserRouter>
-        <Logo />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />}>Home</Route>
             <Route path="about" element={<About />}>About</Route>
             <Route path="services" element={<Services />}>Services</Route>
-            <Route path="team" element={<Team />}>Team</Route>
             <Route path="contact" element={<Contact />}>Contact</Route>
+            <Route path="team" element={<Team />}>Team</Route>
+            <Route path="*" element={<Error />}>Error</Route>
           </Routes>
         </BrowserRouter>
     </div>

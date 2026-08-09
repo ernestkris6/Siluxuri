@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
+import Logo2 from "./Logo2";
 import { FiMenu, FiX } from "react-icons/fi";
 import {
   FaFacebook,
@@ -10,7 +11,6 @@ import {
   FaLinkedin,
   FaLinkedinIn,
 } from "react-icons/fa";
-import Logo2 from "./Logo2";
 
 const navItems = [
   { name: "Home", path: "/" },

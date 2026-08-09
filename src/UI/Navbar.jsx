@@ -17,13 +17,15 @@ export default function Navbar() {
 
   const [ isOpen, setIsOpen ] = useState(false)
 
+  //px-1 sm:px-3
+
   return (
-    <div className="bg-white">
-      <header className="flex justify-between items-center max-w-7xl px-1 sm:px-3">
+    <div className="bg-white ">
+      <header className="flex justify-between items-center max-w-7xl">
         <Link to="/">
           <Logo />
          </Link>
-        <nav className="flex gap-6">
+        <nav className="flex gap-6 px-0 sm:px-3">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
@@ -58,7 +60,7 @@ export default function Navbar() {
 
       {/* Mobile Toggle */}
               <button
-                className="md:hidden text-magenta transition cursor-pointer text-3xl pr-3"
+                className="md:hidden text-magenta transition cursor-pointer text-4xl pr-3"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {isOpen ? <FiX /> : <FiMenu />  }

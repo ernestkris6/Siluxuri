@@ -70,7 +70,7 @@ export default function Navbar() {
           ))}
 
           {/* Social Icons */}
-          <div className="flex items-center gap-6 text-base text-blue pr-6">
+          <div className="flex items-center gap-8 text-base text-blue pr-6">
             <a
               href="#"
               aria-label="Instagram"

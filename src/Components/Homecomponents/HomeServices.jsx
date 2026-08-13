@@ -47,7 +47,7 @@ export default function ServicesSection() {
           </span>
 
           <span className="text-sm text-blue/40">
-            04
+            02
           </span>
         </div>
 

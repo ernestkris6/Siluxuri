@@ -35,7 +35,7 @@ export default function GetInTouch() {
 
             <a
               href="mailto:siluxuri@gmail.com"
-              className="text-xl transition-colors duration-300 hover:text-orange sm:text-2xl"
+              className="text-xl transition-colors duration-300 text-orange hover:text-white sm:text-2xl"
             >
               siluxuri@gmail.com
             </a>
@@ -55,9 +55,9 @@ export default function GetInTouch() {
 
             <a
               href="tel:+2340000000000"
-              className="text-xl transition-colors duration-300 hover:text-orange sm:text-2xl"
+              className="text-xl transition-colors duration-300 text-orange hover:text-white sm:text-2xl"
             >
-              +234 000 000 0000
+              +234 - 704 522 9142
             </a>
           </motion.div>
 
@@ -73,7 +73,7 @@ export default function GetInTouch() {
               Location
             </p>
 
-            <p className="text-xl sm:text-2xl">
+            <p className="text-xl transition-colors duration-300 text-orange hover:text-white sm:text-2xl">
               Lagos, Nigeria
             </p>
           </motion.div>

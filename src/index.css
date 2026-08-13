@@ -67,10 +67,5 @@ body {
   line-height: var(--leading-body);
 }
 
-/* hover effect for mobile */
+/* hover effect for mobile in tailwind-v4*/
 @custom-variant hover (&:hover);
-
-
-
-
-

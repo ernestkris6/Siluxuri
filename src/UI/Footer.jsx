@@ -1,4 +1,5 @@
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMailBulk, FaWhatsapp } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -27,7 +28,7 @@ export default function Footer() {
             Start a project
 
             <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
-              →
+              <FiArrowRight />
             </span>
           </a>
 
@@ -196,7 +197,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 border-t border-white/20 pt-6 text-sm text-white/40 sm:flex-row sm:items-center sm:justify-between">
 
           <p>
-            © {new Date().getFullYear()} Your Agency. All rights reserved.
+            &copy; {new Date().getFullYear()} Your Agency. All rights reserved.
           </p>
 
           <div className="flex gap-6">

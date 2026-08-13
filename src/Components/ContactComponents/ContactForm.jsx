@@ -21,7 +21,7 @@ export default function ContactForm() {
 
             <h2 className="max-w-md text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
               Tell us about
-              <span className="block text-blue/40">
+              <span className="block text-orange">
                 your project.
               </span>
             </h2>
@@ -138,7 +138,7 @@ export default function ContactForm() {
               <textarea
                 rows="5"
                 className="w-full resize-none border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
-                placeholder="Tell us a little about what you're working on..."
+                placeholder="Let's create something beautiful..."
               />
             </div>
 

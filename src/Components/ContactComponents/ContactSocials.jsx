@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const socials = [
   {
@@ -76,7 +77,7 @@ export default function ContactSocials() {
                   </div>
 
                   <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">
-                    ↗
+                    <FiArrowUpRight />
                   </span>
 
                 </a>

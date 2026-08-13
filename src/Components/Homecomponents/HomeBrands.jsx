@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiArrowLeft, FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import image1 from "../../assets/BLA.webp";
 import image2 from "../../assets/Chums.webp";
 import image3 from "../../assets/rtm.webp";
@@ -93,7 +94,7 @@ export default function HomeBrands() {
         <div className="mb-8">
           <h2 className="max-w-4xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-5xl lg:text-6xl">
             Good work gets
-            <span className="block text-blue/40">
+            <span className="block text-orange/90">
               people talking.
             </span>
           </h2>
@@ -153,7 +154,7 @@ export default function HomeBrands() {
                 </div>
 
                 <span className="hidden text-3xl sm:block">
-                  ↗
+                  <FiArrowUpRight />
                 </span>
 
               </div>
@@ -233,7 +234,7 @@ export default function HomeBrands() {
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-blue/20 text-xl transition-all duration-300 hover:border-blue hover:bg-blue hover:text-white"
                 aria-label="Previous brand"
               >
-                ←
+                <FiArrowLeft />
               </button>
 
               <button
@@ -241,7 +242,7 @@ export default function HomeBrands() {
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-blue/20 text-xl transition-all duration-300 hover:border-blue hover:bg-blue hover:text-white"
                 aria-label="Next brand"
               >
-                →
+                <FiArrowRight />
               </button>
 
             </div>

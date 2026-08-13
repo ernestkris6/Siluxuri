@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FiArrowRight } from "react-icons/fi";
 
 const services = [
   {
@@ -105,7 +106,7 @@ export default function ServicesSection() {
                   </span>
 
                   <span className="flex h-10 w-10 items-center justify-center rounded-full border border-blue/20 text-lg transition-all duration-300 hover:border-orange hover:bg-orange hover:text-white">
-                    →
+                    <FiArrowRight />
                   </span>
 
                 </div>
@@ -149,7 +150,7 @@ export default function ServicesSection() {
               Start a project
 
               <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
-                →
+                <FiArrowRight />
               </span>
             </a>
 

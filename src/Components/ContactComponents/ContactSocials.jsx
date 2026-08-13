@@ -63,8 +63,8 @@ export default function ContactSocials() {
                 >
 
                   <div className="flex items-center gap-5">
-
-                    <span className="text-sm text-white/40">
+                  
+                    <span className="hidden text-sm text-blue/90">
                       0{index + 1}
                     </span>
 

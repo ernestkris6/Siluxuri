@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function ContactForm() {
   return (
@@ -151,7 +152,7 @@ export default function ContactForm() {
               Send enquiry
 
               <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
-                →
+                <FaArrowRight />
               </span>
             </button>
 

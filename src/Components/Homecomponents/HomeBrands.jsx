@@ -38,7 +38,7 @@ const brands = [
     name: "Vamp",
     category: "Vape and Smoke",
     description:
-      "One stop shop for authentic vapes and somke accessories.",
+      "One stop shop for authentic vapes and smoke accessories.",
     image: image5,
   },
   {

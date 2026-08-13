@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 const services = [
   {
     number: "01",
-    title: "PR & Communications",
+    title: "Brand Strategy",
     description:
       "Building stories that connect brands with people and create meaningful conversations.",
     image:
@@ -12,7 +12,7 @@ const services = [
   },
   {
     number: "02",
-    title: "Social Media",
+    title: "Identity Design",
     description:
       "Creating conversations, communities and digital experiences that keep brands relevant.",
     image:
@@ -28,7 +28,7 @@ const services = [
   },
   {
     number: "04",
-    title: "Events & Social Commerce",
+    title: "Equipment Rental",
     description:
       "Creating experiences that bring brands and people together in memorable ways.",
     image:

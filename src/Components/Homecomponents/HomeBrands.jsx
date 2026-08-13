@@ -118,7 +118,7 @@ export default function HomeBrands() {
             </motion.div>
 
             {/* Main slide */}
-            <div className="relative h-[500px] w-[28%] xl:h-[600px] xl:w-[36%] shrink-0 overflow-hidden rounded-2xl">
+            <div className="relative h-[450px] w-[28%] xl:h-[600px] xl:w-[36%] shrink-0 overflow-hidden rounded-2xl">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={current}

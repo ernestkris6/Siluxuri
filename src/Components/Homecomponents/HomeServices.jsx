@@ -6,7 +6,7 @@ const services = [
     number: "01",
     title: "Brand Strategy",
     description:
-      "Building stories that connect brands with people and create meaningful conversations.",
+      "We build result-oriented brand strategies that convey what makes your company unique.",
     image:
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85",
   },
@@ -14,7 +14,7 @@ const services = [
     number: "02",
     title: "Identity Design",
     description:
-      "Creating conversations, communities and digital experiences that keep brands relevant.",
+      "From logo design to colour palettes and typography, we craft designs that resonates with your audience.",
     image:
       "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1400&q=85",
   },
@@ -22,7 +22,7 @@ const services = [
     number: "03",
     title: "Digital Marketing",
     description:
-      "Driving growth through thoughtful digital strategies, creative campaigns and measurable results.",
+      "Our digital marketing services complement our branding work by enhancing online visibility and driving engagement.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=85",
   },
@@ -30,7 +30,7 @@ const services = [
     number: "04",
     title: "Equipment Rental",
     description:
-      "Creating experiences that bring brands and people together in memorable ways.",
+      "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs and small businesses.",
     image:
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85",
   },

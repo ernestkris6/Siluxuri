@@ -32,10 +32,7 @@ export default function AboutSection() {
           {/* Description + CTA */}
           <div className="flex flex-col justify-end lg:pb-2">
             <p className="max-w-xl text-xl leading-relaxed sm:text-2xl">
-              We are a creative agency that helps brands find their voice,
-              connect with their audience and create experiences that matter.
-              From strategy to digital, we turn bold ideas into meaningful
-              results.
+              We are a creative agency specialized in building result-oriented strategies, designs and marketing solutions.
             </p>
 
             <a

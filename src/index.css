@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
   /* ----- Font ----- */
   --font-primary: "Roboto", sans-serif;
@@ -65,6 +66,11 @@ body {
   font-weight: var(--weight-body);
   line-height: var(--leading-body);
 }
+
+/* hover effect for mobile */
+@custom-variant hover (&:hover);
+
+
 
 
 

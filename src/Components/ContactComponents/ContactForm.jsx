@@ -52,7 +52,7 @@ export default function ContactForm() {
 
                 <input
                   type="text"
-                  className="w-full border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+                  className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
                   placeholder="John Doe"
                 />
               </div>
@@ -64,7 +64,7 @@ export default function ContactForm() {
 
                 <input
                   type="email"
-                  className="w-full border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+                  className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
                   placeholder="you@email.com"
                 />
               </div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
 
                 <input
                   type="text"
-                  className="w-full border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+                  className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
                   placeholder="Your company"
                 />
               </div>
@@ -94,7 +94,7 @@ export default function ContactForm() {
 
                 <input
                   type="tel"
-                  className="w-full border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+                  className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
                   placeholder="+234"
                 />
               </div>

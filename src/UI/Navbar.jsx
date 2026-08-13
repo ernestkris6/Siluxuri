@@ -25,7 +25,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full pl-2">
+    <header className="w-full px-6 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
       <nav className="flex w-full items-center justify-between">
         {/* Logo */}
           <Link to="/">

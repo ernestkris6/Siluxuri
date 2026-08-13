@@ -3,8 +3,8 @@ import herovideo from "../../assets/siluxuri-hero-web.mp4"
 
 export default function HeroSection() {
   return (
-    <section className="w-full text-blue mb-8">
-      <div className="mx-auto flex items-center px-1 py-24">
+    <section className="w-full text-blue mb-8 bg-white px-6 py-24sm:px-8 md:px-12 lg:px-16 xl:px-20">
+      <div className="mx-auto flex items-center py-24">
         
         <div className="w-full">
           {/* Heading */}

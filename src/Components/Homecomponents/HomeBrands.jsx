@@ -79,7 +79,7 @@ export default function HomeBrands() {
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}
-        <div className="mb-16 flex items-center justify-between border-b border-blue/20 pb-4">
+        <div className="mb-8 flex items-center justify-between border-b border-blue/20 pb-4">
           <span className="text-sm font-medium uppercase tracking-[0.2em]">
             Brands we've worked with
           </span>
@@ -90,7 +90,7 @@ export default function HomeBrands() {
         </div>
 
         {/* Intro */}
-        <div className="mb-16">
+        <div className="mb-8">
           <h2 className="max-w-4xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-5xl lg:text-6xl">
             Good work gets
             <span className="block text-blue/40">
@@ -118,7 +118,7 @@ export default function HomeBrands() {
             </motion.div>
 
             {/* Main slide */}
-            <div className="relative h-[600px] w-[36%] shrink-0 overflow-hidden rounded-2xl">
+            <div className="relative h-[500px] w-[28%] xl:h-[600px] xl:w-[36%] shrink-0 overflow-hidden rounded-2xl">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={current}

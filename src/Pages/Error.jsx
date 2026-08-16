@@ -21,7 +21,7 @@ export default function ErrorPage() {
 
           {/* Heading */}
           <h1 className="max-w-4xl text-6xl font-medium leading-[0.9] tracking-tight sm:text-7xl md:text-8xl lg:text-[110px]">
-            Oops!! Looks like
+              Looks like
             <span className="block text-blue/30">
               you're lost.
             </span>

@@ -94,7 +94,7 @@ export default function HomeBrands() {
         <div className="mb-8">
           <h2 className="max-w-4xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-5xl lg:text-6xl">
             Good work gets
-            <span className="block text-orange/90">
+            <span className="block text-magenta">
               people talking.
             </span>
           </h2>

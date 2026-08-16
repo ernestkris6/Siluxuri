@@ -57,7 +57,7 @@ export default function ServicesSection() {
         <div className="mb-20">
           <h2 className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-7xl">
             What we do to help
-            <span className="block text-blue/40">
+            <span className="block text-orange">
               brands move forward.
             </span>
           </h2>

@@ -52,7 +52,7 @@ export default function AboutSection() {
         <div className="mt-24 border-t border-blue/20 pt-8">
           <p className="max-w-4xl text-2xl font-medium leading-tight sm:text-3xl md:text-4xl">
             Strategy. Creativity. Digital.{" "}
-            <span className="text-skyblue">
+            <span className="text-magenta">
               Everything working together.
             </span>
           </p>

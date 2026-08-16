@@ -36,9 +36,10 @@ const services = [
   },
 ];
 
+////px-3 sm:px-6
 export default function ServicesSection() {
   return (
-    <section className="w-full bg-white px-2 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
+    <section className="w-full bg-white px-5 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}

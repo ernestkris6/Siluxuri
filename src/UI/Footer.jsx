@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -170,11 +171,11 @@ export default function Footer() {
             </p>
 
             <a
-                href="mailto:siluxuri@gmail.com"
+                href="mailto:silxuri@gmail.com"
                 className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
             >
                 <FaMailBulk className="text-base" />
-                siluxuri@gmail.com
+                siluxri@gmail.com
             </a>
 
             <p className="mt-3 max-w-xs text-lg leading-relaxed text-white/60">
@@ -188,7 +189,7 @@ export default function Footer() {
         <div className="overflow-hidden py-12">
 
           <h3 className="whitespace-nowrap text-[18vw] font-bold leading-[0.75] tracking-[-0.07em] text-white">
-            SILUXURI
+            SILUXRI
           </h3>
 
         </div>
@@ -208,12 +209,12 @@ export default function Footer() {
               Privacy
             </a>
 
-            <a
-              href="#"
+            <Link
+              to="terms"
               className="transition-colors hover:text-white"
             >
               Terms
-            </a>
+            </Link>
           </div>
 
         </div>

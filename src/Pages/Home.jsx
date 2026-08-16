@@ -5,7 +5,7 @@ import HomeServices from "../Components/Homecomponents/HomeServices"
 
 export default function Home() {
   return (
-    <div className="bg-white px-3 sm:px-6">
+    <div className="">
       <HomeHero/>
       <HomeAbout />
       <HomeServices />

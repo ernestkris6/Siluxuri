@@ -2,14 +2,16 @@
 import herovideo from "../../assets/siluxuri-hero-web.mp4"
 
 export default function HeroSection() {
+
+  //px-3 sm:px-6
   return (
-    <section className="w-full text-blue mb-8 bg-white px-2 py-24sm:px-8 md:px-12 lg:px-16 xl:px-20">
+    <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
       <div className="mx-auto flex items-center py-24">
         
         <div className="w-full">
           {/* Heading */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Hello, we are your next agency.
+            Hello, we are your next <span className="text-orange">agency.</span>
           </h1>
 
           {/* Description */}

@@ -2,7 +2,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white px-2 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
+    <section className="w-full bg-skyblue px-5 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
       <div className="mx-auto max-w-7xl">
 
         {/* Section label */}
@@ -23,7 +23,7 @@ export default function AboutSection() {
           <div>
             <h2 className="max-w-3xl text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
               We create ideas
-              <span className="block text-skyblue">
+              <span className="block text-magenta">
                 that move brands forward.
               </span>
             </h2>

@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import Team from "./Pages/Team";
+import Terms from "./Pages/Terms";
 import Error from "./Pages/Error";
 import Navbar from "./UI/Navbar";
 import Footer from "./UI/Footer";
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="services" element={<Services />}>Services</Route>
             <Route path="contact" element={<Contact />}>Contact</Route>
             <Route path="team" element={<Team />}>Team</Route>
+            <Route path="terms" element={<Terms />}>Terms of Service</Route>
             <Route path="*" element={<Error />}>Error</Route>
           </Routes>
           <Footer />

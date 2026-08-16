@@ -34,7 +34,7 @@ export default function Navbar() {
       
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
 
           {navItems.map((item) => (
             <NavLink
@@ -99,7 +99,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="flex cursor-pointer text-4xl text-magenta transition md:hidden pr-6"
+          className="flex cursor-pointer text-4xl text-magenta transition lg:hidden pr-3"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -117,16 +117,16 @@ export default function Navbar() {
                 duration: 0.4,
                 ease: [0.76, 0, 0.24, 1],
               }}
-              className="fixed inset-0 z-40 flex h-screen flex-col overflow-y-hidden bg-magenta text-white md:hidden"
+              className="fixed inset-0 z-40 flex h-screen flex-col overflow-y-hidden bg-magenta text-white lg:hidden"
             >
 
               {/* Menu Header */}
-              <div className="flex items-center justify-between pl-1 pr-6 py-1">
+              <div className="flex items-center justify-between pl-0 pr-6 py-1">
                 {/* <Logo2 /> */}
                 <Silux />
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer text-4xl text-white transition"
+                  className="cursor-pointer text-4xl text-white transition pl-0 sm:pr-7"
                   aria-label="Close menu"
                 >
                   <FiX />

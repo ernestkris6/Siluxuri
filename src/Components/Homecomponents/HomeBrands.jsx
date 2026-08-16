@@ -76,7 +76,7 @@ export default function HomeBrands() {
   const next = (current + 1) % brands.length;
 
   return (
-    <section className="w-full overflow-hidden bg-white px-2 py-24 text-blue sm:px-8 md:px-8 lg:px-12 xl:px-18">
+    <section className="w-full overflow-hidden bg-white px-5 py-24 text-blue sm:px-8 md:px-8 lg:px-12 xl:px-18">
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}

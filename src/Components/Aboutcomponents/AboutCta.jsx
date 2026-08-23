@@ -58,7 +58,7 @@ export default function AboutCta() {
         </p>
 
         <h2 className="font-serif text-2xl tracking-tight text-blue md:text-3xl">
-          Brands we’ve had the pleasure of working withhhhh
+          Brands we’ve had the pleasure of working with
         </h2>
       </div>
 

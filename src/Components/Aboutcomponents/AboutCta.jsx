@@ -6,30 +6,12 @@ import RTM from "../../assets/RTM-Logo.jpg";
 import Haru from "../../assets/Haru-Logo.jpg";
 
 const brands = [
-  {
-    name: "BLA",
-    logo: BLA,
-  },
-  {
-    name: "VAMP",
-    logo: Vamp,
-  },
-  {
-    name: "Chums Beauty",
-    logo: Chums,
-  },
-  {
-    name: "DSparkles",
-    logo: Sparkles,
-  },
-  {
-    name: "RTM Fashion",
-    logo: RTM,
-  },
-  {
-    name: "Haru",
-    logo: Haru,
-  },
+  { name: "BLA", logo: BLA },
+  { name: "VAMP", logo: Vamp },
+  { name: "Chums Beauty", logo: Chums },
+  { name: "DSparkles", logo: Sparkles },
+  { name: "RTM Fashion", logo: RTM },
+  { name: "Haru", logo: Haru },
 ];
 
 const BrandSet = () => (
@@ -51,12 +33,13 @@ const BrandSet = () => (
             rounded-full
             transition-all
             duration-500
+            cursor-pointer
             md:h-24
             md:max-w-[240px]
           "
         />
 
-        <span className="ml-10 shrink-0 text-sm text-black/20 md:ml-16">
+        <span className="ml-10 shrink-0 text-sm text-blue/20 md:ml-16">
           ✦
         </span>
       </div>
@@ -66,7 +49,7 @@ const BrandSet = () => (
 
 export default function AboutCta() {
   return (
-    <section className="relative overflow-hidden border-y border-black/10 bg-white py-16">
+    <section className="relative overflow-hidden border-y border-blue/10 bg-white py-16">
 
       {/* Heading */}
       <div className="mx-auto mb-12 max-w-7xl px-6 text-center">
@@ -88,15 +71,125 @@ export default function AboutCta() {
         {/* Right fade */}
         <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent md:w-40" />
 
-        {/* Infinite track */}
+        {/* Infinite scrolling track */}
         <div className="brand-marquee">
           <BrandSet />
           <BrandSet />
+          <BrandSet />
+          <BrandSet />
         </div>
+
       </div>
     </section>
   );
 }
+
+
+
+
+
+
+
+
+// import BLA from "../../assets/BLA-Logo.jpg";
+// import Vamp from "../../assets/Vamp-Logo.jpg";
+// import Chums from "../../assets/Chums-Logo.jpg";
+// import Sparkles from "../../assets/Sparkles-Logo.jpg";
+// import RTM from "../../assets/RTM-Logo.jpg";
+// import Haru from "../../assets/Haru-Logo.jpg";
+
+// const brands = [
+//   {
+//     name: "BLA",
+//     logo: BLA,
+//   },
+//   {
+//     name: "VAMP",
+//     logo: Vamp,
+//   },
+//   {
+//     name: "Chums Beauty",
+//     logo: Chums,
+//   },
+//   {
+//     name: "DSparkles",
+//     logo: Sparkles,
+//   },
+//   {
+//     name: "RTM Fashion",
+//     logo: RTM,
+//   },
+//   {
+//     name: "Haru",
+//     logo: Haru,
+//   },
+// ];
+
+// const BrandSet = () => (
+//   <div className="flex shrink-0 items-center">
+//     {brands.map((brand) => (
+//       <div
+//         key={brand.name}
+//         className="group mx-10 flex shrink-0 items-center md:mx-16"
+//       >
+//         <img
+//           src={brand.logo}
+//           alt={brand.name}
+//           className="
+//             h-16
+//             w-auto
+//             max-w-[180px]
+//             shrink-0
+//             object-contain
+//             rounded-full
+//             transition-all
+//             duration-500
+//             md:h-24
+//             md:max-w-[240px]
+//           "
+//         />
+
+//         <span className="ml-10 shrink-0 text-sm text-black/20 md:ml-16">
+//           ✦
+//         </span>
+//       </div>
+//     ))}
+//   </div>
+// );
+
+// export default function AboutCta() {
+//   return (
+//     <section className="relative overflow-hidden border-y border-black/10 bg-white py-16">
+
+//       {/* Heading */}
+//       <div className="mx-auto mb-12 max-w-7xl px-6 text-center">
+//         <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.35em] text-blue/45">
+//           Selected Collaborations
+//         </p>
+
+//         <h2 className="font-serif text-2xl tracking-tight text-blue md:text-3xl">
+//           Brands we’ve had the pleasure of working with
+//         </h2>
+//       </div>
+
+//       {/* Marquee */}
+//       <div className="relative w-full overflow-hidden">
+
+//         {/* Left fade */}
+//         <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent md:w-40" />
+
+//         {/* Right fade */}
+//         <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent md:w-40" />
+
+//         {/* Infinite track */}
+//         <div className="brand-marquee">
+//           <BrandSet />
+//           <BrandSet />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 
 

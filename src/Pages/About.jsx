@@ -11,7 +11,7 @@ export default function About() {
       <AboutStory />
       <AboutValues />
       <AboutWork />
-      {/* <AboutCta /> */}
+      <AboutCta />
     </>
   )
 }

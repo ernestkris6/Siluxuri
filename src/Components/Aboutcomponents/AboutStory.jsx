@@ -34,7 +34,7 @@ export default function AboutStory() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl">
               <img
                 src={digi}
                 alt="Creative work at Siluxuri"

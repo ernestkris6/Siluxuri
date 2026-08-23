@@ -67,7 +67,7 @@ export default function AboutWork() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[16/10] overflow-hidden rounded-[2rem]">
+            <div className="aspect-[16/10] overflow-hidden rounded-2xl">
               <img
                 src={digi}
                 alt="Siluxuri creative process"

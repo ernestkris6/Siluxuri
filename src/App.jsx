@@ -11,20 +11,22 @@ import Navbar from "./UI/Navbar";
 import Footer from "./UI/Footer";
 
 
+// /menu/:category/:foodId"
+
 export default function App() {
   return (
     <div> 
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />}>Home</Route>
-            <Route path="/about" element={<About />}>About</Route>
-            <Route path="/services" element={<Services />}>Services</Route>
-            <Route path="/contact" element={<Contact />}>Contact</Route>
-            <Route path="/team" element={<Team />}>Team</Route>
-            <Route path="/team/:slug" element={<TeamDetails />} />
-            <Route path="/terms" element={<Terms />}>Terms of Service</Route>
-            <Route path="*" element={<Error />}>Error</Route>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="team" element={<Team />} />
+            <Route path="/team/:teamId" element={<TeamDetails />} /> 
+            <Route path="terms" element={<Terms />} />
+            <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
         </BrowserRouter>

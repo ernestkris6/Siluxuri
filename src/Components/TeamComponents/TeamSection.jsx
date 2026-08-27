@@ -1,30 +1,10 @@
+import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import image1 from "../../assets/spark.webp";
-import image2 from "../../assets/rentals.webp";
-import image3 from "../../assets/digital1.webp";
-import { Link } from "react-router";
+import { teamData } from "../../data";
 
-const team = [
-  {
-    name: "Ihenwosu C. Stephen",
-    slug: "ihenwosu-stephen",
-    role: "Brand Strategist",
-    image: image1,
-  },
-  {
-    name: "Team Member",
-    slug: "team-member",
-    role: "Creative Director",
-    image: image2,
-  },
-  {
-    name: "Team Member 2",
-    slug: "team-member-2",
-    role: "Creative Director",
-    image: image3,
-  },
-];
+
+
 
 export default function TeamSection() {
   return (
@@ -60,7 +40,7 @@ export default function TeamSection() {
         {/* Team Grid */}
         <div className="grid gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
 
-          {team.map((member, index) => (
+          {teamData.map((member, index) => (
 
             <motion.div
               key={member.name + index}

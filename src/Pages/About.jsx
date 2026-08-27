@@ -6,12 +6,12 @@ import AboutWork from "../Components/Aboutcomponents/AboutWork";
 
 export default function About() {
   return (
-    <>
+    <main>
       <AboutHero />
       <AboutStory />
       <AboutValues />
       <AboutWork />
       <AboutCta />
-    </>
+    </main>
   )
 }

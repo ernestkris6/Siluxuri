@@ -5,11 +5,11 @@ import HomeServices from "../Components/Homecomponents/HomeServices"
 
 export default function Home() {
   return (
-    <div className="">
+    <main>
       <HomeHero/>
       <HomeAbout />
       <HomeServices />
       <HomeBrands />
-    </div>
+    </main>
   )
 }

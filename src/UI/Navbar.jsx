@@ -5,13 +5,14 @@ import Logo from "./Logo";
 // import Logo2 from "./Logo2";
 import { FiArrowRight, FiMenu, FiX } from "react-icons/fi";
 import {
-  FaFacebook,
-  FaFacebookF,
+  FaTiktok,
   FaInstagram,
   FaLinkedin,
   FaLinkedinIn,
 } from "react-icons/fa";
 import Silux from "./Silux";
+import { AiFillTikTok } from "react-icons/ai";
+
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -72,7 +73,8 @@ export default function Navbar() {
           {/* Social Icons */}
           <div className="flex items-center gap-8 text-base text-blue pr-6">
             <a
-              href="#"
+              href="https://www.instagram.com/siluxri.ng?igsh=MWhubTFpNjJnN2Q3eQ=="
+              target="_blank"
               aria-label="Instagram"
               className="transition-colors duration-300 hover:text-magenta"
             >
@@ -80,15 +82,16 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="https://www.tiktok.com/@siluxri.ng?_r=1&_t=ZS-997goAcLssm"
               aria-label="Facebook"
               className="transition-colors duration-300 hover:text-magenta"
             >
-              <FaFacebook />
+              <AiFillTikTok />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/siluxri/"
+              target="_blank"
               aria-label="LinkedIn"
               className="transition-colors duration-300 hover:text-magenta"
             >
@@ -186,24 +189,24 @@ export default function Navbar() {
                 {/* Social Links */}
                 <div className="flex gap-4 text-sm">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/siluxri.ng?igsh=MWhubTFpNjJnN2Q3eQ=="
                     aria-label="Instagram"
                   >
                    <FaInstagram />
                   </a>
 
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/siluxri"
                     aria-label="LinkedIn"
                   > 
                     <FaLinkedinIn  />
                   </a>
 
                   <a
-                    href="#"
-                    aria-label="LinkedIn"
+                    href="https://www.tiktok.com/@siluxri.ng?_r=1&_t=ZS-997goAcLssm"
+                    aria-label="TikTok"
                   >
-                    <FaFacebookF/>
+                    <FaTiktok  />
                   </a>
                 </div>
 

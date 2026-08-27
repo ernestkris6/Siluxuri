@@ -5,7 +5,7 @@ export default function GetInTouch() {
     <section className="w-full bg-skyblue px-6 py-24 text-white sm:px-8 md:px-12 lg:px-16 xl:px-20">
       
       <div className="mx-auto max-w-7xl">
-
+      
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

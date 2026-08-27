@@ -2,11 +2,13 @@ import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { teamData } from "../../data";
+import { slugify } from "../../utils/slugify";
 
 
 
 
 export default function TeamSection() {
+
   return (
     <section className="bg-white px-6 py-24 sm:px-8 md:px-12 lg:px-16 lg:py-32">
 
@@ -54,7 +56,7 @@ export default function TeamSection() {
               className="group"
             >
             
-            <Link to={`/team/${member.slug}`} className="block">
+            <Link to={`/team/${slugify(member.name)}`} className="block">
               {/* Image */}
               <div className="relative aspect-[2/2.2] overflow-hidden rounded-2xl bg-skyblue/30">
 

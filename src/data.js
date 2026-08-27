@@ -9,19 +9,79 @@ export const teamData = [
     slug: "ihenwosu-stephen",
     role: "Brand Strategist",
     image: image1,
+     bio: [
+      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
+
+      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+    ],
+
+    expertise: [
+      "Creative Direction",
+      "Visual Identity",
+      "Campaign Design",
+      "Art Direction",
+      
+    ],
+
+    instagram: "#",
+    linkedin: "#",
   },
   {
-    name: "Team Member",
-    slug: "team-member",
-    role: "Creative Director",
+    name: "Jessica",
+    slug: "ihenwosu-stephen",
+    role: "Digital Marketing",
     image: image2,
+     bio: [
+      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
+
+      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+    ],
+
+    expertise: [
+      "Creative Direction",
+      "Visual Identity",
+      "Campaign Design",
+      "Art Direction",
+      
+    ],
+
+    instagram: "#",
+    linkedin: "#",
   },
   {
-    name: "Team Member 2",
-    slug: "team-member-2",
+    name: "Ihenwosu C. Stephen",
+    slug: "ihenwosu-stephen",
     role: "Creative Director",
     image: image3,
+     bio: [
+      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
+
+      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+    ],
+
+    expertise: [
+      "Creative Direction",
+      "Visual Identity",
+      "Campaign Design",
+      "Art Direction",
+      
+    ],
+
+    instagram: "#",
+    linkedin: "#",
   },
+//   {
+//     name: "Team Member",
+//     slug: "team-member",
+//     role: "Creative Director",
+//     image: image2,
+//   },
+//   {
+//     name: "Team Member 2",
+//     slug: "team-member-2",
+//     role: "Creative Director",
+//     image: image3,
+//   },
 ];
 
 

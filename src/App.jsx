@@ -9,6 +9,7 @@ import TeamDetails from "./Components/TeamComponents/TeamDetails";
 import Error from "./Pages/Error";
 import Navbar from "./UI/Navbar";
 import Footer from "./UI/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 
 // /menu/:category/:foodId"
@@ -17,6 +18,7 @@ export default function App() {
   return (
     <div> 
         <BrowserRouter>
+        <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

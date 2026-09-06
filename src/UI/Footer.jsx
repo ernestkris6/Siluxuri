@@ -198,23 +198,24 @@ export default function Footer() {
         <div className="flex flex-col gap-4 border-t border-white/20 pt-6 text-sm text-white/40 sm:flex-row sm:items-center sm:justify-between">
 
           <p>
-            &copy; {new Date().getFullYear()} Your Agency. All rights reserved.
+            &copy; {new Date().getFullYear()} Siluxri. All rights reserved.
           </p>
 
           <div className="flex gap-6">
-            <a
-              href="#"
-              className="transition-colors hover:text-white"
-            >
-              Privacy
-            </a>
-
             <Link
               to="terms"
               className="transition-colors hover:text-white"
             >
               Terms
             </Link>
+            <p
+
+              onClick={()=> scrollTo(0,0)}
+              className="transition-colors hover:text-white cursor-pointer"
+            >
+              Back to top
+            </p>
+
           </div>
 
         </div>

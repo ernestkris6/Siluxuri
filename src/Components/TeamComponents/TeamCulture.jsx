@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router";
 
 export default function TeamCulture() {
   return (
@@ -66,7 +67,7 @@ export default function TeamCulture() {
                 </span>
 
                 <h3 className="mb-2 text-lg font-medium">
-                  Make boldly
+                  Take bold steps
                 </h3>
 
                 <p className="text-sm leading-6 text-white/50">
@@ -77,14 +78,14 @@ export default function TeamCulture() {
 
             </div>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="group inline-flex items-center gap-3 border-b border-white/40 pb-2 text-sm uppercase tracking-[0.15em] transition-all duration-300 hover:gap-6"
             >
               Work with us
 
               <FiArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
-            </a>
+            </Link>
 
           </div>
 

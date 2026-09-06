@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMailBulk, FaWhatsapp } from "react-icons/fa";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiArrowUp } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -209,11 +209,10 @@ export default function Footer() {
               Terms
             </Link>
             <p
-
               onClick={()=> scrollTo(0,0)}
-              className="transition-colors hover:text-white cursor-pointer"
+              className="flex gap-2 items-center transition-colors hover:text-white cursor-pointer"
             >
-              Back to top
+              Back to top <span><FiArrowUp /></span>
             </p>
 
           </div>

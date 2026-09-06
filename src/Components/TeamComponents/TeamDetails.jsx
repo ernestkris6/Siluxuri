@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router";
 import { motion } from "framer-motion";
 import {
   FiArrowLeft,
+  FiArrowRight,
   FiInstagram,
   FiLinkedin,
 } from "react-icons/fi";
@@ -261,7 +262,7 @@ export default function TeamDetails() {
             View all team members
 
             <span className="transition-transform duration-300 group-hover:translate-x-2">
-              →
+              <FiArrowRight />
             </span>
 
           </Link>

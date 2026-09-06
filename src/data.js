@@ -1,18 +1,18 @@
 import image1 from "./assets/spark.webp";
-import image2 from "./assets/rentals.webp";
-import image3 from "./assets/digital1.webp";
+import image2 from "./assets/jess2.webp";
+import image3 from "./assets/jess.webp";
 
 
 export const teamData = [
   {
     name: "Ihenwosu C. Stephen",
     slug: "ihenwosu-stephen",
-    role: "Brand Strategist",
+    role: "Founder & Managing Director",
     image: image1,
      bio: [
-      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
-
-      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+      "Ihenwosu Stephen Chijioke is a creative strategist with hands-on expertise in branding, marketing, and client relationship management. He holds a Bachelor’s degree in History and Strategic Studies from the University of Lagos.",
+      
+      "As the Founder and Managing Director of Siluxri Creative Studio, he leads a team of creatives across diverse markets, helping brands grow through creative, practical, and results-driven marketing solutions. His leadership is defined by strategic thinking, attention to detail, and a commitment to professionalism, creativity, and collaboration.",
     ],
 
     expertise: [
@@ -23,18 +23,19 @@ export const teamData = [
       
     ],
 
-    instagram: "#",
-    linkedin: "#",
+    instagram: "https://www.instagram.com/st_phenwolf?igsh=MTFpbG9wYmttcXJpOQ==",
+    linkedin: "https://www.linkedin.com/in/alphastiff?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
   {
-    name: "Jessica",
-    slug: "ihenwosu-stephen",
-    role: "Digital Marketing",
+    name: "Nwabuzor Jessica",
+    slug: "nwabuzor-jessica",
+    role: "Chief Operations Manager",
     image: image2,
      bio: [
-      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
+      "Jessica Nwabuzor oversees the systems, people, and processes that keep Siluxri Creative Studio moving efficiently from strategy to execution. As Chief Operations Manager, she focuses on organisation, quality, and seamless delivery, ensuring the team stays aligned and every client experience is handled with intention.",
 
-      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+      "Her approach combines strong coordination, attention to detail, and a commitment to maintaining the standards that allow the team to deliver creative work effectively and consistently."
+
     ],
 
     expertise: [
@@ -49,14 +50,14 @@ export const teamData = [
     linkedin: "#",
   },
   {
-    name: "Ihenwosu C. Stephen",
-    slug: "ihenwosu-stephen",
-    role: "Creative Director",
+    name: "Olabisi",
+    slug: "olabisi",
+    role: "Finance Manager",
     image: image3,
      bio: [
-      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
-
-      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+      "As Finance Manager at Siluxri Creative Studio, Olabisi manages the company’s financial activities and records. She handle budgeting, financial reporting, and ensures proper financial controls.", 
+      
+      "She also monitors the company’s finances to ensure they are accurate, organised, and well managed.",
     ],
 
     expertise: [
@@ -83,6 +84,56 @@ export const teamData = [
 //     image: image3,
 //   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

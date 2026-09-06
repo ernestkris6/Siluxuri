@@ -50,8 +50,8 @@ export const teamData = [
     linkedin: "#",
   },
   {
-    name: "Olabisi",
-    slug: "olabisi",
+    name: "Ojo Olabisi",
+    slug: "ojo-olabisi",
     role: "Finance Manager",
     image: image3,
      bio: [

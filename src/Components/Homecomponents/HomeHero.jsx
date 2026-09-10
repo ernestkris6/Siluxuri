@@ -1,7 +1,10 @@
 // import herovideo from "../../assets/herovideo.mp4"
+import { useState } from "react";
 import herovideo from "../../assets/siluxuri-hero-web.mp4"
 
 export default function HeroSection() {
+
+  const [ loaded, setIsLoaded ] = useState(false);
 
   //px-3 sm:px-6
   return (
@@ -24,14 +27,20 @@ export default function HeroSection() {
     <div className="relative h-[380px] mt-[-32px] overflow-hidden md:h-[480px]">
             {/* Video */}
             <video
-                className="absolute inset-0 w-full h-full rounded-2xl object-cover"
+                className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-700 ${loaded ? "opacity-100" : "opacity-0"}`}
                 src={herovideo}
                 autoPlay
                 muted
                 loop
                 playsInline
                 controls={false}
+                onCanPlay={() => setIsLoaded(true)}
             />
+
+             {/* Fallback while video is loading */}
+            {!loaded && (
+              <div className="absolute inset-0 bg-blue/60" />
+            )}
         </div>
     </section>
   );

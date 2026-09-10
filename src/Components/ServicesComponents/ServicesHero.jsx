@@ -6,7 +6,7 @@ export default function ServicesHero() {
   return (
     <section className="relative min-h-[85vh] overflow-hidden text-white">
 
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
         <video
           src={digi}

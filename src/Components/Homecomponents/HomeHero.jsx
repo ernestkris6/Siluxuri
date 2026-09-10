@@ -1,50 +1,135 @@
-// import herovideo from "../../assets/herovideo.mp4"
 import { useState } from "react";
-import herovideo from "../../assets/siluxuri-hero-web.mp4"
+import herovideo from "../../assets/siluxuri-hero-web.mp4";
 
 export default function HeroSection() {
+  const [loaded, setIsLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
 
-  const [ loaded, setIsLoaded ] = useState(false);
-
-  //px-3 sm:px-6
   return (
     <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
       <div className="mx-auto flex items-center py-24">
-        
         <div className="w-full">
           {/* Heading */}
           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Hello, we are your next <span className="text-orange">agency.</span>
+            Hello, we are your next{" "}
+            <span className="text-orange">agency.</span>
           </h1>
 
           {/* Description */}
           <p className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3">
-            The kind that reimagines what PR, Social Media, Digital Marketing, Events, Social Commerce can achieve for you and your brand. The kind that dives deep to help your business grow and meet brand resultssssssssss.
+            The kind that reimagines what PR, Social Media, Digital Marketing,
+            Events, Social Commerce can achieve for you and your brand. The
+            kind that dives deep to help your business grow and meet brand
+            resultssssssssss.
           </p>
         </div>
       </div>
 
-    <div className="relative h-[380px] mt-[-32px] overflow-hidden md:h-[480px]">
-            {/* Video */}
-            <video
-                className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-700 ${loaded ? "opacity-100" : "opacity-0"}`}
-                src={herovideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls={false}
-                onCanPlay={() => setIsLoaded(true)}
-            />
+      {/* Video */}
+      <div className="relative mt-[-32px] h-[380px] overflow-hidden md:h-[480px]">
+        
+        {/* Fallback while video is loading or unavailable */}
+        {!loaded && (
+          <div className="absolute inset-0 rounded-2xl bg-blue/60" />
+        )}
 
-             {/* Fallback while video is loading */}
-            {!loaded && (
-              <div className="absolute inset-0 bg-blue/60" />
-            )}
-        </div>
+        {/* Only show the actual video once it is ready */}
+        {loaded && !videoError && (
+          <video
+            className="absolute inset-0 h-full w-full rounded-2xl object-cover"
+            src={herovideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls={false}
+          />
+        )}
+
+        {/* Hidden video used only to preload the file */}
+        {!loaded && !videoError && (
+          <video
+            src={herovideo}
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            onCanPlay={() => setIsLoaded(true)}
+            onError={() => setVideoError(true)}
+            className="hidden"
+          />
+        )}
+      </div>
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // import herovideo from "../../assets/herovideo.mp4"
+// import { useState } from "react";
+// import herovideo from "../../assets/siluxuri-hero-web.mp4"
+
+// export default function HeroSection() {
+
+//   const [ loaded, setIsLoaded ] = useState(false);
+
+//   //px-3 sm:px-6
+//   return (
+//     <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+//       <div className="mx-auto flex items-center py-24">
+        
+//         <div className="w-full">
+//           {/* Heading */}
+//           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
+//             Hello, we are your next <span className="text-orange">agency.</span>
+//           </h1>
+
+//           {/* Description */}
+//           <p className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3">
+//             The kind that reimagines what PR, Social Media, Digital Marketing, Events, Social Commerce can achieve for you and your brand. The kind that dives deep to help your business grow and meet brand resultssssssssss.
+//           </p>
+//         </div>
+//       </div>
+
+//     <div className="relative h-[380px] mt-[-32px] overflow-hidden md:h-[480px]">
+//             {/* Video */}
+//             <video
+//                 className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-700 ${loaded ? "opacity-100" : "opacity-0"}`}
+//                 src={herovideo}
+//                 autoPlay
+//                 muted
+//                 loop
+//                 playsInline
+//                 controls={false}
+//                 onCanPlay={() => setIsLoaded(true)}
+//             />
+
+//              {/* Fallback while video is loading */}
+//             {!loaded && (
+//               <div className="absolute inset-0 bg-blue/60" />
+//             )}
+//         </div>
+//     </section>
+//   );
+// }
 
 
 

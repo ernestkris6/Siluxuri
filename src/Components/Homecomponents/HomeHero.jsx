@@ -19,7 +19,7 @@ export default function HeroSection() {
 
           {/* Description */}
           <p className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3">
-            The kind that reimagines what PR, Social Media, Digital Marketing, Events, Social Commerce can achieve for you and your brand. The kind that dives deep to help your business grow and meet brand results.
+            The kind that reimagines what PR, Social Media, Digital Marketing, Events, Social Commerce can achieve for you and your brand. The kind that dives deep to help your business grow and meet brand resultssssssssss.
           </p>
         </div>
       </div>

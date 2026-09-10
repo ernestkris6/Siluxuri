@@ -15,6 +15,7 @@ export default function ServicesHero() {
           muted
           loop
           playsInline
+          controls={false}
           className="h-full w-full object-cover"
         />
 

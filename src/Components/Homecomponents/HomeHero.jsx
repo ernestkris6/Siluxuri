@@ -30,6 +30,7 @@ export default function HeroSection() {
                 muted
                 loop
                 playsInline
+                controls={false}
             />
         </div>
     </section>

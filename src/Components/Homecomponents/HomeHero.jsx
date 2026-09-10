@@ -20,7 +20,7 @@ export default function HeroSection() {
             The kind that reimagines what PR, Social Media, Digital Marketing,
             Events, Social Commerce can achieve for you and your brand. The
             kind that dives deep to help your business grow and meet brand
-            resultssssssssss.
+            results.
           </p>
         </div>
       </div>

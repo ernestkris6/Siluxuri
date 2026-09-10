@@ -1,6 +1,18 @@
+import ServicesHero from '../Components/ServicesComponents/ServicesHero'
+import ServicesIntro from '../Components/ServicesComponents/ServicesIntro'
+import ServicesItem from '../Components/ServicesComponents/ServicesItem'
+import ServicesList from '../Components/ServicesComponents/ServicesList'
+
+
 export default function Services() {
   return (
-    <div>Services</div>
+    <>
+      <ServicesHero />
+      <ServicesIntro />
+      <ServicesList />
+      <ServicesItem />
+      
+    </>
   )
 }
 

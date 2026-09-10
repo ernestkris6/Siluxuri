@@ -87,6 +87,71 @@ export const teamData = [
 
 
 
+export const services = [
+  {
+    number: "01",
+    title: "Brand Strategy",
+    shortTitle: "Strategy",
+    description:
+      "We help businesses understand what they stand for, who they are speaking to, and where they want to go.",
+    details:
+      "From positioning and audience research to messaging and brand direction, we create the strategic foundation that gives every creative decision a reason.",
+    tags: [
+      "Brand Positioning",
+      "Audience Research",
+      "Brand Direction",
+      "Messaging",
+    ],
+  },
+  {
+    number: "02",
+    title: "Visual Identity",
+    shortTitle: "Identity",
+    description:
+      "We translate your strategy into a visual language that feels distinctive, consistent and recognisable.",
+    details:
+      "Logo systems, typography, colour, graphic language and brand guidelines come together to create an identity people can recognise and remember.",
+    tags: [
+      "Logo Design",
+      "Typography",
+      "Colour Systems",
+      "Brand Guidelines",
+    ],
+  },
+  {
+    number: "03",
+    title: "Digital Experiences",
+    shortTitle: "Digital",
+    description:
+      "We design digital experiences that make brands easier to understand, explore and engage with.",
+    details:
+      "We combine thoughtful UX with expressive visual design to create websites and digital products that feel as good as they function.",
+    tags: [
+      "Website Design",
+      "UX/UI",
+      "Digital Direction",
+      "Prototyping",
+    ],
+  },
+  {
+    number: "04",
+    title: "Web Development",
+    shortTitle: "Development",
+    description:
+      "We turn considered designs into fast, responsive and purposeful digital experiences.",
+    details:
+      "Using modern technologies, we build websites that are responsive, maintainable and engineered around the needs of the brand and its audience.",
+    tags: [
+      "React",
+      "Responsive Development",
+      "CMS Integration",
+      "Performance",
+    ],
+  },
+];
+
+
+
 
 
 

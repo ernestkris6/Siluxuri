@@ -20,7 +20,7 @@ export default function ServicesHero() {
         />
 
         {/* Dark luxury overlay */}
-        <div className="absolute inset-0 bg-blue/50" />
+        <div className="absolute inset-0 bg-blue/60" />
 
         {/* Subtle brand-colour gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue/80 via-blue/45 to-magenta/30" />
@@ -42,7 +42,7 @@ export default function ServicesHero() {
           </span>
 
           <span className="hidden text-xs uppercase tracking-[0.2em] text-white/40 sm:block">
-            Creative Studio
+            Siluxri Creative Studio
           </span>
         </motion.div>
 

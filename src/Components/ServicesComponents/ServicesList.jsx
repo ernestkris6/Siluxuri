@@ -5,31 +5,31 @@ const services = [
     number: "01",
     title: "Brand Strategy",
     description:
-      "We define the foundation behind your brand — positioning, direction, audience and the ideas that make it meaningful.",
+      "We build result oriented brand strategies that convey what makes your company unique. We ensure that your brand stands out both offline and online. We integrate digital marketing strategies, including social media, SEO, and content marketing, into our branding approach to ensure your brand reaches its target audience effectively.",
   },
   {
     number: "02",
-    title: "Visual Identity",
+    title: "Identity Design",
     description:
-      "We create distinctive visual systems that give your brand a recognizable presence across every touchpoint.",
+      "From logo design to color palettes and typography, we craft designs that not only look good but also resonate with your audience. We understand the psychology behind design and ensure that our visuals appeal to the market while being optimized for digital platforms. Everything we create, from logos to marketing materials, is developed with the goal of delivering a seamless brand experience across both traditional and digital channels.",
   },
   {
     number: "03",
-    title: "Website Design",
+    title: "Digital Marketing",
     description:
-      "We design purposeful digital experiences that balance strong visual direction with clarity and usability.",
+      "Our digital marketing services complement our branding work by enhancing online visibility and driving engagement. This includes social media management, paid advertising (Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads), email marketing, and content creation. We aim to provide integrated marketing solutions that help brands expand their reach and grow their business in the digital space.",
   },
   {
     number: "04",
-    title: "Web Development",
+    title: "Equipment Rental",
     description:
-      "We turn approved designs into responsive, functional websites built with modern technologies and attention to detail.",
+      "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs, and small businesses that need access to professional tools without the high cost of ownership.",
   },
 ];
 
 export default function ServicesList () {
   return (
-    <section className="bg-[#F2F2F2] text-[#2F2E41] px-6 md:px-10 lg:px-16 pb-24 md:pb-32">
+    <section className="bg-white text-blue px-6 md:px-10 lg:px-16 pb-24 md:pb-32">
       <div className="grid grid-cols-1 md:grid-cols-2 border-t border-[#2F2E41]/15">
         {services.map((service, index) => (
           <motion.article

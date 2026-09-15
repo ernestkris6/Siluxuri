@@ -1,4 +1,4 @@
-import image1 from "./assets/spark.webp";
+import image1 from "./assets/stephen.webp";
 import image2 from "./assets/jess2.webp";
 import image3 from "./assets/jess.webp";
 

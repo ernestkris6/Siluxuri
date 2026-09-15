@@ -24,17 +24,16 @@ const ServicesOverview = () => {
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-[-0.045em] leading-[0.95]">
             Ideas are easy.
             <br />
-            <span className="text-[#007589]">
+            <span className="text-orange">
               Making them matter
             </span>{" "}
             is the work.
           </h2>
 
           <p className="max-w-2xl mt-10 text-base md:text-lg leading-relaxed text-[#2F2E41]/60">
-            We combine strategy, design and technology to create brands and
-            digital experiences that communicate clearly and leave a lasting
-            impression.
+            We've worked with really amazing clients, from brand new startups to well established brands that began before we were born.
           </p>
+          <p className="max-w-2xl mt-4 text-base md:text-lg leading-relaxed text-[#2F2E41]/60">Whether established SMEs or independent startups, we see each client as equal, with a vision to be shared and a voice to be heard. Through beautiful designs, clear imagery, vibrant story telling and strategic marketing, we bring those visions to life from their conception to completion.</p>
         </motion.div>
       </div>
     </section>

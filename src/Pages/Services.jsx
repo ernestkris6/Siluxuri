@@ -2,6 +2,7 @@ import ServicesHero from '../Components/ServicesComponents/ServicesHero'
 import ServicesIntro from '../Components/ServicesComponents/ServicesIntro'
 import ServicesItem from '../Components/ServicesComponents/ServicesItem'
 import ServicesList from '../Components/ServicesComponents/ServicesList'
+import ServicesMetrics from '../Components/ServicesComponents/ServicesMetrics'
 
 
 export default function Services() {
@@ -11,6 +12,7 @@ export default function Services() {
       <ServicesIntro />
       <ServicesList />
       <ServicesItem />
+      <ServicesMetrics />
       
     </>
   )

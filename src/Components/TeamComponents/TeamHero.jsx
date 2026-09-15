@@ -16,7 +16,7 @@ export default function TeamHero() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-blue/40" />
+        <div className="absolute inset-0 bg-blue/60" />
 
         {/* Brand gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue/80 via-blue/50 to-magenta/30" />

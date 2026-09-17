@@ -16,10 +16,10 @@ export const teamData = [
     ],
 
     expertise: [
-      "Creative Direction",
-      "Visual Identity",
-      "Campaign Design",
-      "Art Direction",
+      "Brand Strategy",
+      "Digital Marketing",
+      "Client Relationship Management",
+      "Creative Strategist & Business Development",
       
     ],
 
@@ -39,10 +39,10 @@ export const teamData = [
     ],
 
     expertise: [
-      "Creative Direction",
-      "Visual Identity",
-      "Campaign Design",
-      "Art Direction",
+      "Operations Management",
+      "Process & Workflow Management",
+      "Quality Assurance & Service Delivery",
+      "Team Coordination",
       
     ],
 
@@ -61,10 +61,10 @@ export const teamData = [
     ],
 
     expertise: [
-      "Creative Direction",
-      "Visual Identity",
-      "Campaign Design",
-      "Art Direction",
+      "Financial Management",
+      "Budgeting & Financial Planning",
+      "Financial Reporting",
+      "Financial Controls & Record Management",
       
     ],
 

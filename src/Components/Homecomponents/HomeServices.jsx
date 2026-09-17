@@ -4,6 +4,7 @@ import digital1 from "../../assets/digital1.webp";
 import digital2 from "../../assets/digital2.webp";
 import Card from "../../assets/Business-Card.webp";
 import rentals from "../../assets/rentals.webp";
+import { Link } from "react-router";
 
 
 const services = [
@@ -116,9 +117,11 @@ export default function ServicesSection() {
                     Explore service
                   </span>
 
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-blue/20 text-lg transition-all duration-300 hover:border-orange hover:bg-orange hover:text-white">
+                 <Link to="services">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full border border-blue/20 text-lg transition-all duration-300 hover:border-orange hover:bg-orange hover:text-white">
                     <FiArrowRight />
                   </span>
+                 </Link>
 
                 </div>
 
@@ -154,8 +157,8 @@ export default function ServicesSection() {
               something people remember.
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              to="/services"
               className="group flex w-fit shrink-0 items-center gap-4 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:border-orange hover:text-orange"
             >
               Start a project
@@ -163,7 +166,7 @@ export default function ServicesSection() {
               <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
                 <FiArrowRight />
               </span>
-            </a>
+            </Link>
 
           </div>
 

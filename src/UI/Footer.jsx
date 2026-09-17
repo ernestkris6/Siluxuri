@@ -23,8 +23,8 @@ export default function Footer() {
             </span>
           </h2>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="group mt-10 inline-flex items-center gap-4 border-b border-white pb-3 text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:gap-7"
           >
             Start a project
@@ -32,7 +32,7 @@ export default function Footer() {
             <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
               <FiArrowRight />
             </span>
-          </a>
+          </Link>
 
         </div>
 

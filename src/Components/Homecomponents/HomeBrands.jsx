@@ -7,6 +7,7 @@ import image3 from "../../assets/rtm.webp";
 import image4 from "../../assets/spark.webp";
 import image5 from "../../assets/vamp.webp";
 import image6 from "../../assets/Haru.webp";
+import { Link } from "react-router";
 
 const brands = [
   {
@@ -248,9 +249,24 @@ export default function HomeBrands() {
             </div>
 
           </div>
-
-        </div>
-
+      {/* CTA */}
+            <div className="border-t border-blue/20 mt-6 pt-8">
+              <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+               <p className="max-w-xl text-xl leading-relaxed text-blue/60 sm:text-2xl">
+                  Explore the work we've created to make brands seen, heard, and remembered.
+                </p>
+                  <Link
+                        to="workks"
+                        className="group flex w-fit shrink-0 items-center gap-4 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:border-orange hover:text-orange"
+                      >
+                        View Our Work
+                        <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
+                          <FiArrowRight />
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+          </div>
       </div>
     </section>
   );

@@ -1,15 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import { useForm } from "@formspree/react";
 import Toast from "../../Lib/Toast";
 
 export default function ContactForm() {
   const [selectedService, setSelectedService] = useState("");
-  const [state, handleSubmit] = useForm("mvzzgoqp");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
-
-  const formRef = useRef(null);
 
   const services = [
     "Brand Strategy",
@@ -18,43 +15,13 @@ export default function ContactForm() {
     "Equipment Rental",
   ];
 
-  // SUCCESS
-  useEffect(() => {
-    if (!state.succeeded) return;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    setToast({
-      type: "success",
-      message: "Message sent successfully 🎉",
-    });
+    // Clear any previous toast
+    setToast(null);
 
-    if (formRef.current) {
-      formRef.current.reset();
-    }
-
-    setSelectedService("");
-
-    const timer = setTimeout(() => {
-      setToast(null);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, [state.succeeded]);
-
-  // ERROR
-  useEffect(() => {
-    if (state.errors?.length > 0 && !state.submitting) {
-      setToast({
-        type: "error",
-        message: "Something went wrong 😢 Please try again.",
-      });
-    }
-  }, [state.errors, state.submitting]);
-
-  // FORM SUBMISSION
-  const onSubmit = async (event) => {
-    event.preventDefault();
-
-    // Make sure a service has been selected
+    // Require a service selection
     if (!selectedService) {
       setToast({
         type: "error",
@@ -63,11 +30,74 @@ export default function ContactForm() {
       return;
     }
 
-    await handleSubmit(event);
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://formspree.io/f/mvzzgoqp",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      // Formspree returned an error
+      if (!response.ok) {
+        let errorMessage =
+          "Something went wrong 😢 Please try again.";
+
+        try {
+          const data = await response.json();
+
+          if (data?.errors?.length > 0) {
+            errorMessage = data.errors
+              .map((error) => error.message)
+              .join(" ");
+          }
+        } catch {
+          // Response wasn't JSON, so use our default message
+        }
+
+        throw new Error(errorMessage);
+      }
+
+      // SUCCESS
+      setToast({
+        type: "success",
+        message: "Message sent successfully 🎉",
+      });
+
+      // Reset the form
+      form.reset();
+
+      // Reset selected service
+      setSelectedService("");
+
+    } catch (error) {
+      console.error("Form submission failed:", error);
+
+      // ERROR
+      setToast({
+        type: "error",
+        message:
+          error.message ||
+          "Something went wrong 😢 Please try again.",
+      });
+
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <>
+      {/* Toast */}
       {toast && (
         <Toast
           type={toast.type}
@@ -78,9 +108,10 @@ export default function ContactForm() {
 
       <section className="w-full bg-white px-6 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
         <div className="mx-auto max-w-7xl">
+
           <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
 
-            {/* LEFT */}
+            {/* LEFT CONTENT */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -106,8 +137,7 @@ export default function ContactForm() {
 
             {/* FORM */}
             <motion.form
-              ref={formRef}
-              onSubmit={onSubmit}
+              onSubmit={handleSubmit}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -118,12 +148,17 @@ export default function ContactForm() {
               {/* NAME + EMAIL */}
               <div className="grid gap-10 sm:grid-cols-2">
 
+                {/* NAME */}
                 <div>
-                  <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
-                    Your name
+                  <label
+                    htmlFor="firstName"
+                    className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90"
+                  >
+                    Your name*
                   </label>
 
                   <input
+                    id="firstName"
                     type="text"
                     name="firstName"
                     placeholder="John Doe"
@@ -132,12 +167,17 @@ export default function ContactForm() {
                   />
                 </div>
 
+                {/* EMAIL */}
                 <div>
-                  <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
-                    Email
+                  <label
+                    htmlFor="email"
+                    className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90"
+                  >
+                    Email*
                   </label>
 
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     placeholder="you@email.com"
@@ -151,26 +191,35 @@ export default function ContactForm() {
               {/* COMPANY + PHONE */}
               <div className="grid gap-10 sm:grid-cols-2">
 
+                {/* COMPANY */}
                 <div>
-                  <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+                  <label
+                    htmlFor="company"
+                    className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90"
+                  >
                     Company
                   </label>
 
                   <input
+                    id="company"
                     type="text"
                     name="company"
                     placeholder="Your company"
-                    required
                     className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
                   />
                 </div>
 
+                {/* PHONE */}
                 <div>
-                  <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
-                    Phone
+                  <label
+                    htmlFor="phone"
+                    className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90"
+                  >
+                    Phone*
                   </label>
 
                   <input
+                    id="phone"
                     type="tel"
                     name="phone"
                     placeholder="+234"
@@ -184,20 +233,23 @@ export default function ContactForm() {
               {/* SERVICE */}
               <div>
                 <label className="mb-4 block text-xs uppercase tracking-[0.15em] text-blue/90">
-                  What can we help with?
+                  What can we help with?*
                 </label>
 
                 <div className="flex flex-wrap gap-3">
 
                   {services.map((service) => {
-                    const isSelected = selectedService === service;
+                    const isSelected =
+                      selectedService === service;
 
                     return (
                       <button
                         key={service}
                         type="button"
-                        onClick={() => setSelectedService(service)}
-                        className={`rounded-full border px-5 py-3 text-sm cursor-pointer transition-all duration-300 ${
+                        onClick={() =>
+                          setSelectedService(service)
+                        }
+                        className={`rounded-full border px-5 py-3 text-sm transition-all duration-300 ${
                           isSelected
                             ? "border-orange bg-orange text-white"
                             : "border-blue/20 hover:border-orange hover:bg-orange hover:text-white"
@@ -210,7 +262,7 @@ export default function ContactForm() {
 
                 </div>
 
-                {/* This is what Formspree receives */}
+                {/* Selected service sent to Formspree */}
                 <input
                   type="hidden"
                   name="service"
@@ -220,11 +272,15 @@ export default function ContactForm() {
 
               {/* MESSAGE */}
               <div>
-                <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
-                  Tell us about your project
+                <label
+                  htmlFor="message"
+                  className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90"
+                >
+                  Tell us about your project*
                 </label>
 
                 <textarea
+                  id="message"
                   name="message"
                   rows={5}
                   placeholder="Let's create something beautiful..."
@@ -236,10 +292,12 @@ export default function ContactForm() {
               {/* SUBMIT */}
               <button
                 type="submit"
-                disabled={state.submitting}
+                disabled={isSubmitting}
                 className="group flex items-center gap-5 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-8 hover:border-orange hover:text-orange disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {state.submitting ? "Sending..." : "Send enquiry"}
+                {isSubmitting
+                  ? "Sending..."
+                  : "Send enquiry"}
 
                 <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
                   <FiArrowRight />
@@ -247,13 +305,301 @@ export default function ContactForm() {
               </button>
 
             </motion.form>
-
           </div>
         </div>
       </section>
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================ 02 ==================
+// import { useState, useEffect, useRef } from "react";
+// import { motion } from "framer-motion";
+// import { FiArrowRight } from "react-icons/fi";
+// import { useForm } from "@formspree/react";
+// import Toast from "../../Lib/Toast";
+
+// export default function ContactForm() {
+//   const [selectedService, setSelectedService] = useState("");
+//   const [state, handleSubmit] = useForm("mvzzgoqppp");
+//   const [toast, setToast] = useState(null);
+
+//   const formRef = useRef(null);
+
+//   const services = [
+//     "Brand Strategy",
+//     "Identity Design",
+//     "Digital Marketing",
+//     "Equipment Rental",
+//   ];
+
+//   // SUCCESS
+//   useEffect(() => {
+//     if (!state.succeeded) return;
+
+//     setToast({
+//       type: "success",
+//       message: "Message sent successfully 🎉",
+//     });
+
+//     if (formRef.current) {
+//       formRef.current.reset();
+//     }
+
+//     setSelectedService("");
+
+//     const timer = setTimeout(() => {
+//       setToast(null);
+//     }, 4000);
+
+//     return () => clearTimeout(timer);
+//   }, [state.succeeded]);
+
+//   // ERROR
+//   useEffect(() => {
+//     if (state.errors?.length > 0 && !state.submitting) {
+//       setToast({
+//         type: "error",
+//         message: "Something went wrong 😢 Please try again.",
+//       });
+//     }
+//   }, [state.errors, state.submitting]);
+
+//   // FORM SUBMISSION
+//   const onSubmit = async (e) => {
+//     e.preventDefault();
+
+//     // Make sure a service has been selected
+
+//     //  setToast({
+//     //     type: "error",
+//     //     message: "Something went wrong 😢 Please try again.",
+//     //   });
+
+//     //     return;
+
+//     if (!selectedService) {
+//       setToast({
+//         type: "error",
+//         message: "Please select a service.",
+//       });
+//       return;
+//     }
+
+//     await handleSubmit(e);
+//   };
+
+//   return (
+//     <>
+//       {toast && (
+//         <Toast
+//           type={toast.type}
+//           message={toast.message}
+//           onClose={() => setToast(null)}
+//         />
+//       )}
+
+//       <section className="w-full bg-white px-6 py-24 text-blue sm:px-8 md:px-12 lg:px-16 xl:px-20">
+//         <div className="mx-auto max-w-7xl">
+//           <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+
+//             {/* LEFT */}
+//             <motion.div
+//               initial={{ opacity: 0, x: -30 }}
+//               whileInView={{ opacity: 1, x: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.6 }}
+//             >
+//               <p className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-blue/40">
+//                 Contact
+//               </p>
+
+//               <h2 className="max-w-md text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
+//                 Tell us about
+//                 <span className="block text-orange">
+//                   your project.
+//                 </span>
+//               </h2>
+
+//               <p className="mt-8 max-w-md text-lg leading-relaxed text-blue/60">
+//                 Whether you have a fully formed brief or just
+//                 an idea, we'd love to hear what you're thinking.
+//               </p>
+//             </motion.div>
+
+//             {/* FORM */}
+//             <motion.form
+//               ref={formRef}
+//               onSubmit={onSubmit}
+//               initial={{ opacity: 0, y: 30 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.6 }}
+//               className="space-y-10"
+//             >
+
+//               {/* NAME + EMAIL */}
+//               <div className="grid gap-10 sm:grid-cols-2">
+
+//                 <div>
+//                   <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                     Your name
+//                   </label>
+
+//                   <input
+//                     type="text"
+//                     name="firstName"
+//                     placeholder="John Doe"
+//                     required
+//                     className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+//                   />
+//                 </div>
+
+//                 <div>
+//                   <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                     Email
+//                   </label>
+
+//                   <input
+//                     type="email"
+//                     name="email"
+//                     placeholder="you@email.com"
+//                     required
+//                     className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+//                   />
+//                 </div>
+
+//               </div>
+
+//               {/* COMPANY + PHONE */}
+//               <div className="grid gap-10 sm:grid-cols-2">
+
+//                 <div>
+//                   <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                     Company
+//                   </label>
+
+//                   <input
+//                     type="text"
+//                     name="company"
+//                     placeholder="Your company"
+//                     required
+//                     className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+//                   />
+//                 </div>
+
+//                 <div>
+//                   <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                     Phone
+//                   </label>
+
+//                   <input
+//                     type="tel"
+//                     name="phone"
+//                     placeholder="+234"
+//                     required
+//                     className="w-full border-b border-blue/90 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+//                   />
+//                 </div>
+
+//               </div>
+
+//               {/* SERVICE */}
+//               <div>
+//                 <label className="mb-4 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                   What can we help with?
+//                 </label>
+
+//                 <div className="flex flex-wrap gap-3">
+
+//                   {services.map((service) => {
+//                     const isSelected = selectedService === service;
+
+//                     return (
+//                       <button
+//                         key={service}
+//                         type="button"
+//                         onClick={() => setSelectedService(service)}
+//                         className={`rounded-full border px-5 py-3 text-sm cursor-pointer transition-all duration-300 ${
+//                           isSelected
+//                             ? "border-orange bg-orange text-white"
+//                             : "border-blue/20 hover:border-orange hover:bg-orange hover:text-white"
+//                         }`}
+//                       >
+//                         {service}
+//                       </button>
+//                     );
+//                   })}
+
+//                 </div>
+
+//                 {/* This is what Formspree receives */}
+//                 <input
+//                   type="hidden"
+//                   name="service"
+//                   value={selectedService}
+//                 />
+//               </div>
+
+//               {/* MESSAGE */}
+//               <div>
+//                 <label className="mb-3 block text-xs uppercase tracking-[0.15em] text-blue/90">
+//                   Tell us about your project
+//                 </label>
+
+//                 <textarea
+//                   name="message"
+//                   rows={5}
+//                   placeholder="Let's create something beautiful..."
+//                   required
+//                   className="w-full resize-none border-b border-blue/20 bg-transparent py-3 text-lg outline-none transition-colors placeholder:text-blue/30 focus:border-orange"
+//                 />
+//               </div>
+
+//               {/* SUBMIT */}
+//               <button
+//                 type="submit"
+//                 disabled={state.submitting}
+//                 className="group flex items-center gap-5 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-8 hover:border-orange hover:text-orange disabled:cursor-not-allowed disabled:opacity-50"
+//               >
+//                 {state.submitting ? "Sending..." : "Send enquiry"}
+
+//                 <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
+//                   <FiArrowRight />
+//                 </span>
+//               </button>
+
+//             </motion.form>
+
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
+// }
 
 
 

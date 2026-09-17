@@ -1,4 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router";
 
 export default function AboutSection() {
   return (
@@ -35,8 +36,8 @@ export default function AboutSection() {
               We are a creative agency specialized in building result-oriented strategies, designs and marketing solutions.
             </p>
 
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="group mt-10 flex w-fit items-center gap-4 border-b-2 border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:text-orange hover:border-orange"
             >
               Discover more
@@ -44,7 +45,7 @@ export default function AboutSection() {
               <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
                 <FiArrowRight />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 

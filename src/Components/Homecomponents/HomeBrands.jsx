@@ -256,7 +256,7 @@ export default function HomeBrands() {
                   Explore the work we've created to make brands seen, heard, and remembered.
                 </p>
                   <Link
-                        to="works"
+                        to="work"
                         className="group flex w-fit shrink-0 items-center gap-4 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:border-orange hover:text-orange"
                       >
                         View Our Work

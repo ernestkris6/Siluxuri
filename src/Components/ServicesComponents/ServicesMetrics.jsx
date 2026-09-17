@@ -223,11 +223,11 @@ export default function ServicesMetrics() {
           <div className="flex items-center gap-5">
             <div className="h-[1px] w-16 bg-[#A0CBD2]" />
 
-            <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/80">
+            <p className="font-sans text-[4px] sm:text-[10px] uppercase tracking-[0.4em] text-white/80">
               Insights
-              <span className="mx-3 text-[#007589]">/</span>
+              <span className="mx-3 text-magenta">/</span>
               Creativity
-              <span className="mx-3 text-[#007589]">/</span>
+              <span className="mx-3 text-magenta">/</span>
               Impact
             </p>
           </div>

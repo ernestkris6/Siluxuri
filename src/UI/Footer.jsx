@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMailBulk, FaWhatsapp } from "react-icons/fa";
 import { FiArrowRight, FiArrowUp } from "react-icons/fi";
+import { FaTiktok } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -45,40 +46,47 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-col items-start gap-3">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-lg transition-colors hover:text-white/50"
               >
                 Home
-              </a>
+              </Link>
 
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-lg transition-colors hover:text-white/50"
               >
                 About
-              </a>
+              </Link>
 
-              <a
-                href="/services"
+              <Link
+                to="/services"
                 className="text-lg transition-colors hover:text-white/50"
               >
                 Services
-              </a>
+              </Link>
 
-              <a
-                href="/team"
+              <Link
+                to="/work"
+                className="text-lg transition-colors hover:text-white/50"
+              >
+                Work
+              </Link>
+
+              <Link
+                to="/team"
                 className="text-lg transition-colors hover:text-white/50"
               >
                 Team
-              </a>
+              </Link>
 
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="text-lg transition-colors hover:text-white/50"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -89,45 +97,53 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-col items-start gap-3">
-  <a
-    href="#"
-    className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
-  >
-    <FaInstagram className="text-base" />
-    Instagram
-  </a>
+          <a
+            href="https://www.instagram.com/siluxri.ng?igsh=MWhubTFpNjJnN2Q3eQ=="
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaInstagram className="text-base" />
+            Instagram
+          </a>
 
-  <a
-    href="#"
-    className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
-  >
-    <FaLinkedinIn className="text-base" />
-    LinkedIn
-  </a>
+        <a
+            href="https://www.tiktok.com/@siluxri.ng?_r=1&_t=ZS-997goAcLssm"
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaTiktok className="text-base" />
+            TikTok
+          </a>
 
-  <a
-    href="#"
-    className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
-  >
-    <FaFacebookF className="text-base" />
-    Facebook
-  </a>
+          <a
+            href="https://www.linkedin.com/company/siluxri"
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaLinkedinIn className="text-base" />
+            LinkedIn
+          </a>
 
-  <a
-    href="mailto:hello@youragency.com"
-    className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
-  >
-    <FaEnvelope className="text-base" />
-    Email
-  </a>
+          <a
+            href="#"
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaFacebookF className="text-base" />
+            Facebook
+          </a>
 
-  <a
-    href="mailto:hello@youragency.com"
-    className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
-  >
-    <FaWhatsapp className="text-base" />
-    (+234) 704 522 9142
-  </a>
+          <a
+            href="mailto:siluxri@gmail.com"
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaEnvelope className="text-base" />
+            Email
+          </a>
+
+          <a
+            href="https://wa.me/2347045229142?text=Hello%20Siluxri%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+            className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
+          >
+            <FaWhatsapp className="text-base" />
+            (+234) 704 522 9142
+          </a>
 </div>
 
 

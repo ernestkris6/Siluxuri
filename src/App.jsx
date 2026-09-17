@@ -10,6 +10,7 @@ import Error from "./Pages/Error";
 import Navbar from "./UI/Navbar";
 import Footer from "./UI/Footer";
 import ScrollToTop from "./ScrollToTop";
+import Work from "./Pages/Work";
 
 
 // /menu/:category/:foodId"
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
+            <Route path="work" element={<Work />} />
             <Route path="contact" element={<Contact />} />
             <Route path="team" element={<Team />} />
             <Route path="/team/:teamId" element={<TeamDetails />} /> 

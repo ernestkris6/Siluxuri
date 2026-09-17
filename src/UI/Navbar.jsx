@@ -18,6 +18,7 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
+  { name: "Work", path: "/work"},
   { name: "Team", path: "/team" },
   { name: "Contact", path: "/contact" },
 ];
@@ -57,7 +58,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-underline"
-                      className="absolute left-0 right-0 -bottom-1 h-0.5 rounded-full bg-black"
+                      className="absolute left-0 right-0 -bottom-1 h-0.5 rounded-full bg-blue"
                       transition={{
                         type: "spring",
                         stiffness: 500,
@@ -181,7 +182,7 @@ export default function Navbar() {
               </div>
 
               {/* Bottom Section */}
-              <div className="flex justify-end px-6 pb-8">
+              <div className="flex justify-end px-6 pb-8 mt-4">
 
                 {/* Email */}
 

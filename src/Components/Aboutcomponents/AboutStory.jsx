@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import digi from "../../assets/digital2.webp";
+import digi from "../../assets/sectionImage2.webp";
 
 
 export default function AboutStory() {

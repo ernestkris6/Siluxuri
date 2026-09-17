@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
+import contactHero from "../../assets/contactHero.webp"
+
 
 export default function ContactHero() {
+
   return (
     <section className="relative min-h-[60vh] overflow-hidden bg-blue">
       
       {/* Background Image */}
       <img
-        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85"
+        src={contactHero}
         alt="SILUXRI contact"
         className="absolute inset-0 h-full w-full object-cover"
       />

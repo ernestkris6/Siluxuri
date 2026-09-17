@@ -3,6 +3,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaFacebook,
+  FaTiktok,
 } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -10,12 +11,17 @@ const socials = [
   {
     name: "Instagram",
     icon: FaInstagram,
-    href: "#",
+    href: "https://www.instagram.com/siluxri.ng?igsh=MWhubTFpNjJnN2Q3eQ==",
   },
   {
     name: "LinkedIn",
     icon: FaLinkedin,
-    href: "#",
+    href: "https://www.linkedin.com/company/siluxri",
+  },
+  {
+    name: "TikTok",
+    icon: FaTiktok,
+    href: "https://www.tiktok.com/@siluxri.ng?_r=1&_t=ZS-997goAcLssm",
   },
   {
     name: "Facebook",

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiArrowLeft, FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import image1 from "../../assets/BLA.webp";
@@ -7,7 +8,6 @@ import image3 from "../../assets/rtm.webp";
 import image4 from "../../assets/spark.webp";
 import image5 from "../../assets/vamp.webp";
 import image6 from "../../assets/Haru.webp";
-import { Link } from "react-router";
 
 const brands = [
   {
@@ -256,7 +256,7 @@ export default function HomeBrands() {
                   Explore the work we've created to make brands seen, heard, and remembered.
                 </p>
                   <Link
-                        to="workks"
+                        to="works"
                         className="group flex w-fit shrink-0 items-center gap-4 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:border-orange hover:text-orange"
                       >
                         View Our Work

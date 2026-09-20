@@ -184,11 +184,17 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/rtm/cover.jpg",
+    cover: image2,
     gallery: [
-      "/images/works/rtm/01.jpg",
-      "/images/works/rtm/02.jpg",
-      "/images/works/rtm/03.jpg",
+      image1,
+      image2,
+      image3,
+      image1,
+      image2,
+      image3,
+      image1,
+      image2,
+      image3,
     ],
   },
 
@@ -228,10 +234,11 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/d-sparkles/cover.jpg",
+    cover: image3,
     gallery: [
-      "/images/works/d-sparkles/01.jpg",
-      "/images/works/d-sparkles/02.jpg",
+      image1,
+      image2,
+      image3,
     ],
   },
 
@@ -267,10 +274,11 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/haru-africa/cover.jpg",
+    cover: image2,
     gallery: [
-      "/images/works/haru-africa/01.jpg",
-      "/images/works/haru-africa/02.jpg",
+      image1,
+      image2,
+      image3,
     ],
   },
 
@@ -311,10 +319,11 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/vamp/cover.jpg",
+    cover: image3,
     gallery: [
-      "/images/works/vamp/01.jpg",
-      "/images/works/vamp/02.jpg",
+      image1,
+      image2,
+      image3,
     ],
   },
 
@@ -350,8 +359,9 @@ export const project = [
 
     cover: "/images/works/bla/cover.jpg",
     gallery: [
-      "/images/works/bla/01.jpg",
-      "/images/works/bla/02.jpg",
+      image1,
+      image2,
+      image3,
     ],
   },
 
@@ -383,10 +393,11 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/chums-beauty/cover.jpg",
+    cover: image2,
     gallery: [
-      "/images/works/chums-beauty/01.jpg",
-      "/images/works/chums-beauty/02.jpg",
+      image1,
+      image2,
+      image3,
     ],
   },
 ];

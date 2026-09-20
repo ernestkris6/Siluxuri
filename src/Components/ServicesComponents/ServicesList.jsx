@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { FaArrowCircleUp, FaStar } from "react-icons/fa";
-import { FaSquareArrowUpRight } from "react-icons/fa6";
-import { FiArrowUpRight } from "react-icons/fi";
+import { LuFingerprint, LuCamera, LuMonitorSmartphone, LuChartNoAxesCombined } from "react-icons/lu";
+
 
 const services = [
   {
@@ -9,24 +8,28 @@ const services = [
     title: "Brand Strategy",
     description:
       "We build result oriented brand strategies that convey what makes your company unique. We ensure that your brand stands out both offline and online. We integrate digital marketing strategies, including social media, SEO, and content marketing, into our branding approach to ensure your brand reaches its target audience effectively.",
+      icon: <LuChartNoAxesCombined />,
   },
   {
     number: "02",
     title: "Identity Design",
     description:
       "From logo design to color palettes and typography, we craft designs that not only look good but also resonate with your audience. We understand the psychology behind design and ensure that our visuals appeal to the market while being optimized for digital platforms. Everything we create, from logos to marketing materials, is developed with the goal of delivering a seamless brand experience across both traditional and digital channels.",
+      icon: <LuFingerprint />,
   },
   {
     number: "03",
     title: "Digital Marketing",
     description:
       "Our digital marketing services complement our branding work by enhancing online visibility and driving engagement. This includes social media management, paid advertising (Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads), email marketing, and content creation. We aim to provide integrated marketing solutions that help brands expand their reach and grow their business in the digital space.",
+      icon: <LuMonitorSmartphone />,
   },
   {
     number: "04",
     title: "Equipment Rental",
     description:
       "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs, and small businesses that need access to professional tools without the high cost of ownership.",
+    icon: <LuCamera />,
   },
 ];
 
@@ -56,12 +59,12 @@ export default function ServicesList () {
             `}
           >
             <div className="flex items-start justify-between gap-6">
-              <span className="text-sm text-magenta">
+              <span className="text-sm text-blue">
                 {service.number}
               </span>
 
                <div className="flex h-11 w-11 translate-y-3 items-center justify-center rounded-full bg-blue text-white transition-all duration-500  ">
-                    <FaStar />
+                    {service.icon}
                   </div>
               {/* <span className="text-[#2F2E41]/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                 <FiArrowUpRight />

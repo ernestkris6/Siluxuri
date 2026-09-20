@@ -1,7 +1,9 @@
-import React from 'react'
+import Project from '../Components/Workcomponents/Project'
 
 export default function Work() {
   return (
-    <div>Work</div>
+    <main>
+      <Project />
+    </main>
   )
 }

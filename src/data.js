@@ -3,6 +3,9 @@ import image2 from "./assets/jess2.webp";
 import image3 from "./assets/jess.webp";
 
 
+
+// TEAM DATA
+
 export const teamData = [
   {
     name: "Ihenwosu C. Stephen",
@@ -71,22 +74,11 @@ export const teamData = [
     instagram: "#",
     linkedin: "#",
   },
-//   {
-//     name: "Team Member",
-//     slug: "team-member",
-//     role: "Creative Director",
-//     image: image2,
-//   },
-//   {
-//     name: "Team Member 2",
-//     slug: "team-member-2",
-//     role: "Creative Director",
-//     image: image3,
-//   },
 ];
 
 
 
+// SERVICES DATA
 export const services = [
   {
     number: "01",
@@ -152,132 +144,250 @@ export const services = [
 
 
 
+//WORKS DATA
 
+export const project = [
+  {
+    slug: "rtm-fashion-concierge",
+    name: "RTM Fashion Concierge",
+    shortName: "RTM",
+    category: "Luxury Retail",
+    location: "Lagos, Nigeria",
+    description:
+      "A luxury retail brand specialising in authentic designer fashion and curated premium experiences.",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export const teamData2 = {
-  "ihenwosu-stephen": {
-    name: "Ihenwosu C. Stephen",
-    role: "Brand Strategist",
-    image: image1,
-    slug: "ihenwosu-stephen",
-
-    intro:
-      "Building brands that are clear, distinctive and impossible to ignore.",
-
-    bio: [
-      "Stephen is a brand strategist passionate about helping businesses find clarity in an increasingly competitive environment.",
-
-      "At Siluxri, he works across strategy, branding and digital marketing to transform ideas into experiences that connect with people and create meaningful business outcomes.",
+    services: [
+      "Brand Identity Redesign",
+      "Social Media Management",
+      "Content Creation",
+      "Influencer Marketing",
+      "Paid Advertising",
     ],
 
-    expertise: [
-      "Brand Strategy",
-      "Digital Marketing",
-      "Creative Direction",
-      "Campaign Strategy",
+    metrics: [
+      { label: "Followers", value: "31.32K+" },
+      { label: "Impressions", value: "4.08M+" },
+      { label: "Interactions", value: "126.78K+" },
     ],
 
-    instagram: "#",
-    linkedin: "#",
+    results: [
+      "Professional brand identity redesign",
+      "Increased brand recognition nationwide",
+      "Increased sales and in-store foot traffic",
+    ],
+
+    theme: {
+      background: "#F4F0EA",
+      foreground: "#242536",
+      accent: "#007589",
+      secondary: "#EB6F38",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/rtm/cover.jpg",
+    gallery: [
+      "/images/works/rtm/01.jpg",
+      "/images/works/rtm/02.jpg",
+      "/images/works/rtm/03.jpg",
+    ],
   },
 
-  "creative-director": {
-    name: "Team Member",
-    role: "Creative Director",
-    image: image2,
-    slug: "team-member",
+  {
+    slug: "d-sparkles",
+    name: "D.sparkles",
+    shortName: "D.SPARKLES",
+    category: "Jewellery & Lifestyle",
+    location: "Greater London, England",
+    description:
+      "A family-run jewellery brand celebrating the artistry and sophistication of handmade beaded jewellery.",
 
-    intro:
-      "Turning ideas into visual experiences people remember.",
-
-    bio: [
-      "A creative thinker with a passion for visual storytelling and distinctive brand experiences.",
-
-      "At Siluxri, their work brings together creativity, design and strategy to create work that feels both beautiful and purposeful.",
+    services: [
+      "Brand Identity Redesign",
+      "Social Media Management",
+      "Content Creation",
+      "Paid Advertising",
     ],
 
-    expertise: [
-      "Creative Direction",
-      "Visual Identity",
-      "Campaign Design",
-      "Art Direction",
+    metrics: [
+      { label: "Followers", value: "8.4K+" },
+      { label: "Impressions", value: "988.27K+" },
+      { label: "Interactions", value: "3.74K+" },
     ],
 
-    instagram: "#",
-    linkedin: "#",
+    results: [
+      "Professional brand identity redesign",
+      "Increased brand recognition worldwide",
+      "Online sales increase of 164%",
+    ],
+
+    theme: {
+      background: "#F4EEE8",
+      foreground: "#302B35",
+      accent: "#8A5265",
+      secondary: "#D8B88A",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/d-sparkles/cover.jpg",
+    gallery: [
+      "/images/works/d-sparkles/01.jpg",
+      "/images/works/d-sparkles/02.jpg",
+    ],
   },
 
-  "creative-director-2": {
-    name: "Team Member 2",
-    role: "Creative Director",
-    image: image3,
-    slug: "team-member",
+  {
+    slug: "haru-africa",
+    name: "HARU Africa",
+    shortName: "HARU",
+    category: "Korean Lifestyle",
+    location: "Lagos, Nigeria",
+    description:
+      "A Korean lifestyle brand bringing authentic Korean ramen, snacks, K-beauty, K-pop goods and cultural experiences closer to customers across Nigeria.",
 
-    intro:
-      "Creating meaningful experiences through creativity and strategy.",
-
-    bio: [
-      "A creative professional focused on developing ideas that help brands communicate with clarity and personality.",
-
-      "At Siluxri, their work spans creative development, digital experiences and brand communication.",
+    services: [
+      "Social Media Management",
+      "Content Creation",
+      "Influencer Marketing",
+      "Paid Advertising",
     ],
 
-    expertise: [
-      "Creative Direction",
-      "Digital Strategy",
-      "Brand Communication",
-      "Content Development",
+    metrics: [],
+
+    results: [
+      "Increased brand recognition nationwide",
+      "Increased online sales",
+      "Increased in-store foot traffic",
     ],
 
-    instagram: "#",
-    linkedin: "#",
+    theme: {
+      background: "#F0F5F0",
+      foreground: "#183A32",
+      accent: "#2C745E",
+      secondary: "#E9A23B",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/haru-africa/cover.jpg",
+    gallery: [
+      "/images/works/haru-africa/01.jpg",
+      "/images/works/haru-africa/02.jpg",
+    ],
   },
-};
+
+  {
+    slug: "vamp",
+    name: "VAMP",
+    shortName: "VAMP",
+    category: "Lifestyle Retail",
+    location: "Lagos, Nigeria",
+    description:
+      "A lifestyle retail brand with a curated selection of products and accessories, built around exploration and expression.",
+
+    services: [
+      "Brand Guide Design",
+      "Social Media Management",
+      "Content Creation",
+      "Influencer Marketing",
+      "Paid Advertising",
+    ],
+
+    metrics: [
+      { label: "Followers", value: "6.89K+" },
+      { label: "Impressions", value: "1.19M+" },
+      { label: "Interactions", value: "13.6K+" },
+    ],
+
+    results: [
+      "Increased brand awareness and loyalty",
+      "Increased brand engagement",
+      "Increased online sales and store foot traffic",
+    ],
+
+    theme: {
+      background: "#EAEAEA",
+      foreground: "#171717",
+      accent: "#262626",
+      secondary: "#9CA3AF",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/vamp/cover.jpg",
+    gallery: [
+      "/images/works/vamp/01.jpg",
+      "/images/works/vamp/02.jpg",
+    ],
+  },
+
+  {
+    slug: "better-life-ahead",
+    name: "Better Life Ahead",
+    shortName: "BLA",
+    category: "Fashion",
+    location: "Lagos, Nigeria",
+    description:
+      "A high-end fashion brand creating bold, sophisticated designs for individuals who value quality and self-expression.",
+
+    services: [
+      "Brand Identity Design",
+      "Merchandise Design",
+    ],
+
+    metrics: [],
+
+    results: [
+      "Professional brand identity design",
+      "Official brand launch",
+      "Merchandise sales",
+    ],
+
+    theme: {
+      background: "#E8F3F5",
+      foreground: "#1F3042",
+      accent: "#007589",
+      secondary: "#EB6F38",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/bla/cover.jpg",
+    gallery: [
+      "/images/works/bla/01.jpg",
+      "/images/works/bla/02.jpg",
+    ],
+  },
+
+  {
+    slug: "chums-beauty",
+    name: "Chums Beauty",
+    shortName: "CHUMS",
+    category: "Beauty & Hair",
+    location: "Nigeria",
+    description:
+      "A hair styling and beauty brand where elegance meets expertise, celebrating individuality and personal expression.",
+
+    services: [
+      "Brand Identity Redesign",
+    ],
+
+    metrics: [],
+
+    results: [
+      "A stylish and clean brand identity",
+      "A timeless visual direction",
+    ],
+
+    theme: {
+      background: "#F6EDE9",
+      foreground: "#392A2B",
+      accent: "#A86668",
+      secondary: "#D9B8A4",
+      displayFont: "Georgia, serif",
+    },
+
+    cover: "/images/works/chums-beauty/cover.jpg",
+    gallery: [
+      "/images/works/chums-beauty/01.jpg",
+      "/images/works/chums-beauty/02.jpg",
+    ],
+  },
+];
+

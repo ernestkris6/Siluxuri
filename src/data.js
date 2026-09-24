@@ -260,7 +260,11 @@ export const project = [
       "Paid Advertising",
     ],
 
-    metrics: [],
+    metrics: [
+      { label: "Followers", value: "31.32K+" },
+      { label: "Impressions", value: "4.08M+" },
+      { label: "Interactions", value: "126.78K+" },
+    ],
 
     results: [
       "Increased brand recognition nationwide",
@@ -343,7 +347,11 @@ export const project = [
       "Merchandise Design",
     ],
 
-    metrics: [],
+    metrics: [
+      { label: "Followers", value: "31.32K+" },
+      { label: "Impressions", value: "4.08M+" },
+      { label: "Interactions", value: "126.78K+" },
+    ],
 
     results: [
       "Professional brand identity design",

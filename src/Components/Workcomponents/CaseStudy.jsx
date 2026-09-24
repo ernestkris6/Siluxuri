@@ -308,7 +308,7 @@ export default function CaseStudy() {
               color: theme.accent,
             }}
           >
-            03 / The Outcome
+            04 / The Outcome
           </p>
 
           <div>
@@ -370,7 +370,7 @@ export default function CaseStudy() {
                 color: theme.accent,
               }}
             >
-              04 / The Work
+              05 / The Work
             </p>
 
             {/* =========================

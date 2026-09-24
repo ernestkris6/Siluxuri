@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 import { project } from "../../data";
+import { FiArrowLeft, FiArrowUpRight } from "react-icons/fi";
 
 export default function CaseStudy() {
   const { slug } = useParams();
@@ -12,7 +13,7 @@ export default function CaseStudy() {
   // Simple fallback for an invalid project URL
   if (!selectedProject) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-[#F2F2F2] px-6 text-center">
+      <main className="flex min-h-screen items-center justify-center bg-white px-6 text-center">
         <div>
           <h1 className="font-serif text-5xl text-blue">
             Project not found.
@@ -72,12 +73,12 @@ export default function CaseStudy() {
         ========================== */}
         <div className="px-5 sm:px-8 lg:px-16">
           <div className="mx-auto max-w-7xl">
-
+            
             <Link
               to="/work"
-              className="my-8 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] opacity-70 transition-opacity hover:opacity-100"
+              className="my-8 inline-flex items-center gap-2 text-xs font-semibold uppercase border-b pb-2 tracking-[0.2em] opacity-70 transition-opacity hover:opacity-100"
             >
-              ← Back to Works
+               <FiArrowLeft /> Back to Works
             </Link>
 
             <div className="mt-6">
@@ -184,7 +185,7 @@ export default function CaseStudy() {
       <section
         className="px-5 py-20 sm:px-8 md:py-28 lg:px-16"
         style={{
-          backgroundColor: `${theme.accent}12`,
+          backgroundColor: `${theme.secondary}`,
         }}
       >
         <div className="mx-auto max-w-7xl">
@@ -192,7 +193,7 @@ export default function CaseStudy() {
           <p
             className="mb-10 text-xs font-semibold uppercase tracking-[0.2em]"
             style={{
-              color: theme.accent,
+              color: theme.foreground,
             }}
           >
             02 / Our Contribution
@@ -233,7 +234,7 @@ export default function CaseStudy() {
                     color: theme.accent,
                   }}
                 >
-                  ↗
+                  <FiArrowUpRight />
                 </span>
 
               </div>
@@ -307,7 +308,7 @@ export default function CaseStudy() {
               color: theme.accent,
             }}
           >
-            04 / The Outcome
+            03 / The Outcome
           </p>
 
           <div>
@@ -369,48 +370,60 @@ export default function CaseStudy() {
                 color: theme.accent,
               }}
             >
-              05 / The Work
+              04 / The Work
             </p>
 
             {/* =========================
                 TILE GALLERY
-            ========================== */}
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 lg:gap-5">
+            ========================== */}{/* =========================
+    GALLERY
+========================== */}
+<section className="px-5 pb-20 sm:px-8 md:pb-28 lg:px-16">
+  <div className="mx-auto max-w-7xl">
 
-              {selectedProject.gallery?.map((image, index) => {
+    {selectedProject.gallery?.length > 0 && (
+      <div className="columns-2 gap-3 md:columns-3 lg:columns-4">
+        {selectedProject.gallery.map((image, index) => {
+          const imageSizes = [
+            "aspect-[4/5]",
+            "aspect-square",
+            "aspect-[3/4]",
+            "aspect-[4/5]",
+            "aspect-square",
+            "aspect-[3/4]",
+            "aspect-[4/5]",
+            "aspect-square",
+          ];
 
-                // Different tile sizes create the editorial / masonry feel
-                const tileSizes = [
-                  "col-span-2 row-span-2",
-                  "row-span-1",
-                  "row-span-2",
-                  "row-span-1",
-                  "row-span-2",
-                  "col-span-2 row-span-1",
-                  "row-span-1",
-                  "row-span-2",
-                ];
-
-                return (
-                  <div
-                    key={image}
-                    className={`group overflow-hidden rounded-xl ${
-                      tileSizes[index % tileSizes.length]
-                    }`}
-                  >
-                    <img
-                      src={image}
-                      alt={`${selectedProject.name} project image ${
-                        index + 1
-                      }`}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                );
-              })}
-
+          return (
+            <div
+              key={image}
+              className="group mb-3 w-full break-inside-avoid overflow-hidden rounded-xl"
+            >
+              <div
+                className={`w-full ${
+                  imageSizes[index % imageSizes.length]
+                }`}
+              >
+                <img
+                  src={image}
+                  alt={`${selectedProject.name} project image ${index + 1}`}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+              </div>
             </div>
+          );
+        })}
+      </div>
+    )}
+
+  </div>
+</section>
+
+
+
+           
 
           </div>
         </section>
@@ -451,7 +464,7 @@ export default function CaseStudy() {
             }}
           >
             Back to all projects
-            <span>↗</span>
+            <span><FiArrowUpRight /></span>
           </Link>
 
         </div>
@@ -1028,7 +1041,137 @@ export default function CaseStudy() {
 
 
 
+ {/* <div className="grid grid-cols-2 gap-3 auto-rows-[150px] grid-flow-dense md:grid-cols-3 md:auto-rows-[160px] lg:grid-cols-4 lg:auto-rows-[180px]">
+  {selectedProject.gallery?.map((image, index) => {
+    const tileSizes = [
+      "col-span-2 row-span-2",
+      "col-span-1 row-span-1",
+      "col-span-1 row-span-2",
+      "col-span-1 row-span-1",
+      "col-span-1 row-span-2",
+      "col-span-2 row-span-1",
+      "col-span-1 row-span-1",
+      "col-span-1 row-span-2",
+    ];
 
+    return (
+      <div
+        key={image}
+        className={`group h-full w-full overflow-hidden rounded-xl ${
+          tileSizes[index % tileSizes.length]
+        }`}
+      >
+        <img
+          src={image}
+          alt={`${selectedProject.name} project image ${index + 1}`}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+        />
+      </div>
+    );
+  })}
+</div> */}
+
+            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[180px]">
+
+  {selectedProject.gallery?.map((image, index) => {
+
+    // Different tile sizes create the editorial / masonry feel
+    const tileSizes = [
+      "col-span-2 row-span-1",
+      "row-span-1",
+      "row-span-2",
+      "row-span-1",
+      "row-span-2",
+      "col-span-2 row-span-1",
+      "row-span-1",
+      "row-span-2",
+    ];
+
+    return (
+      <div
+        key={image}
+        className={`group w-full h-full overflow-hidden rounded-xl ${
+          tileSizes[index % tileSizes.length]
+        }`}
+      >
+        <img
+          src={image}
+          alt={`${selectedProject.name} project image ${index + 1}`}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+        />
+      </div>
+    );
+  })}
+
+</div> */}
+
+            {/* <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+  {selectedProject.gallery?.map((image, index) => (
+
+     // Different tile sizes create the editorial / masonry feel
+                const tileSizes = [
+                  "col-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                  "col-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                ];
+    <div
+      key={image}
+      className="group aspect-square w-full max-w-[220px] overflow-hidden rounded-xl"
+    >
+      <img
+        src={image}
+        alt={`${selectedProject.name} project image ${index + 1}`}
+        loading="lazy"
+        className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]` `group overflow-hidden rounded-xl ${
+                      tileSizes[index % tileSizes.length]
+                    }`}
+      />
+    </div>
+  ))}
+</div> */}
+            {/* <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 lg:gap-5">
+
+              {selectedProject.gallery?.map((image, index) => {
+
+                // Different tile sizes create the editorial / masonry feel
+                const tileSizes = [
+                  "col-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                  "col-span-2",
+                  "row-span-1",
+                  "row-span-2",
+                ];
+
+                return (
+                  <div
+                    key={image}
+                    className={`group overflow-hidden rounded-xl ${
+                      tileSizes[index % tileSizes.length]
+                    }`}
+                  >
+                    <img
+                      src={image}
+                      alt={`${selectedProject.name} project image ${
+                        index + 1
+                      }`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                );
+              })}
+
+            </div> */}
 
 
 

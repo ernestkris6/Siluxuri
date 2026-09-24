@@ -176,12 +176,14 @@ export const project = [
       "Increased sales and in-store foot traffic",
     ],
 
+    //F75D18, F2F2F2F, 242433, 3F3D56, E6E6E6
+
     theme: {
-      background: "#F4F0EA",
-      foreground: "#242536",
-      accent: "#007589",
-      secondary: "#EB6F38",
-      displayFont: "Georgia, serif",
+      background: "#F2F2F2", //Background
+      foreground: "#242433", //Major texts/bottom banner
+      accent: "#F75D18", //Tiny headings/services-list section
+      secondary: "#F75D18", //Button underline
+      displayFont: "Georgia, serif", //texts
     },
 
     cover: image2,
@@ -227,11 +229,11 @@ export const project = [
     ],
 
     theme: {
-      background: "#F4EEE8",
-      foreground: "#302B35",
-      accent: "#8A5265",
-      secondary: "#D8B88A",
-      displayFont: "Georgia, serif",
+      background: "#F7F7F7", //background
+      foreground: "#0B0C0D", //Major texts/bottom banner
+      accent: "#8A5265",     //Tiny headings/services-list section
+      secondary: "#735A51",  //Button underline
+      displayFont: "Georgia, serif", //Texts
     },
 
     cover: image3,
@@ -267,11 +269,11 @@ export const project = [
     ],
 
     theme: {
-      background: "#F0F5F0",
-      foreground: "#183A32",
-      accent: "#2C745E",
-      secondary: "#E9A23B",
-      displayFont: "Georgia, serif",
+      background: "#F3E8FF", //Background
+      foreground: "#1A1A1A", //Major texts/bottom banner
+      accent: "F2F2F2",  //Tiny headings/services-list section
+      secondary: "#F2F2F2", //Button underline
+      displayFont: "Georgia, serif", //Texts
     },
 
     cover: image2,
@@ -312,11 +314,11 @@ export const project = [
     ],
 
     theme: {
-      background: "#EAEAEA",
-      foreground: "#171717",
-      accent: "#262626",
-      secondary: "#9CA3AF",
-      displayFont: "Georgia, serif",
+      background: "#EAEAEA", //background
+      foreground: "#171717", //Major texts/bottom banner
+      accent: "",     //Tiny headings/services-list section
+      secondary: "#008751",  //Button underline
+      displayFont: "Georgia, serif", //Texts
     },
 
     cover: image3,
@@ -350,11 +352,11 @@ export const project = [
     ],
 
     theme: {
-      background: "#E8F3F5",
-      foreground: "#1F3042",
-      accent: "#007589",
-      secondary: "#EB6F38",
-      displayFont: "Georgia, serif",
+      background: "#E2E2E2",  //background
+      foreground: "#9A7B3E",  //Major texts/bottom banner
+      accent: "",      //Tiny headings/services-list section
+      secondary: "#4A0000",   //Button underline
+      displayFont: "Georgia, serif",  //Texts
     },
 
     cover: image1,
@@ -386,11 +388,11 @@ export const project = [
     ],
 
     theme: {
-      background: "#F6EDE9",
-      foreground: "#392A2B",
-      accent: "#A86668",
-      secondary: "#D9B8A4",
-      displayFont: "Georgia, serif",
+      background: "#C8A2C8",   //background
+      foreground: "#612828",   //Major texts/bottom banner
+      accent: "#F2F2F2",       //Tiny headings/services-list section
+      secondary: "#FAB1B1",    //Button underline
+      displayFont: "Georgia, serif",  //Texts
     },
 
     cover: image2,

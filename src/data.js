@@ -447,8 +447,8 @@ export const project = [
     theme: {
       background: "#F2F2F2", //Background
       foreground: "#242433", //Major texts/bottom banner
-      accent: "#F75D18", //Tiny headings/services-list section
-      secondary: "#F75D18", //Button underline
+      accent: "#242433", //Tiny headings
+      secondary: "#F2F2F2", //Button underline/services-list section 
       displayFont: "Georgia, serif", //texts
     },
 
@@ -497,8 +497,8 @@ export const project = [
     theme: {
       background: "#F7F7F7", //background
       foreground: "#0B0C0D", //Major texts/bottom banner
-      accent: "#8A5265",     //Tiny headings/services-list section
-      secondary: "#735A51",  //Button underline
+      accent: "#8A5265",     //Tiny headings
+      secondary: "#735A51",  //Button underline/services-list section 
       displayFont: "Georgia, serif", //Texts
     },
 
@@ -537,8 +537,8 @@ export const project = [
     theme: {
       background: "#F3E8FF", //Background
       foreground: "#1A1A1A", //Major texts/bottom banner
-      accent: "F2F2F2",  //Tiny headings/services-list section
-      secondary: "#F2F2F2", //Button underline
+      accent: "F2F2F2",  //Tiny headings
+      secondary: "#F2F2F2", //Button underline/services-list section 
       displayFont: "Georgia, serif", //Texts
     },
 
@@ -582,8 +582,8 @@ export const project = [
     theme: {
       background: "#EAEAEA", //background
       foreground: "#171717", //Major texts/bottom banner
-      accent: "",     //Tiny headings/services-list section
-      secondary: "#008751",  //Button underline
+      accent: "",     //Tiny headings
+      secondary: "#008751",  //Button underline/services-list section 
       displayFont: "Georgia, serif", //Texts
     },
 
@@ -620,8 +620,8 @@ export const project = [
     theme: {
       background: "#E2E2E2",  //background
       foreground: "#9A7B3E",  //Major texts/bottom banner
-      accent: "",      //Tiny headings/services-list section
-      secondary: "#4A0000",   //Button underline
+      accent: "",      //Tiny headings
+      secondary: "#4A0000",   //Button underline/services-list section 
       displayFont: "Georgia, serif",  //Texts
     },
 
@@ -656,8 +656,8 @@ export const project = [
     theme: {
       background: "#C8A2C8",   //background
       foreground: "#612828",   //Major texts/bottom banner
-      accent: "#F2F2F2",       //Tiny headings/services-list section
-      secondary: "#FAB1B1",    //Button underline
+      accent: "#F2F2F2",       //Tiny headings
+      secondary: "#FAB1B1",    //Button underline/services-list section 
       displayFont: "Georgia, serif",  //Texts
     },
 

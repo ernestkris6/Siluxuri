@@ -462,7 +462,6 @@ export const project = [
       image3,
       image1,
       image2,
-      image3,
     ],
   },
 

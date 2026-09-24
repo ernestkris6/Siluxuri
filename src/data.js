@@ -144,6 +144,272 @@ export const services = [
 
 
 
+//PROJECTS DATA
+
+// export const project = [
+//   {
+//     slug: "rtm-fashion-concierge",
+//     name: "RTM Fashion Concierge",
+//     shortName: "RTM",
+//     category: "Luxury Retail",
+//     location: "Lagos, Nigeria",
+//     description:
+//       "A luxury retail brand specialising in authentic designer fashion and curated premium experiences.",
+
+//     services: [
+//       "Brand Identity Redesign",
+//       "Social Media Management",
+//       "Content Creation",
+//       "Influencer Marketing",
+//       "Paid Advertising",
+//     ],
+
+//     metrics: [
+//       { label: "Followers", value: "31.32K+" },
+//       { label: "Impressions", value: "4.08M+" },
+//       { label: "Interactions", value: "126.78K+" },
+//     ],
+
+//     results: [
+//       "Professional brand identity redesign",
+//       "Increased brand recognition nationwide",
+//       "Increased sales and in-store foot traffic",
+//     ],
+
+//     //F75D18, F2F2F2F, 242433, 3F3D56, E6E6E6
+
+//     theme: {
+//       background: "#F2F2F2", //Background
+//       foreground: "#242433", //Major texts/bottom banner
+//       accent: "#F75D18", //Tiny headings/services-list section
+//       secondary: "#F75D18", //Button underline
+//       displayFont: "Georgia, serif", //texts
+//     },
+
+//     cover: image2,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//       image1,
+//       image2,
+//       image3,
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+
+//   {
+//     slug: "d-sparkles",
+//     name: "D.sparkles",
+//     shortName: "D.SPARKLES",
+//     category: "Jewellery & Lifestyle",
+//     location: "Greater London, England",
+//     description:
+//       "A family-run jewellery brand celebrating the artistry and sophistication of handmade beaded jewellery.",
+
+//     services: [
+//       "Brand Identity Redesign",
+//       "Social Media Management",
+//       "Content Creation",
+//       "Paid Advertising",
+//     ],
+
+//     metrics: [
+//       { label: "Followers", value: "8.4K+" },
+//       { label: "Impressions", value: "988.27K+" },
+//       { label: "Interactions", value: "3.74K+" },
+//     ],
+
+//     results: [
+//       "Professional brand identity redesign",
+//       "Increased brand recognition worldwide",
+//       "Online sales increase of 164%",
+//     ],
+
+//     theme: {
+//       background: "#F7F7F7", //background
+//       foreground: "#0B0C0D", //Major texts/bottom banner
+//       accent: "#8A5265",     //Tiny headings/services-list section
+//       secondary: "#735A51",  //Button underline
+//       displayFont: "Georgia, serif", //Texts
+//     },
+
+//     cover: image3,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+
+//   {
+//     slug: "haru-africa",
+//     name: "HARU Africa",
+//     shortName: "HARU",
+//     category: "Korean Lifestyle",
+//     location: "Lagos, Nigeria",
+//     description:
+//       "A Korean lifestyle brand bringing authentic Korean ramen, snacks, K-beauty, K-pop goods and cultural experiences closer to people across Nigeria and beyond.",
+
+//     services: [
+//       "Social Media Management",
+//       "Content Creation",
+//       "Influencer Marketing",
+//       "Paid Advertising",
+//     ],
+
+//     metrics: [
+//       { label: "Followers", value: "31.32K+" },
+//       { label: "Impressions", value: "4.08M+" },
+//       { label: "Interactions", value: "126.78K+" },
+//     ],
+
+//     results: [
+//       "Increased brand recognition nationwide",
+//       "Increased online sales and in-store foot traffic",
+//     ],
+
+//     theme: {
+//       background: "#F3E8FF", //Background
+//       foreground: "#1A1A1A", //Major texts/bottom banner
+//       accent: "F2F2F2",  //Tiny headings/services-list section
+//       secondary: "#F2F2F2", //Button underline
+//       displayFont: "Georgia, serif", //Texts
+//     },
+
+//     cover: image2,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+
+//   {
+//     slug: "vamp",
+//     name: "VAMP",
+//     shortName: "VAMP",
+//     category: "Lifestyle Retail",
+//     location: "Lagos, Nigeria",
+//     description:
+//       "A one-stop shop for authentic vapes and smoke accessories in Lagos, Nigeria, with carefully curated selections built around exploration and expression.",
+
+//     services: [
+//       "Brand Guide Design",
+//       "Social Media Management",
+//       "Content Creation",
+//       "Influencer Marketing",
+//       "Paid Advertising",
+//     ],
+
+//     metrics: [
+//       { label: "Followers", value: "6.89K+" },
+//       { label: "Impressions", value: "1.19M+" },
+//       { label: "Interactions", value: "13.6K+" },
+//     ],
+
+//     results: [
+//       "Increased brand awareness and loyalty",
+//       "Increased brand engagement",
+//       "Increased online sales and foot traffic to store",
+//     ],
+
+//     theme: {
+//       background: "#EAEAEA", //background
+//       foreground: "#171717", //Major texts/bottom banner
+//       accent: "",     //Tiny headings/services-list section
+//       secondary: "#008751",  //Button underline
+//       displayFont: "Georgia, serif", //Texts
+//     },
+
+//     cover: image3,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+
+//   {
+//     slug: "better-life-ahead",
+//     name: "Better Life Ahead",
+//     shortName: "BLA",
+//     category: "Fashion",
+//     location: "Lagos, Nigeria",
+//     description:
+//       "A high-end fashion brand committed to revolutionising the fashion landscape through bold, sophisticated designs that inspire confidence and self-expression.",
+
+//     services: [
+//       "Brand Identity Design",
+//       "Merchandise Design",
+//     ],
+
+//     metrics: [
+//       { label: "Followers", value: "31.32K+" },
+//       { label: "Impressions", value: "4.08M+" },
+//       { label: "Interactions", value: "126.78K+" },
+//     ],
+
+//     results: [
+//       "Professional brand identity design",
+//       "Official brand launch and merchandise sales",
+//     ],
+
+//     theme: {
+//       background: "#E2E2E2",  //background
+//       foreground: "#9A7B3E",  //Major texts/bottom banner
+//       accent: "",      //Tiny headings/services-list section
+//       secondary: "#4A0000",   //Button underline
+//       displayFont: "Georgia, serif",  //Texts
+//     },
+
+//     cover: image1,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+
+//   {
+//     slug: "chums-beauty",
+//     name: "Chums Beauty",
+//     shortName: "CHUMS",
+//     category: "Beauty & Hair",
+//     location: "Nigeria",
+//     description:
+//       "A Nigerian hair styling and beauty brand where elegance meets expertise, celebrating beauty, culture and individuality.",
+
+//     services: [
+//       "Brand Identity Redesign",
+//     ],
+
+//     metrics: [],
+
+//     results: [
+//       "Professional brand identity design that is stylish, clean and timeless",
+//     ],
+
+//     theme: {
+//       background: "#C8A2C8",   //background
+//       foreground: "#612828",   //Major texts/bottom banner
+//       accent: "#F2F2F2",       //Tiny headings/services-list section
+//       secondary: "#FAB1B1",    //Button underline
+//       displayFont: "Georgia, serif",  //Texts
+//     },
+
+//     cover: image2,
+//     gallery: [
+//       image1,
+//       image2,
+//       image3,
+//     ],
+//   },
+// ];
+
+
 //WORKS DATA
 
 export const project = [
@@ -260,11 +526,7 @@ export const project = [
       "Paid Advertising",
     ],
 
-    metrics: [
-      { label: "Followers", value: "31.32K+" },
-      { label: "Impressions", value: "4.08M+" },
-      { label: "Interactions", value: "126.78K+" },
-    ],
+    metrics: [],
 
     results: [
       "Increased brand recognition nationwide",
@@ -347,11 +609,7 @@ export const project = [
       "Merchandise Design",
     ],
 
-    metrics: [
-      { label: "Followers", value: "31.32K+" },
-      { label: "Impressions", value: "4.08M+" },
-      { label: "Interactions", value: "126.78K+" },
-    ],
+    metrics: [],
 
     results: [
       "Professional brand identity design",

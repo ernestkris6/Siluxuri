@@ -14,13 +14,13 @@ export default function CaseStudy() {
     return (
       <main className="flex min-h-screen items-center justify-center bg-[#F2F2F2] px-6 text-center">
         <div>
-          <h1 className="font-serif text-5xl text-[#2F2E41]">
+          <h1 className="font-serif text-5xl text-blue">
             Project not found.
           </h1>
 
           <Link
             to="/work"
-            className="mt-6 inline-block text-[#007589] underline"
+            className="mt-6 inline-block text-magenta underline"
           >
             Back to Works
           </Link>

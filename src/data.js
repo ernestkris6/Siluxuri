@@ -357,7 +357,7 @@ export const project = [
       displayFont: "Georgia, serif",
     },
 
-    cover: "/images/works/bla/cover.jpg",
+    cover: image1,
     gallery: [
       image1,
       image2,

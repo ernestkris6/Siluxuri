@@ -204,15 +204,16 @@ export default function Project() {
               transition={{ duration: 0.25, ease: "easeOut" }}
               className="inline-block"
             >
-              <Link
-                to="contact"
+              <a
+                href="https://wa.me/2347045229142?text=Hello%20Siluxri%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+                target="_blank"
                 className="mt-8 inline-flex items-center gap-4 border-b border-skyblue pb-2 text-sm font-medium text-white transition-colors hover:text-skyblue"
               >
                 Chat with US
                 <span>
                   <FiArrowUpRight />
                 </span>
-              </Link>
+              </a>
             </motion.div>
 
           </motion.div>

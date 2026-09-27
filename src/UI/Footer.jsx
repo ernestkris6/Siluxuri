@@ -139,6 +139,7 @@ export default function Footer() {
 
           <a
             href="https://wa.me/2347045229142?text=Hello%20Siluxri%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+            target="_blank"
             className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
           >
             <FaWhatsapp className="text-base" />

@@ -55,6 +55,7 @@ import Haru11 from "./assets/Haru11.jpg";
 import Haru12 from "./assets/Haru12.jpg";
 
 
+//SPARKLES
 import SpaHero from "./assets/SparklesHeroImg.webp";
 import SPA1 from "./assets/SPA1.jpg";
 import SPA2 from "./assets/SPA2.jpg";
@@ -66,6 +67,19 @@ import SPA7 from "./assets/SPA7.jpg";
 import SPA8 from "./assets/SPA8.jpg";
 import SPA9 from "./assets/SPA9.jpg";
 import SPA10 from "./assets/SPA10.jpg";
+
+
+//VAMP
+import Vamp1 from "./assets/Vamp1.jpg"
+import Vamp2 from "./assets/Vamp2.jpg"
+import Vamp3 from "./assets/Vamp3.jpg"
+import Vamp4 from "./assets/Vamp4.jpg"
+import Vamp5 from "./assets/Vamp5.jpg"
+import Vamp6 from "./assets/Vamp6.jpg"
+import Vamp7 from "./assets/Vamp7.jpg"
+import Vamp8 from "./assets/Vamp8.jpg"
+import Vamp9 from "./assets/Vamp9.jpg"
+
 
 
 
@@ -405,11 +419,17 @@ export const project = [
       displayFont: "Georgia, serif", //Texts
     },
 
-    cover: image3,
+    cover: Vamp3,
     gallery: [
-      image1,
-      image2,
-      image3,
+     Vamp1,
+    //  Vamp2,
+     Vamp3,
+     Vamp4,
+     Vamp5,
+     Vamp6,
+     Vamp7,
+     Vamp8,
+     Vamp9,
     ],
   },
 

@@ -3,6 +3,58 @@ import image2 from "./assets/jess2.webp";
 import image3 from "./assets/jess.webp";
 
 
+//RTM
+import RTM0 from "./assets/RTMHero.webp";
+import RTM1 from "./assets/RTM1.jpg";
+import RTM2 from "./assets/RTM2.jpg";
+import RTM3 from "./assets/RTM3.jpg";
+import RTM4 from "./assets/RTM4.jpg";
+import RTM5 from "./assets/RTM5.jpg";
+import RTM6 from "./assets/RTM6.jpg";
+import RTM7 from "./assets/RTM7.jpg";
+import RTM8 from "./assets/RTM8.jpg";
+import RTM9 from "./assets/RTM9.jpg";
+import RTM10 from "./assets/RTM10.jpg";
+
+
+//BEAUTY
+import BEAUTY1 from "./assets/BEAUTY1.jpg";
+import BEAUTY2 from "./assets/BEAUTY2.jpg";
+import Chums from "./assets/Chums.webp";
+import ChumsLogo from "./assets/Chums-Logo.jpg"
+
+
+//BLA
+import BLA1 from "./assets/BLA1.jpg"
+import BLA2 from "./assets/BLA2.jpg"
+import BLA3 from "./assets/BLA3.jpg"
+import BLA4 from "./assets/BLA4.jpg"
+import BLA5 from "./assets/BLA5.jpg"
+import BLA6 from "./assets/BLA6.jpg"
+import BLA7 from "./assets/BLA7.jpg"
+import BLA8 from "./assets/BLA8.jpg"
+import BLA9 from "./assets/BLA9.jpg"
+import BLA10 from "./assets/BLA10.jpg"
+import BLA11 from "./assets/BLA11.jpg"
+import BLA12 from "./assets/BLA12.jpg"
+
+
+//HARU
+import Haru0 from "./assets/Haru0.webp";
+import Haru1 from "./assets/Haru1.jpg";
+import Haru2 from "./assets/Haru2.jpg";
+import Haru3 from "./assets/Haru3.jpg";
+import Haru4 from "./assets/Haru4.jpg";
+import Haru5 from "./assets/Haru5.jpg";
+import Haru6 from "./assets/Haru6.jpg";
+import Haru7 from "./assets/Haru7.jpg";
+import Haru8 from "./assets/Haru8.jpg";
+import Haru9 from "./assets/Haru9.jpg";
+import Haru10 from "./assets/Haru10.jpg";
+import Haru11 from "./assets/Haru11.jpg";
+import Haru12 from "./assets/Haru12.jpg";
+
+
 
 // TEAM DATA
 
@@ -144,272 +196,6 @@ export const services = [
 
 
 
-//PROJECTS DATA
-
-// export const project = [
-//   {
-//     slug: "rtm-fashion-concierge",
-//     name: "RTM Fashion Concierge",
-//     shortName: "RTM",
-//     category: "Luxury Retail",
-//     location: "Lagos, Nigeria",
-//     description:
-//       "A luxury retail brand specialising in authentic designer fashion and curated premium experiences.",
-
-//     services: [
-//       "Brand Identity Redesign",
-//       "Social Media Management",
-//       "Content Creation",
-//       "Influencer Marketing",
-//       "Paid Advertising",
-//     ],
-
-//     metrics: [
-//       { label: "Followers", value: "31.32K+" },
-//       { label: "Impressions", value: "4.08M+" },
-//       { label: "Interactions", value: "126.78K+" },
-//     ],
-
-//     results: [
-//       "Professional brand identity redesign",
-//       "Increased brand recognition nationwide",
-//       "Increased sales and in-store foot traffic",
-//     ],
-
-//     //F75D18, F2F2F2F, 242433, 3F3D56, E6E6E6
-
-//     theme: {
-//       background: "#F2F2F2", //Background
-//       foreground: "#242433", //Major texts/bottom banner
-//       accent: "#F75D18", //Tiny headings/services-list section
-//       secondary: "#F75D18", //Button underline
-//       displayFont: "Georgia, serif", //texts
-//     },
-
-//     cover: image2,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//       image1,
-//       image2,
-//       image3,
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-
-//   {
-//     slug: "d-sparkles",
-//     name: "D.sparkles",
-//     shortName: "D.SPARKLES",
-//     category: "Jewellery & Lifestyle",
-//     location: "Greater London, England",
-//     description:
-//       "A family-run jewellery brand celebrating the artistry and sophistication of handmade beaded jewellery.",
-
-//     services: [
-//       "Brand Identity Redesign",
-//       "Social Media Management",
-//       "Content Creation",
-//       "Paid Advertising",
-//     ],
-
-//     metrics: [
-//       { label: "Followers", value: "8.4K+" },
-//       { label: "Impressions", value: "988.27K+" },
-//       { label: "Interactions", value: "3.74K+" },
-//     ],
-
-//     results: [
-//       "Professional brand identity redesign",
-//       "Increased brand recognition worldwide",
-//       "Online sales increase of 164%",
-//     ],
-
-//     theme: {
-//       background: "#F7F7F7", //background
-//       foreground: "#0B0C0D", //Major texts/bottom banner
-//       accent: "#8A5265",     //Tiny headings/services-list section
-//       secondary: "#735A51",  //Button underline
-//       displayFont: "Georgia, serif", //Texts
-//     },
-
-//     cover: image3,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-
-//   {
-//     slug: "haru-africa",
-//     name: "HARU Africa",
-//     shortName: "HARU",
-//     category: "Korean Lifestyle",
-//     location: "Lagos, Nigeria",
-//     description:
-//       "A Korean lifestyle brand bringing authentic Korean ramen, snacks, K-beauty, K-pop goods and cultural experiences closer to people across Nigeria and beyond.",
-
-//     services: [
-//       "Social Media Management",
-//       "Content Creation",
-//       "Influencer Marketing",
-//       "Paid Advertising",
-//     ],
-
-//     metrics: [
-//       { label: "Followers", value: "31.32K+" },
-//       { label: "Impressions", value: "4.08M+" },
-//       { label: "Interactions", value: "126.78K+" },
-//     ],
-
-//     results: [
-//       "Increased brand recognition nationwide",
-//       "Increased online sales and in-store foot traffic",
-//     ],
-
-//     theme: {
-//       background: "#F3E8FF", //Background
-//       foreground: "#1A1A1A", //Major texts/bottom banner
-//       accent: "F2F2F2",  //Tiny headings/services-list section
-//       secondary: "#F2F2F2", //Button underline
-//       displayFont: "Georgia, serif", //Texts
-//     },
-
-//     cover: image2,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-
-//   {
-//     slug: "vamp",
-//     name: "VAMP",
-//     shortName: "VAMP",
-//     category: "Lifestyle Retail",
-//     location: "Lagos, Nigeria",
-//     description:
-//       "A one-stop shop for authentic vapes and smoke accessories in Lagos, Nigeria, with carefully curated selections built around exploration and expression.",
-
-//     services: [
-//       "Brand Guide Design",
-//       "Social Media Management",
-//       "Content Creation",
-//       "Influencer Marketing",
-//       "Paid Advertising",
-//     ],
-
-//     metrics: [
-//       { label: "Followers", value: "6.89K+" },
-//       { label: "Impressions", value: "1.19M+" },
-//       { label: "Interactions", value: "13.6K+" },
-//     ],
-
-//     results: [
-//       "Increased brand awareness and loyalty",
-//       "Increased brand engagement",
-//       "Increased online sales and foot traffic to store",
-//     ],
-
-//     theme: {
-//       background: "#EAEAEA", //background
-//       foreground: "#171717", //Major texts/bottom banner
-//       accent: "",     //Tiny headings/services-list section
-//       secondary: "#008751",  //Button underline
-//       displayFont: "Georgia, serif", //Texts
-//     },
-
-//     cover: image3,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-
-//   {
-//     slug: "better-life-ahead",
-//     name: "Better Life Ahead",
-//     shortName: "BLA",
-//     category: "Fashion",
-//     location: "Lagos, Nigeria",
-//     description:
-//       "A high-end fashion brand committed to revolutionising the fashion landscape through bold, sophisticated designs that inspire confidence and self-expression.",
-
-//     services: [
-//       "Brand Identity Design",
-//       "Merchandise Design",
-//     ],
-
-//     metrics: [
-//       { label: "Followers", value: "31.32K+" },
-//       { label: "Impressions", value: "4.08M+" },
-//       { label: "Interactions", value: "126.78K+" },
-//     ],
-
-//     results: [
-//       "Professional brand identity design",
-//       "Official brand launch and merchandise sales",
-//     ],
-
-//     theme: {
-//       background: "#E2E2E2",  //background
-//       foreground: "#9A7B3E",  //Major texts/bottom banner
-//       accent: "",      //Tiny headings/services-list section
-//       secondary: "#4A0000",   //Button underline
-//       displayFont: "Georgia, serif",  //Texts
-//     },
-
-//     cover: image1,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-
-//   {
-//     slug: "chums-beauty",
-//     name: "Chums Beauty",
-//     shortName: "CHUMS",
-//     category: "Beauty & Hair",
-//     location: "Nigeria",
-//     description:
-//       "A Nigerian hair styling and beauty brand where elegance meets expertise, celebrating beauty, culture and individuality.",
-
-//     services: [
-//       "Brand Identity Redesign",
-//     ],
-
-//     metrics: [],
-
-//     results: [
-//       "Professional brand identity design that is stylish, clean and timeless",
-//     ],
-
-//     theme: {
-//       background: "#C8A2C8",   //background
-//       foreground: "#612828",   //Major texts/bottom banner
-//       accent: "#F2F2F2",       //Tiny headings/services-list section
-//       secondary: "#FAB1B1",    //Button underline
-//       displayFont: "Georgia, serif",  //Texts
-//     },
-
-//     cover: image2,
-//     gallery: [
-//       image1,
-//       image2,
-//       image3,
-//     ],
-//   },
-// ];
-
-
 //WORKS DATA
 
 export const project = [
@@ -452,16 +238,18 @@ export const project = [
       displayFont: "Georgia, serif", //texts
     },
 
-    cover: image2,
+    cover: RTM0,
     gallery: [
-      image1,
-      image2,
-      image3,
-      image1,
-      image2,
-      image3,
-      image1,
-      image2,
+      RTM1,
+      RTM2,
+      RTM3,
+      RTM4,
+      RTM5,
+      RTM6,
+      RTM7,
+      RTM8,
+      // RTM9,
+      // RTM10,
     ],
   },
 
@@ -541,11 +329,20 @@ export const project = [
       displayFont: "Georgia, serif", //Texts
     },
 
-    cover: image2,
+    cover: Haru0,
     gallery: [
-      image1,
-      image2,
-      image3,
+      Haru1,
+      Haru2,
+      Haru3,
+      Haru4,
+      Haru5,
+      Haru6,
+      Haru7,
+      Haru8,
+      // Haru9,
+      // Haru10,
+      // Haru11,
+      // Haru12,
     ],
   },
 
@@ -624,11 +421,21 @@ export const project = [
       displayFont: "Georgia, serif",  //Texts
     },
 
-    cover: image1,
+    cover: BLA7,
     gallery: [
-      image1,
-      image2,
-      image3,
+      BLA1,
+      BLA2,
+      BLA3,
+      BLA4,
+      BLA5,
+      BLA6,
+      BLA7,
+      BLA8,
+      BLA9,
+      BLA10,
+      BLA11,
+      BLA12,
+
     ],
   },
 
@@ -660,11 +467,12 @@ export const project = [
       displayFont: "Georgia, serif",  //Texts
     },
 
-    cover: image2,
+    cover: Chums,
     gallery: [
-      image1,
-      image2,
-      image3,
+      ChumsLogo,
+      BEAUTY1,
+      BEAUTY2,
+      Chums,
     ],
   },
 ];

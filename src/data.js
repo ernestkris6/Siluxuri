@@ -491,10 +491,10 @@ export const project = [
 
     cover: Chums,
     gallery: [
-      ChumsLogo,
       BEAUTY1,
       BEAUTY2,
       Chums,
+      // ChumsLogo,
     ],
   },
 ];

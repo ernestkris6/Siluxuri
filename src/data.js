@@ -55,6 +55,21 @@ import Haru11 from "./assets/Haru11.jpg";
 import Haru12 from "./assets/Haru12.jpg";
 
 
+import SpaHero from "./assets/SparklesHeroImg.webp";
+import SPA1 from "./assets/SPA1.jpg";
+import SPA2 from "./assets/SPA2.jpg";
+import SPA3 from "./assets/SPA3.jpg";
+import SPA4 from "./assets/SPA4.jpg";
+import SPA5 from "./assets/SPA5.jpg";
+import SPA6 from "./assets/SPA6.jpg";
+import SPA7 from "./assets/SPA7.jpg";
+import SPA8 from "./assets/SPA8.jpg";
+import SPA9 from "./assets/SPA9.jpg";
+import SPA10 from "./assets/SPA10.jpg";
+
+
+
+
 
 // TEAM DATA
 
@@ -289,11 +304,18 @@ export const project = [
       displayFont: "Georgia, serif", //Texts
     },
 
-    cover: image3,
+    cover: SpaHero,
     gallery: [
-      image1,
-      image2,
-      image3,
+      SPA1,
+      // SPA2,
+      SPA3,
+      SPA4,
+      SPA5,
+      SPA6,
+      // SPA7,
+      SPA8,
+      SPA9,
+      SPA10,
     ],
   },
 

@@ -1,270 +1,115 @@
 import { motion } from "framer-motion";
-import herovideo from "../../assets/siluxuri-hero-web.mp4";
+import { Link } from "react-router";
+import herovideo from "../../assets/vid2_web.mp4";
+import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
+
 
 export default function HeroSection() {
   return (
-    <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-      <div className="mx-auto flex items-center py-24">
+    <section className="relative h-[88vh] min-h-[620px] w-full overflow-hidden">
+      {/* Background Video */}
+      <video
+        src={herovideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      />
 
-        <div className="w-full">
+      {/* Main Overlay */}
+      <div className="absolute inset-0 bg-[#2F2E41]/24" />
 
-          {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 45 }}
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#2F2E41]/75 via-[#2F2E41]/35 to-transparent" />
+
+      {/* Content */}
+      <div className="relative z-10 flex h-full items-end px-5 pb-12 sm:px-8 sm:pb-16 md:pb-20 lg:px-16 lg:pb-20 xl:px-20">
+        <div className="w-full max-w-7xl">
+          
+          {/* Small Label */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.9,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl"
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="mb-5 flex items-center gap-3"
           >
-            Hello, we are your next{" "}
-            <span className="text-orange">
-              agency.
+            {/* <span className="h-px w-10 bg-[#A0CBD2]" /> */}
+
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#F2F2F2]">
+              Siluxri — Creative Agency
+            </p>
+          </motion.div>
+
+          {/* Main Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.35 }}
+            className="max-w-4xl font-serif text-4xl leading-[1.05] tracking-tight text-[#F2F2F2] sm:text-5xl md:text-6xl lg:text-7xl"
+          >
+            We create brands
+            <br />
+            <span className="italic text-[#A0CBD2]">
+              that move people.
             </span>
           </motion.h1>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.2,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3"
-          >
-            The kind that reimagines what PR, Social Media, Digital Marketing,
-            Events, Social Commerce can achieve for you and your brand. The kind
-            that dives deep to help your business grow and meet brand results.
-          </motion.p>
+          {/* Bottom Content */}
+          <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+            
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="max-w-md text-sm leading-7 text-[#F2F2F2]/95 sm:text-base"
+            >
+              Branding, digital marketing and creative solutions
+              for individuals and businesses.
+            </motion.p>
 
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.75 }}
+            >
+              <Link
+                to="/work"
+                className="group inline-flex items-center gap-5 border-b border-[#A0CBD2] pb-3 text-sm font-medium text-[#F2F2F2] transition-all duration-300 hover:gap-7"
+              >
+                Explore our work
+
+                <span className="text-lg text-[#A0CBD2] transition-transform duration-300 group-hover:translate-x-1">
+                  <FiArrowUpRight />
+                </span>
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Bottom Metadata */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="mt-10 flex items-center justify-between border-t border-[#F2F2F2]/20 pt-4 text-[10px] font-medium uppercase tracking-[0.2em] text-[#F2F2F2]/60"
+          >
+            <span>Lagos · Nigeria</span>
+
+            <span className="hidden sm:block">
+              Branding · Digital · Creative
+            </span>
+
+            <span className="flex items-center gap-2">
+              Scroll
+              <span className="text-[#A0CBD2]">
+                <FiArrowDown />
+              </span>
+            </span>
+          </motion.div>
         </div>
       </div>
-
-      {/* Video */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.97 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 1.1,
-          delay: 0.35,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-        className="relative mt-[-32px] h-[380px] overflow-hidden md:h-[480px]"
-      >
-        <video
-          className="absolute inset-0 h-full w-full rounded-2xl object-cover"
-          src={herovideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-      </motion.div>
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import herovideo from "../../assets/siluxuri-hero-web.mp4"
-
-// export default function HeroSection() {
-
-//   //px-3 sm:px-6
-//   return (
-//     <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-//       <div className="mx-auto flex items-center py-24">
-        
-//         <div className="w-full">
-//           {/* Heading */}
-//           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-//             Hello, we are your next <span className="text-orange">agency.</span>
-//           </h1>
-
-//           {/* Description */}
-//           <p className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3">
-//             The kind that reimagines what PR, Social Media, Digital Marketing, Events, Social Commerce can achieve for you and your brand. The kind that dives deep to help your business grow and meet brand results.
-//           </p>
-//         </div>
-//       </div>
-
-//     <div className="relative h-[380px] mt-[-32px] overflow-hidden md:h-[480px]">
-//             {/* Video */}
-//             <video
-//                 className="absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-700"
-//                 src={herovideo}
-//                 autoPlay
-//                 muted
-//                 loop
-//                 playsInline
-//             />
-//         </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-// // import { useState } from "react";
-// // import herovideo from "../../assets/siluxuri-hero-web.mp4";
-
-// // export default function HeroSection() {
-// //   const [loaded, setIsLoaded] = useState(false);
-// //   const [videoError, setVideoError] = useState(false);
-
-// //   return (
-// //     <section className="w-full text-blue mb-8 bg-white px-5 py-24 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-// //       <div className="mx-auto flex items-center py-24">
-// //         <div className="w-full">
-// //           {/* Heading */}
-// //           <h1 className="text-4xl font-medium leading-tight tracking-tight sm:text-5xl md:text-6xl">
-// //             Hello, we are your next{" "}
-// //             <span className="text-orange">agency.</span>
-// //           </h1>
-
-// //           {/* Description */}
-// //           <p className="mt-8 text-2xl font-medium sm:text-3xl md:w-2/3">
-// //             The kind that reimagines what PR, Social Media, Digital Marketing,
-// //             Events, Social Commerce can achieve for you and your brand. The
-// //             kind that dives deep to help your business grow and meet brand
-// //             results.
-// //           </p>
-// //         </div>
-// //       </div>
-
-// //       {/* Video */}
-// //       <div className="relative mt-[-32px] h-[380px] overflow-hidden md:h-[480px]">
-        
-// //         {/* Fallback while video is loading or unavailable */}
-// //         {!loaded && (
-// //           <div className="absolute inset-0 rounded-2xl bg-blue/60" />
-// //         )}
-
-// //         {/* Only show the actual video once it is ready */}
-// //         {loaded && !videoError && (
-// //           <video
-// //             className="absolute inset-0 h-full w-full rounded-2xl object-cover"
-// //             src={herovideo}
-// //             autoPlay
-// //             muted
-// //             loop
-// //             playsInline
-// //             controls={false}
-// //           />
-// //         )}
-
-// //         {/* Hidden video used only to preload the file */}
-// //         {!loaded && !videoError && (
-// //           <video
-// //             src={herovideo}
-// //             autoPlay
-// //             muted
-// //             playsInline
-// //             preload="auto"
-// //             onCanPlay={() => setIsLoaded(true)}
-// //             onError={() => setVideoError(true)}
-// //             className="hidden"
-// //           />
-// //         )}
-// //       </div>
-// //     </section>
-// //   );
-// // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

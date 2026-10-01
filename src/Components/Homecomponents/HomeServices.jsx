@@ -110,7 +110,7 @@ export default function ServicesSection() {
                       {service.title}
                     </h3>
 
-                    <p className="mt-5 max-w-md text-lg leading-relaxed text-blue/60">
+                    <p className="mt-5 max-w-m text-lg sm:text-xl leading-relaxed text-blue/60">
                       {service.description}
                     </p>
                   </div>
@@ -164,7 +164,7 @@ export default function ServicesSection() {
             </p>
 
             <Link
-              to="/services"
+              to="/contact"
               className="group flex w-fit shrink-0 items-center gap-4 border-b border-blue pb-3 text-sm font-medium uppercase tracking-[0.15em] transition-all duration-300 hover:gap-7 hover:border-orange hover:text-orange"
             >
               Start a project

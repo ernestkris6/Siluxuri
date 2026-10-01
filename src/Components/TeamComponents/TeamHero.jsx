@@ -43,17 +43,6 @@ export default function TeamHero() {
 
         {/* Main */}
         <div className="max-w-4xl pb-12">
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="mb-6 max-w-md text-sm leading-7 text-white/60"
-          >
-            Strategists, creatives, storytellers and problem-solvers
-            united by one thing — making brands matter.
-          </motion.p>
-
           <motion.h1
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}

@@ -19,7 +19,7 @@ export default function TeamSection() {
 
           <div>
             <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-magenta">
-              The team
+              Team Leads
             </p>
 
             <h2 className="max-w-2xl text-4xl font-medium leading-tight tracking-tight text-blue sm:text-5xl md:text-6xl">

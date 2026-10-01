@@ -49,19 +49,6 @@ export default function ServicesHero() {
 
         {/* Main */}
         <div className="max-w-5xl pb-12">
-
-          <motion.p
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="mb-6 max-w-md text-sm leading-7 text-white/60"
-          >
-           From strategy and identity to digital experiences and
-           development, we turn ideas into brands that feel clear,
-           distinctive and built to lastttt.
-          </motion.p>
-
-
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}

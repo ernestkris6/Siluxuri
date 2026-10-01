@@ -33,7 +33,7 @@ export default function AboutHero() {
           className="flex items-center justify-between"
         >
           <span className="text-xs uppercase tracking-[0.25em] text-white/60">
-            About Siluxuri
+            About Siluxri
           </span>
 
           <span className="hidden text-xs uppercase tracking-[0.2em] text-white/40 sm:block">
@@ -45,7 +45,7 @@ export default function AboutHero() {
         {/* Main */}
         <div className="max-w-5xl pb-12">
 
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
@@ -53,7 +53,7 @@ export default function AboutHero() {
           >
             We build brands, digital experiences and creative
             solutions designed to make businesses impossible to ignore.
-          </motion.p>
+          </motion.p> */}
 
 
           <motion.h1

@@ -16,8 +16,7 @@ export default function AboutStory() {
           </p>
 
           <h2 className="max-w-4xl text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
-            We combine strategy, creativity and technology to help
-            ambitious businesses move forward.
+            We build result oriented strategies, designs, and marketing solutions.
           </h2>
 
         </div>
@@ -55,18 +54,6 @@ export default function AboutStory() {
             className="lg:pl-10"
           >
 
-            <p className="max-w-2xl text-lg leading-8 text-blue/65 sm:text-xl">
-              Siluxuri is a creative studio built around one simple idea:
-              good businesses deserve equally good brands.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-blue/65 sm:text-xl">
-              We work across branding, digital marketing, web development,
-              social media and creative communication to help businesses
-              communicate clearly and compete confidently.
-            </p>
-
-
             {/* Mission */}
             <div className="mt-14 border-l-2 border-magenta pl-6">
 
@@ -75,10 +62,7 @@ export default function AboutStory() {
               </p>
 
               <p className="max-w-2xl text-xl font-medium leading-relaxed sm:text-2xl">
-                Our mission is to provide our clients with practical,
-                creative, and effective branding/digital marketing solutions
-                that help their businesses differentiate themselves in the
-                competitive environment.
+                Our mission is: To provide creative, practical, and effective branding/digital marketing solutions for businesses.
               </p>
 
             </div>

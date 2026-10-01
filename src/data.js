@@ -100,10 +100,10 @@ export const teamData = [
     ],
 
     expertise: [
-      "Brand Strategy",
-      "Digital Marketing",
-      "Client Relationship Management",
-      "Creative Strategist & Business Development",
+      "Design",
+      "Creative Strategy",
+      "Marketing",
+      "Business Development",
       
     ],
 
@@ -139,7 +139,7 @@ export const teamData = [
     role: "Finance Manager",
     image: image3,
      bio: [
-      "As Finance Manager at Siluxri Creative Studio, Olabisi manages the company’s financial activities and records. She handle budgeting, financial reporting, and ensures proper financial controls.", 
+      "As Finance Manager at Siluxri Creative Studio, Ojo Olabisi manages the company’s financial activities and records. She handle budgeting, financial reporting, and ensures proper financial controls.", 
       
       "She also monitors the company’s finances to ensure they are accurate, organised, and well managed.",
     ],

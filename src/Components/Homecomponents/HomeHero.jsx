@@ -48,10 +48,10 @@ export default function HeroSection() {
             transition={{ duration: 0.9, delay: 0.35 }}
             className="max-w-4xl font-serif text-4xl leading-[1.05] tracking-tight text-[#F2F2F2] sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            We create brands
+            Your Vision
             <br />
             <span className="italic text-[#A0CBD2]">
-              that move people.
+              Brought to life.
             </span>
           </motion.h1>
 

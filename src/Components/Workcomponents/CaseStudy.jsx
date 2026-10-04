@@ -16,7 +16,7 @@ export default function CaseStudy() {
     return (
       <main className="flex min-h-screen items-center justify-center bg-white px-6 text-center">
         <div>
-          <h1 className="font-serif text-5xl text-blue">
+          <h1 className="text-5xl text-blue">
             Project not found.
           </h1>
 
@@ -39,7 +39,7 @@ export default function CaseStudy() {
     foreground: "#2F2E41",
     accent: "#007589",
     secondary: "#EB6F38",
-    displayFont: "Georgia, serif",
+    displayFont: "Roboto",
   };
 
   // CHANGED: Check whether this project actually has metrics.

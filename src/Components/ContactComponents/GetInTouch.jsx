@@ -74,7 +74,7 @@ export default function GetInTouch() {
             </p>
 
             <p className="text-xl transition-colors duration-300 text-magenta hover:text-magenta/80 sm:text-2xl">
-              Lagos, Nigeria
+              Nigeria
             </p>
           </motion.div>
 

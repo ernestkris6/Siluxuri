@@ -26,9 +26,9 @@ const services = [
   },
   {
     number: "04",
-    title: "Equipment Rental",
+    title: "Rentals",
     description:
-      "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs, and small businesses that need access to professional tools without the high cost of ownership.",
+      "We provide flexible and affordable studio/equipment rental solutions for creators, entrepreneurs, and small businesses that need access to professional tools without the high cost of ownership.",
     icon: <LuCamera />,
   },
 ];

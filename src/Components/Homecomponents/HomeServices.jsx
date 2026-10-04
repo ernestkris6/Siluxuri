@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import digital1 from "../../assets/digital1.webp";
 import digital2 from "../../assets/digital2.webp";
-import Card from "../../assets/rtmmockup.jpg";
+import Card from "../../assets/Brand-Identity3.webp";
 import rentals from "../../assets/rentals.webp";
 import { Link } from "react-router";
 

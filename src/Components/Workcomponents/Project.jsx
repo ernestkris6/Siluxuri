@@ -65,7 +65,7 @@ export default function Project() {
                 delay: 0.35,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="max-w-4xl font-serif text-5xl leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+              className="max-w-4xl text-5xl leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
             >
               Ideas made
               <span className="block italic text-orange">
@@ -120,7 +120,7 @@ export default function Project() {
                 The archive
               </p>
 
-              <h2 className="font-serif text-4xl leading-tight text-magenta sm:text-5xl">
+              <h2 className="ext-4xl leading-tight text-magenta sm:text-5xl">
                 More work.
                 <span className="block italic text-orange">
                   More possibilities.

@@ -1,5 +1,5 @@
 import image1 from "./assets/stephen.webp";
-import image2 from "./assets/jess2.webp";
+import image2 from "./assets/Jessica.jpg";
 import image3 from "./assets/jess.webp";
 
 
@@ -264,7 +264,7 @@ export const project = [
       foreground: "#242433", //Major texts/bottom banner
       accent: "#242433", //Tiny headings
       secondary: "#F2F2F2", //Button underline/services-list section 
-      displayFont: "Georgia, serif", //texts
+      displayFont: "Roboto", //texts
     },
 
     cover: RTM0,
@@ -315,7 +315,7 @@ export const project = [
       foreground: "#0B0C0D", //Major texts/bottom banner
       accent: "#8A5265",     //Tiny headings
       secondary: "#735A51",  //Button underline/services-list section 
-      displayFont: "Georgia, serif", //Texts
+      displayFont: "Roboto", //Texts
     },
 
     cover: SpaHero,
@@ -362,7 +362,7 @@ export const project = [
       foreground: "#1A1A1A", //Major texts/bottom banner
       accent: "F2F2F2",  //Tiny headings
       secondary: "#F2F2F2", //Button underline/services-list section 
-      displayFont: "Georgia, serif", //Texts
+      displayFont: "Roboto", //Texts
     },
 
     cover: Haru0,
@@ -416,7 +416,7 @@ export const project = [
       foreground: "#171717", //Major texts/bottom banner
       accent: "",     //Tiny headings
       secondary: "#008751",  //Button underline/services-list section 
-      displayFont: "Georgia, serif", //Texts
+      displayFont: "Roboto", //Texts
     },
 
     cover: Vamp3,
@@ -460,7 +460,7 @@ export const project = [
       foreground: "#9A7B3E",  //Major texts/bottom banner
       accent: "",      //Tiny headings
       secondary: "#4A0000",   //Button underline/services-list section 
-      displayFont: "Georgia, serif",  //Texts
+      displayFont: "Roboto",  //Texts
     },
 
     cover: BLA7,
@@ -506,7 +506,7 @@ export const project = [
       foreground: "#612828",   //Major texts/bottom banner
       accent: "#F2F2F2",       //Tiny headings
       secondary: "#FAB1B1",    //Button underline/services-list section 
-      displayFont: "Georgia, serif",  //Texts
+      displayFont: "Roboto",  //Texts
     },
 
     cover: Chums,

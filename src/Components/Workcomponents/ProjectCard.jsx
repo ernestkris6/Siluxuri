@@ -38,7 +38,7 @@ export default function ProjectCard({ project }) {
               {project.category}
             </p>
 
-            <h3 className="font-serif text-xl text-[#2F2E41] transition-colors duration-300 group-hover:text-[#007589]">
+            <h3 className="text-xl text-[#2F2E41] transition-colors duration-300 group-hover:text-[#007589]">
               {project.name}
             </h3>
           </div>

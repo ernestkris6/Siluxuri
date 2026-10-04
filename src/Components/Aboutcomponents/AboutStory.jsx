@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import digi from "../../assets/sectionImage2.webp";
+import digi from "../../assets/aboutstory.jpg";
 
 
 export default function AboutStory() {
@@ -62,7 +62,7 @@ export default function AboutStory() {
               </p>
 
               <p className="max-w-2xl text-xl font-medium leading-relaxed sm:text-2xl">
-                Our mission is: To provide creative, practical, and effective branding/digital marketing solutions for businesses.
+                To provide creative, practical, and effective branding/digital marketing solutions for businesses.
               </p>
 
             </div>

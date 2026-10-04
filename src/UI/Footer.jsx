@@ -122,7 +122,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://www.facebook.com/share/19E6HdLqZR/?mibextid=wwXIfr"
             className="flex items-center gap-3 text-lg transition-colors hover:text-white/50"
           >
             <FaFacebookF className="text-base" />

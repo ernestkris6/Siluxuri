@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-import digi from "../../assets/herovideo.mp4";
+import digi from "../../assets/vid2_web.mp4";
 
 export default function ServicesHero() {
   return (

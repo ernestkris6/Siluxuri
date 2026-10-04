@@ -26,7 +26,7 @@ const socials = [
   {
     name: "Facebook",
     icon: FaFacebook,
-    href: "#",
+    href: "https://www.facebook.com/share/19E6HdLqZR/?mibextid=wwXIfr",
   },
 ];
 

@@ -90,7 +90,7 @@ export default function Project() {
 
               <div className="mt-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
                 <span className="h-2 w-2 rounded-full bg-orange" />
-                Six brands. Many stories.
+                Different brands. Many stories.
               </div>
             </motion.div>
 
@@ -159,7 +159,7 @@ export default function Project() {
       </section>
 
       {/* CLOSING STATEMENT */}
-      <section className="bg-blue px-5 py-24 text-white sm:px-8 md:py-32 lg:px-16">
+      {/* <section className="bg-blue px-5 py-24 text-white sm:px-8 md:py-32 lg:px-16">
         <div className="mx-auto max-w-7xl">
 
           <motion.div
@@ -218,7 +218,7 @@ export default function Project() {
 
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
     </main>
   );

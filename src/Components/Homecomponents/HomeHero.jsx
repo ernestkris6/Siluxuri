@@ -95,7 +95,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 1 }}
             className="mt-10 flex items-center justify-between border-t border-[#F2F2F2]/20 pt-4 text-[10px] font-medium uppercase tracking-[0.2em] text-[#F2F2F2]/60"
           >
-            <span>Lagos · Nigeria</span>
+            <span>Nigeria</span>
 
             <span className="hidden sm:block">
               Branding · Digital · Creative

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import digital1 from "../../assets/digital1.webp";
 import digital2 from "../../assets/digital2.webp";
-import Card from "../../assets/Business-Card.webp";
+import Card from "../../assets/rtmservice.jpg";
 import rentals from "../../assets/rentals.webp";
 import { Link } from "react-router";
 
@@ -34,7 +34,7 @@ const services = [
   },
   {
     number: "04",
-    title: "Equipment Rental",
+    title: "Studio and Equipment Rental",
     description:
       "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs and small businesses.",
     image: rentals,

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-import image1 from "../../assets/rentals.webp";
+import image1 from "../../assets/activityimage.jpg";
 
 
 export default function TeamHero() {

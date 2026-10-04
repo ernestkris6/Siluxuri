@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-import image1 from "../../assets/activityimage.jpg";
+// import image1 from "../../assets/activityimage.jpg";
+import activityImage from '../../assets/activityImage.jpg'
 
 
 export default function TeamHero() {
@@ -10,7 +11,7 @@ export default function TeamHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={image1}
+          src={activityImage}
           alt=""
           className="h-full w-full object-cover"
         />

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
-import herovideo from "../../assets/vid2_web.mp4";
+import herovideo from "../../assets/siluxhero2-web.mp4";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
 
 

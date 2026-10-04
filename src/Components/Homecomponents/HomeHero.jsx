@@ -46,7 +46,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.35 }}
-            className="max-w-4xl font-serif text-4xl leading-[1.05] tracking-tight text-[#F2F2F2] sm:text-5xl md:text-6xl lg:text-7xl"
+            className="max-w-4xl font-medium text-4xl leading-[1.05] tracking-tight text-[#F2F2F2] sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Your Vision
             <br />

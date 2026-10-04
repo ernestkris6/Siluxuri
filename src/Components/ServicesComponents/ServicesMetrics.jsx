@@ -94,7 +94,7 @@ export default function ServicesMetrics() {
                 duration: 0.7,
                 delay: 0.1,
               }}
-              className="max-w-3xl font-serif text-5xl leading-[0.95] tracking-[-0.04em] text-[#1F263B] sm:text-6xl lg:text-7xl"
+              className="max-w-3xl text-5xl leading-[0.95] tracking-[-0.04em] text-[#1F263B] sm:text-6xl lg:text-7xl"
             >
               Real people.
               <br />
@@ -170,7 +170,7 @@ export default function ServicesMetrics() {
                   </div>
 
                   {/* Number */}
-                  <h3 className="mt-7 font-serif text-5xl leading-none tracking-[-0.04em] text-[#1F263B] sm:text-4xl lg:text-5xl">
+                  <h3 className="mt-7 text-5xl leading-none tracking-[-0.04em] text-[#1F263B] sm:text-4xl lg:text-5xl">
                     {metric.value}
                   </h3>
 
@@ -233,7 +233,7 @@ export default function ServicesMetrics() {
           </div>
 
           {/* Right */}
-          <p className="max-w-md font-serif text-2xl italic leading-tight text-[#A0CBD2] sm:text-3xl">
+          <p className="max-w-md text-2xl italic leading-tight text-[#A0CBD2] sm:text-3xl">
             More than numbers.
             <br />
             It’s real growth.

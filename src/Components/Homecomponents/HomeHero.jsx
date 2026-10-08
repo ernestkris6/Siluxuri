@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
-import heroMobile from "../../assets/hero-mobile.mp4";
-import heroDesktop from "../../assets/hero-desktop.mp4";
+// import heroMobile from "../../assets/hero-mobile.mp4";
+import digi from "../../assets/homevideo.mp4";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
 
 
@@ -9,16 +9,18 @@ export default function HeroSection() {
   return (
     <section className="relative h-[88vh] min-h-[620px] w-full overflow-hidden">
       {/* Background Video */}
-      {/* <video
-        src={herovideo}
+      <video
+        src={digi}
+        alt=""
         autoPlay
         muted
         loop
         playsInline
+        controls={false}
         className="absolute inset-0 h-full w-full object-cover"
-      /> */}
+      />
 
-      <video
+      {/* <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
         muted
@@ -38,7 +40,18 @@ export default function HeroSection() {
           type="video/mp4"
           media="(min-width: 768px)"
         />
-      </video>
+      </video> */}
+
+      {/* <video
+                src={digi}
+                alt=""
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+                className="h-full w-full object-cover"
+              /> */}
 
 
       {/* Main Overlay */}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-import digi from "../../assets/vid2_web.mp4";
+import serviesvideo from "../../assets/servicesvideo.mp4";
 
 export default function ServicesHero() {
   return (
@@ -9,7 +9,7 @@ export default function ServicesHero() {
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
-          src={digi}
+          src={serviesvideo}
           alt=""
           autoPlay
           muted
@@ -20,7 +20,7 @@ export default function ServicesHero() {
         />
 
         {/* Dark luxury overlay */}
-        <div className="absolute inset-0 bg-blue/60" />
+        {/* <div className="absolute inset-0 bg-blue/60" /> */}
 
         {/* Subtle brand-colour gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue/80 via-blue/45 to-magenta/30" />

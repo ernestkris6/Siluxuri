@@ -11,7 +11,7 @@ export default function HeroSection() {
       {/* Background Video */}
       <video
         src={digi}
-        alt=""
+        alt="home hero"
         autoPlay
         muted
         loop
@@ -19,40 +19,6 @@ export default function HeroSection() {
         controls={false}
         className="absolute inset-0 h-full w-full object-cover"
       />
-
-      {/* <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        poster="/hero-poster.webp"
-      >
-        <source
-          src={heroMobile}
-          type="video/mp4"
-          media="(max-width: 767px)"
-        />
-
-        <source
-          src={heroDesktop}
-          type="video/mp4"
-          media="(min-width: 768px)"
-        />
-      </video> */}
-
-      {/* <video
-                src={digi}
-                alt=""
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls={false}
-                className="h-full w-full object-cover"
-              /> */}
-
 
       {/* Main Overlay */}
       {/* <div className="absolute inset-0 bg-[#2F2E41]/24" /> */}

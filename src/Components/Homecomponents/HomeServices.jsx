@@ -34,9 +34,9 @@ const services = [
   },
   {
     number: "04",
-    title: "Studio and Equipment Rental",
+    title: "Rentals",
     description:
-      "We provide flexible and affordable equipment rental solutions for creators, entrepreneurs and small businesses.",
+      "We provide flexible and affordable studio/equipment rental solutions for creators, entrepreneurs and small businesses.",
     image: rentals,
 
   },

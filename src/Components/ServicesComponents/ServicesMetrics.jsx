@@ -199,56 +199,71 @@ export default function ServicesMetrics() {
       {/* =========================
           BOTTOM DARK PANEL
       ========================== */}
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 40,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{
-          once: true,
-        }}
-        transition={{
-          duration: 0.8,
-          delay: 0.2,
-        }}
-        className="relative mx-5 mt-20 overflow-hidden rounded bg-[#1F263B] px-7 py-12 sm:mx-8 sm:px-12 lg:mx-12 lg:mt-28 lg:px-20 lg:py-16"
-      >
-        <div className="relative z-10 flex flex-col justify-between gap-8 md:flex-row md:items-center">
-
-          {/* Left */}
-          <div className="flex items-center gap-5">
-            <div className="h-[1px] w-16 bg-[#A0CBD2]" />
-
-            <p className="font-sans text-[7px] sm:text-[10px] uppercase tracking-[0.4em] text-white/80">
-              Insights
-              <span className="mx-3 text-magenta">/</span>
-              Creativity
-              <span className="mx-3 text-magenta">/</span>
-              Impact
-            </p>
-          </div>
-
-          {/* Right */}
-          <p className="max-w-md text-2xl italic leading-tight text-[#A0CBD2] sm:text-3xl">
-            More than numbers.
-            <br />
-            It’s real growth.
-          </p>
-        </div>
-
-        {/* Decorative shape */}
-        <div className="absolute -bottom-32 -right-24 h-64 w-64 rounded-full bg-[#007589]" />
-
-        {/* Orange dot */}
-        <div className="absolute right-24 top-7 h-12 w-12 rounded-full bg-[#EB6F38] sm:right-28" />
-      </motion.div>
+     
     </section>
   );
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  <motion.div
+//         initial={{
+//           opacity: 0,
+//           y: 40,
+//         }}
+//         whileInView={{
+//           opacity: 1,
+//           y: 0,
+//         }}
+//         viewport={{
+//           once: true,
+//         }}
+//         transition={{
+//           duration: 0.8,
+//           delay: 0.2,
+//         }}
+//         className="relative mx-5 mt-20 overflow-hidden rounded bg-[#1F263B] px-7 py-12 sm:mx-8 sm:px-12 lg:mx-12 lg:mt-28 lg:px-20 lg:py-16"
+//       >
+//         <div className="relative z-10 flex flex-col justify-between gap-8 md:flex-row md:items-center">
+
+//           {/* Left */}
+//           <div className="flex items-center gap-5">
+//             <div className="h-[1px] w-16 bg-[#A0CBD2]" />
+
+//             <p className="font-sans text-[7px] sm:text-[10px] uppercase tracking-[0.4em] text-white/80">
+//               Insights
+//               <span className="mx-3 text-magenta">/</span>
+//               Creativity
+//               <span className="mx-3 text-magenta">/</span>
+//               Impact
+//             </p>
+//           </div>
+
+//           {/* Right */}
+//           <p className="max-w-md text-2xl italic leading-tight text-[#A0CBD2] sm:text-3xl">
+//             More than numbers.
+//             <br />
+//             It’s real growth.
+//           </p>
+//         </div>
+
+//         {/* Decorative shape */}
+//         <div className="absolute -bottom-32 -right-24 h-64 w-64 rounded-full bg-[#007589]" />
+
+//         {/* Orange dot */}
+//         <div className="absolute right-24 top-7 h-12 w-12 rounded-full bg-[#EB6F38] sm:right-28" />
+//       </motion.div>

@@ -471,7 +471,7 @@ export default function ContactForm() {
                         className={`rounded-full border px-5 py-3 text-sm transition-all duration-300 ${
                           isSelected
                             ? "border-orange bg-orange text-white"
-                            : "border-blue/20 hover:border-orange hover:bg-orange hover:text-white"
+                            : "border-blue/20 cursor-pointer hover:border-orange hover:bg-orange hover:text-white"
                         }`}
                       >
                         {service}

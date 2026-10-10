@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 // import heroMobile from "../../assets/hero-mobile.mp4";
-import digi from "../../assets/homevideo.mp4";
+import digi from "../../assets/servicesvideo.mp4";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
+
+//
+//
 
 
 export default function HeroSection() {

@@ -161,7 +161,7 @@ export default function CaseStudy() {
                     {selectedProject.description}
                   </p>
 
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  {/* <div className="mt-6 flex flex-wrap gap-2">
                     {selectedProject.services?.map((service, index) => (
                       <motion.span
                         key={service}
@@ -180,7 +180,7 @@ export default function CaseStudy() {
                         {service}
                       </motion.span>
                     ))}
-                  </div>
+                  </div> */}
                 </motion.div>
               </div>
 
@@ -378,7 +378,7 @@ export default function CaseStudy() {
                     style={{
                       fontFamily: theme.displayFont,
                     }}
-                    className="text-4xl sm:text-5xl"
+                    className="text-4xl sm:text-4xl lg:text-5xl"
                   >
                     {metric.value}
                   </p>

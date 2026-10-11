@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { FiUsers, FiEye, FiHeart } from "react-icons/fi";
 import digital from "../../assets/strategyImage.jpg";

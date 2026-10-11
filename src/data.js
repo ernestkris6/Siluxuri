@@ -313,7 +313,7 @@ export const project = [
     theme: {
       background: "#F7F7F7", //background
       foreground: "#0B0C0D", //Major texts/bottom banner
-      accent: "#8A5265",     //Tiny headings
+      accent: "#000",     //Tiny headings
       secondary: "#735A51",  //Button underline/services-list section 
       displayFont: "Roboto", //Texts
     },

@@ -295,7 +295,7 @@ export default function CaseStudy() {
                 className="flex items-center justify-between gap-5 py-6"
               >
 
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 cursor-pointer">
 
                   <span className="text-xs opacity-50">
                     {String(index + 1).padStart(2, "0")}
@@ -312,6 +312,8 @@ export default function CaseStudy() {
 
                 </div>
 
+      
+
                 <motion.span
                   whileHover={{ x: 4, y: -4 }}
                   transition={{ duration: 0.2 }}
@@ -320,9 +322,9 @@ export default function CaseStudy() {
                     color: theme.accent,
                   }}
                 >
-                  <FiArrowUpRight />
+                    <FiArrowUpRight />
                 </motion.span>
-
+                
               </motion.div>
             ))}
           </div>

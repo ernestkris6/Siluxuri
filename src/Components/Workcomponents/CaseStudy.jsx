@@ -180,11 +180,11 @@ export default function CaseStudy() {
   const results = selectedProject.results || [];
 
   // PDF path for the selected project.
-  const brandGuideUrl =
-    selectedProject.brandGuide ||
-    `/brand-guides/${selectedProject.slug}.pdf`;
+  // const brandGuideUrl =
+  //   selectedProject.brandGuide ||
+  //   `/brand-guides/${selectedProject.slug}.pdf`;
 
-  // const brandGuideUrl = selectedProject.brandGuide || null;
+  const brandGuideUrl = selectedProject.brandGuide || null;
 
   return (
     <>
@@ -447,7 +447,10 @@ export default function CaseStudy() {
                     {isBrandIdentity && brandGuideUrl  && (
                       <button
                         type="button"
-                        onClick={() => setIsBrandGuideOpen(true)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setIsBrandGuideOpen(true)}}
                         className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
                         aria-label={`View ${selectedProject.name} brand guide`}
                       >

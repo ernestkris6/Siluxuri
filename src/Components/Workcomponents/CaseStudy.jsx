@@ -444,7 +444,7 @@ export default function CaseStudy() {
                     whileHover={{ x: 6 }}
                   >
                     {/* BRAND GUIDE: open the in-site PDF viewer */}
-                    {isBrandIdentity && (
+                    {isBrandIdentity && brandGuideUrl  && (
                       <button
                         type="button"
                         onClick={() => setIsBrandGuideOpen(true)}
@@ -692,7 +692,7 @@ export default function CaseStudy() {
       </main>
 
       {/* PDF VIEWER: outside the main layout and overflow container */}
-      {isBrandGuideOpen && (
+      {isBrandGuideOpen && brandGuideUrl && (
         <BrandGuideViewer
           fileUrl={brandGuideUrl}
           brandName={selectedProject.name}

@@ -9,6 +9,7 @@ import Terms from "./Pages/Terms";
 import TeamDetails from "./Components/TeamComponents/TeamDetails";
 import Work from "./Pages/Work";
 import CaseStudy from "./Components/Workcomponents/CaseStudy";
+import ContentGallery from "./Components/Workcomponents/ContentGallery";
 import Error from "./Pages/Error";
 import Footer from "./UI/Footer";
 import ScrollToTop from "./ScrollToTop";
@@ -32,6 +33,10 @@ export default function App() {
 
             {/* Individual brand pages */}
             <Route path="/work/:slug" element={<CaseStudy />} />
+
+            {/* Individual brand content pages */}
+            <Route path="/work/:slug/content" element={<ContentGallery />}
+            />
             
             {/* Team index */}
             <Route path="team" element={<Team />} />

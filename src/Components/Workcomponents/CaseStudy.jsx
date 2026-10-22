@@ -134,6 +134,26 @@ function CountUpMetric({ value, label, theme, index }) {
   );
 }
 
+
+// route for ios
+
+const openBrandGuide = (url) => {
+  if (!url) return;
+
+  const isIOS =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" &&
+      navigator.maxTouchPoints > 1);
+
+  if (isIOS) {
+    window.location.href = url;
+    return;
+  }
+
+  setIsBrandGuideOpen(true);
+};
+
+
 export default function CaseStudy() {
   const { slug } = useParams();
 
@@ -450,7 +470,7 @@ export default function CaseStudy() {
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
-                          setIsBrandGuideOpen(true)}}
+                          setIsBrandGuideOpen(brandGuideUrl)}}
                         className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
                         aria-label={`View ${selectedProject.name} brand guide`}
                       >

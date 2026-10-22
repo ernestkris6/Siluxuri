@@ -236,6 +236,9 @@ export const project = [
     location: "Lagos, Nigeria",
     description:
       "A luxury retail brand specialising in authentic designer fashion and curated premium experiences.",
+    message: "Step into a world of authentic designer fashion, personalised luxury, and thoughtfully curated experiences.",
+    brandGuide: "/public/brand-guides/rtm_brand_guide.pdf",
+    
 
     services: [
       "Brand Identity Redesign",
@@ -290,6 +293,8 @@ export const project = [
     location: "Greater London, England",
     description:
       "A family-run jewellery brand celebrating the artistry and sophistication of handmade beaded jewellery.",
+    message: "Discover handmade jewellery where every bead reflects creativity, care, and a touch of everyday elegance.",
+    brandGuide: "/public/brand-guides/sparkles_brand_guide.pdf",
 
     services: [
       "Brand Identity Redesign",
@@ -341,6 +346,7 @@ export const project = [
     location: "Lagos, Nigeria",
     description:
       "A Korean lifestyle brand bringing authentic Korean ramen, snacks, K-beauty, K-pop goods and cultural experiences closer to customers across Nigeria.",
+    message: "Explore the vibrant world of Korean lifestyle—from K-beauty and K-pop to snacks and cultural discoveries.",
 
     services: [
       "Social Media Management",
@@ -390,6 +396,8 @@ export const project = [
     location: "Lagos, Nigeria",
     description:
       "A lifestyle retail brand with a curated selection of products and accessories, built around exploration and expression.",
+    message: "Find your expression through a curated mix of lifestyle essentials, accessories, and distinctive style.",
+    brandGuide: "/public/brand-guides/vamp_brand_guide.pdf",
 
     services: [
       "Brand Guide Design",
@@ -441,6 +449,8 @@ export const project = [
     location: "Lagos, Nigeria",
     description:
       "A high-end fashion brand creating bold, sophisticated designs for individuals who value quality and self-expression.",
+    message: "Bold design, refined quality, and fashion that celebrates confidence and individual expression.",
+    brandGuide: "/public/brand-guides/bla_brand_guide.pdf",
 
     services: [
       "Brand Identity Design",
@@ -489,6 +499,8 @@ export const project = [
     location: "Nigeria",
     description:
       "A hair styling and beauty brand where elegance meets expertise, celebrating individuality and personal expression.",
+    message: "Celebrate your individuality with hair and beauty experiences shaped by elegance, care, and personal style.",
+    brandGuide: "/public/brand-guides/chums_brand_guide.pdf",
 
     services: [
       "Brand Identity Redesign",

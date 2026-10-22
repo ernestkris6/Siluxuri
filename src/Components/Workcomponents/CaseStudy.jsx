@@ -135,7 +135,15 @@ function CountUpMetric({ value, label, theme, index }) {
 }
 
 
-// route for ios
+
+
+export default function CaseStudy() {
+  const { slug } = useParams();
+
+  const [expandedService, setExpandedService] = useState(null);
+  const [isBrandGuideOpen, setIsBrandGuideOpen] = useState(false);
+
+  // route for ios
 
 const openBrandGuide = (url) => {
   if (!url) return;
@@ -153,12 +161,6 @@ const openBrandGuide = (url) => {
   setIsBrandGuideOpen(true);
 };
 
-
-export default function CaseStudy() {
-  const { slug } = useParams();
-
-  const [expandedService, setExpandedService] = useState(null);
-  const [isBrandGuideOpen, setIsBrandGuideOpen] = useState(false);
 
   // Find the selected project.
   const selectedProject = project.find(
@@ -470,7 +472,7 @@ export default function CaseStudy() {
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
-                          setIsBrandGuideOpen(brandGuideUrl)}}
+                          openBrandGuide(brandGuideUrl)}}
                         className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
                         aria-label={`View ${selectedProject.name} brand guide`}
                       >

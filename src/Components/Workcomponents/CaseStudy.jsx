@@ -400,22 +400,38 @@ const openBrandGuide = (url) => {
                 const isInfluencerMarketing =
                   serviceName.includes("influencer");
 
+                const isMerchandiseDesign = 
+                  serviceName.includes("merchandise design")
+
                 const isPaidAdvertising =
                   serviceName.includes("paid advertising") ||
                   serviceName.includes("paid ads");
 
                 const isExpandable =
-                  isInfluencerMarketing || isPaidAdvertising;
+                  isInfluencerMarketing || isPaidAdvertising || isMerchandiseDesign;
 
                 const isExpanded = expandedService === service;
 
                 const detailText = isInfluencerMarketing
                   ? selectedProject.influencerMarketingDetails
-                  : selectedProject.paidAdvertisingDetails;
+                  : isPaidAdvertising
+                    ? selectedProject.paidAdvertisingDetails
+                    : selectedProject.merchandiseDesignDetails;
 
+                
                 const detailFallback = isInfluencerMarketing
                   ? "Add details about creator partnerships, influencer collaborations, campaign strategy, and results for this brand."
-                  : "Add details about the advertising strategy, campaign creatives, audience targeting, and performance results for this brand.";
+                  : isPaidAdvertising
+                    ? "Add details about the advertising strategy, campaign creatives, audience targeting, and performance results for this brand."
+                    : "Explore the merchandise designed for this brand, including branded apparel, promotional products, creative concepts, and visual identity applications.";
+
+                // const detailText = isInfluencerMarketing
+                //   ? selectedProject.influencerMarketingDetails :
+                //    isPaidAdvertising ? isMerchandiseDesign : selectedProject.paidAvertisingDetails : selectedProject.merchandiseDesignDetails;
+
+                // const detailFallback = isInfluencerMarketing
+                //   ? "Add details about creator partnerships, influencer collaborations, campaign strategy, and results for this brand."
+                //   : "Add details about the advertising strategy, campaign creatives, audience targeting, and performance results for this brand.";
 
                 const rowContent = (
                   <>

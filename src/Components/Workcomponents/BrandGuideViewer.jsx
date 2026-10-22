@@ -72,7 +72,7 @@ export default function BrandGuideViewer({
       {/* Viewer header */}
       <header className="relative z-10 flex shrink-0 items-center justify-between gap-4 border-b border-white/10 bg-[#171717] px-4 py-4 text-white sm:px-8">
         <div className="min-w-0">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#A0CBD2]">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-skyblue">
             SILUXRI / BRAND GUIDELINES
           </p>
 
@@ -85,7 +85,7 @@ export default function BrandGuideViewer({
           type="button"
           onClick={onClose}
           aria-label="Close brand guide"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#A0CBD2]"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border cursor-pointer border-white/20 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#A0CBD2]"
         >
           <FiX size={20} />
         </button>

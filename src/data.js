@@ -248,6 +248,12 @@ export const project = [
       "Paid Advertising",
     ],
 
+    influencerMarketingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    paidAdvertisingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+
+
     metrics: [
       { label: "Followers", value: "31.32K+" },
       { label: "Impressions", value: "4.08M+" },
@@ -302,6 +308,10 @@ export const project = [
       "Content Creation",
       "Paid Advertising",
     ],
+    // influencerMarketingDetails:
+    //   "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    paidAdvertisingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
 
     metrics: [
       { label: "Followers", value: "8.4K+" },
@@ -354,6 +364,11 @@ export const project = [
       "Influencer Marketing",
       "Paid Advertising",
     ],
+    influencerMarketingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    paidAdvertisingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+
 
     metrics: [],
 
@@ -407,6 +422,11 @@ export const project = [
       "Paid Advertising",
     ],
 
+    influencerMarketingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    paidAdvertisingDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+
     metrics: [
       { label: "Followers", value: "6.89K+" },
       { label: "Impressions", value: "1.19M+" },
@@ -456,6 +476,8 @@ export const project = [
       "Brand Identity Design",
       "Merchandise Design",
     ],
+    merchandiseDesignDetails:
+      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
 
     metrics: [],
 

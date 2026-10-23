@@ -442,7 +442,7 @@ const openBrandGuide = (url) => {
 
                       <h3
                         style={{ fontFamily: theme.displayFont }}
-                        className="text-2xl sm:text-3xl cursor-pointer"
+                        className="text-2xl sm:text-3xl"
                       >
                         {service}
                       </h3>
@@ -489,7 +489,7 @@ const openBrandGuide = (url) => {
                           e.preventDefault();
                           e.stopPropagation();
                           openBrandGuide(brandGuideUrl)}}
-                        className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
+                        className="flex w-full items-center justify-between gap-5 py-6 text-left cursor-pointer transition-opacity hover:opacity-75"
                         aria-label={`View ${selectedProject.name} brand guide`}
                       >
                         {rowContent}
@@ -508,7 +508,7 @@ const openBrandGuide = (url) => {
                               block: "start",
                             });
                         }}
-                        className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
+                        className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75 cursor-pointer"
                         aria-label="Scroll to the outcome section"
                       >
                         {rowContent}
@@ -519,7 +519,7 @@ const openBrandGuide = (url) => {
                     {isContentCreation && (
                       <Link
                         to={`/work/${selectedProject.slug}/content`}
-                        className="flex w-full items-center justify-between gap-5 py-6 transition-opacity hover:opacity-75"
+                        className="flex w-full items-center justify-between gap-5 py-6 transition-opacity hover:opacity-75  cursor-pointer"
                         aria-label={`View ${selectedProject.name} content creation portfolio`}
                       >
                         {rowContent}
@@ -537,7 +537,7 @@ const openBrandGuide = (url) => {
                             )
                           }
                           aria-expanded={isExpanded}
-                          className="flex w-full items-center justify-between gap-5 py-6 text-left transition-opacity hover:opacity-75"
+                          className="flex w-full items-center justify-between gap-5 py-6 text-left  cursor-pointer transition-opacity hover:opacity-75"
                         >
                           {rowContent}
                         </button>

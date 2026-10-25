@@ -146,13 +146,34 @@ export default function ServicesMetrics() {
           {/* =========================
               IMAGE
           ========================== */}
+
+          {/* <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+              }}
+              className="relative overflow-hidden rounded-tr-[24px] rounded-br-[24px] lg:rounded-tr-[60px] lg:rounded-br-[60px]"
+            >
+              <img
+                src={digital}
+                alt="Siluxri creative workspace"
+                loading="lazy"
+                className="h-[420px] w-full object-cover sm:h-[580px] lg:h-[640px]"
+              />
+            
+              <div className="absolute inset-0 bg-black/5" />
+            </motion.div> */}
+
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{
-              duration: 0.8,
-              ease: [0.22, 1, 0.36, 1],
+              duration: 1.4,
+              ease: [0.16, 1, 0.3, 1],
             }}
             className="relative overflow-hidden rounded-tr-[24px] rounded-br-[24px] lg:rounded-tr-[60px] lg:rounded-br-[60px]"
           >

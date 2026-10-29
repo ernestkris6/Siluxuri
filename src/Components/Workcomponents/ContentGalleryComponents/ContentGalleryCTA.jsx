@@ -3,6 +3,9 @@ import { Link } from "react-router";
 import { motion } from "framer-motion";
 
 export default function ContentGalleryCTA({ project }) {
+
+  // const selectedProject = project;
+
   return (
     <section className="relative overflow-hidden border-t border-[#2F2E41]/10 bg-[#A0CBD2]/20 px-5 py-20 sm:px-8 md:px-12 md:py-28 lg:px-20">
       <div className="pointer-events-none absolute -right-24 top-1/2 size-80 -translate-y-1/2 rounded-full border border-[#007589]/15 md:size-[500px]" />
@@ -40,11 +43,11 @@ export default function ContentGalleryCTA({ project }) {
           className="flex flex-col items-start gap-5 lg:items-end"
         >
           <Link
-            to="/contact"
-            className="group inline-flex items-center gap-8 rounded-full bg-[#007589] px-7 py-5 text-sm font-medium text-white transition-all duration-300 hover:bg-[#2F2E41]"
+             to={`/work/${project.slug}`}
+            className="group inline-flex items-center gap-8 rounded-lg bg-[#007589] px-15 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-[#2F2E41]"
           >
-            Start a conversation
-
+            
+              {project.name}
             <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
               ↗
             </span>

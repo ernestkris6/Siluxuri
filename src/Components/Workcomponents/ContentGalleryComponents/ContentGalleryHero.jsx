@@ -42,10 +42,6 @@ export default function ContentGalleryHero({ project }) {
               {project.name}
             </span>.
           </p>
-
-          <p className="mt-7 text-xs uppercase tracking-[0.2em] text-[#2F2E41]/45">
-            Creative archive / 01
-          </p>
         </motion.div>
       </div>
 

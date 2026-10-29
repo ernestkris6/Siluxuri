@@ -963,15 +963,15 @@ export default function ContentGallery() {
 
       <ContentGalleryCTA project={selectedProject} />
 
-      <div className="px-5 py-8 sm:px-8 md:px-12 lg:px-20">
+      {/* <div className="px-5 py-8 sm:px-8 md:px-12 lg:px-20 bg-white">
         <Link
           to={`/work/${selectedProject.slug}`}
-          className="inline-flex items-center gap-2 text-sm text-[#2F2E41]/70 transition-colors hover:text-[#007589]"
+          className="inline-flex items-center gap-2 text-sm text-[#2F2E41]/70 transition-colors hover:text-[#007589] border-b-1"
         >
           <span aria-hidden="true">←</span>
-          Back to {selectedProject.name} case study
+          Back to {selectedProject.name}
         </Link>
-      </div>
+      </div> */}
 
       {selectedMedia && (
         <MediaViewer

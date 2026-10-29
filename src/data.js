@@ -13,15 +13,15 @@ import RTM5 from "./assets/RTM5.jpg";
 import RTM6 from "./assets/RTM6.jpg";
 import RTM7 from "./assets/RTM7.jpg";
 import RTM8 from "./assets/RTM8.jpg";
-import RTM9 from "./assets/RTM9.jpg";
-import RTM10 from "./assets/RTM10.jpg";
+// import RTM9 from "./assets/RTM9.jpg";
+// import RTM10 from "./assets/RTM10.jpg";
 
 
 //BEAUTY
 import BEAUTY1 from "./assets/BEAUTY1.jpg";
 import BEAUTY2 from "./assets/BEAUTY2.jpg";
 import Chums from "./assets/Chums.webp";
-import ChumsLogo from "./assets/Chums-Logo.jpg"
+// import ChumsLogo from "./assets/Chums-Logo.jpg"
 
 
 //BLA
@@ -49,21 +49,21 @@ import Haru5 from "./assets/Haru5.jpg";
 import Haru6 from "./assets/Haru6.jpg";
 import Haru7 from "./assets/Haru7.jpg";
 import Haru8 from "./assets/Haru8.jpg";
-import Haru9 from "./assets/Haru9.jpg";
-import Haru10 from "./assets/Haru10.jpg";
-import Haru11 from "./assets/Haru11.jpg";
-import Haru12 from "./assets/Haru12.jpg";
+// import Haru9 from "./assets/Haru9.jpg";
+// import Haru10 from "./assets/Haru10.jpg";
+// import Haru11 from "./assets/Haru11.jpg";
+// import Haru12 from "./assets/Haru12.jpg";
 
 
 //SPARKLES
 import SpaHero from "./assets/SparklesHeroImg.webp";
 import SPA1 from "./assets/SPA1.jpg";
-import SPA2 from "./assets/SPA2.jpg";
+// import SPA2 from "./assets/SPA2.jpg";
 import SPA3 from "./assets/SPA3.jpg";
 import SPA4 from "./assets/SPA4.jpg";
 import SPA5 from "./assets/SPA5.jpg";
 import SPA6 from "./assets/SPA6.jpg";
-import SPA7 from "./assets/SPA7.jpg";
+// import SPA7 from "./assets/SPA7.jpg";
 import SPA8 from "./assets/SPA8.jpg";
 import SPA9 from "./assets/SPA9.jpg";
 import SPA10 from "./assets/SPA10.jpg";
@@ -71,7 +71,7 @@ import SPA10 from "./assets/SPA10.jpg";
 
 //VAMP
 import Vamp1 from "./assets/Vamp1.jpg"
-import Vamp2 from "./assets/Vamp2.jpg"
+// import Vamp2 from "./assets/Vamp2.jpg"
 import Vamp3 from "./assets/Vamp3.jpg"
 import Vamp4 from "./assets/Vamp4.jpg"
 import Vamp5 from "./assets/Vamp5.jpg"
@@ -160,68 +160,68 @@ export const teamData = [
 
 
 // SERVICES DATA
-export const services = [
-  {
-    number: "01",
-    title: "Brand Strategy",
-    shortTitle: "Strategy",
-    description:
-      "We help businesses understand what they stand for, who they are speaking to, and where they want to go.",
-    details:
-      "From positioning and audience research to messaging and brand direction, we create the strategic foundation that gives every creative decision a reason.",
-    tags: [
-      "Brand Positioning",
-      "Audience Research",
-      "Brand Direction",
-      "Messaging",
-    ],
-  },
-  {
-    number: "02",
-    title: "Visual Identity",
-    shortTitle: "Identity",
-    description:
-      "We translate your strategy into a visual language that feels distinctive, consistent and recognisable.",
-    details:
-      "Logo systems, typography, colour, graphic language and brand guidelines come together to create an identity people can recognise and remember.",
-    tags: [
-      "Logo Design",
-      "Typography",
-      "Colour Systems",
-      "Brand Guidelines",
-    ],
-  },
-  {
-    number: "03",
-    title: "Digital Experiences",
-    shortTitle: "Digital",
-    description:
-      "We design digital experiences that make brands easier to understand, explore and engage with.",
-    details:
-      "We combine thoughtful UX with expressive visual design to create websites and digital products that feel as good as they function.",
-    tags: [
-      "Website Design",
-      "UX/UI",
-      "Digital Direction",
-      "Prototyping",
-    ],
-  },
-  {
-    number: "04",
-    title: "Web Development",
-    shortTitle: "Development",
-    description:
-      "We turn considered designs into fast, responsive and purposeful digital experiences.",
-    details:
-      "Using modern technologies, we build websites that are responsive, maintainable and engineered around the needs of the brand and its audience.",
-    tags: [
-      "React",
-      "Responsive Development",
-      "CMS Integration",
-      "Performance",
-    ],
-  },
-];
+// export const services = [
+//   {
+//     number: "01",
+//     title: "Brand Strategy",
+//     shortTitle: "Strategy",
+//     description:
+//       "We help businesses understand what they stand for, who they are speaking to, and where they want to go.",
+//     details:
+//       "From positioning and audience research to messaging and brand direction, we create the strategic foundation that gives every creative decision a reason.",
+//     tags: [
+//       "Brand Positioning",
+//       "Audience Research",
+//       "Brand Direction",
+//       "Messaging",
+//     ],
+//   },
+//   {
+//     number: "02",
+//     title: "Visual Identity",
+//     shortTitle: "Identity",
+//     description:
+//       "We translate your strategy into a visual language that feels distinctive, consistent and recognisable.",
+//     details:
+//       "Logo systems, typography, colour, graphic language and brand guidelines come together to create an identity people can recognise and remember.",
+//     tags: [
+//       "Logo Design",
+//       "Typography",
+//       "Colour Systems",
+//       "Brand Guidelines",
+//     ],
+//   },
+//   {
+//     number: "03",
+//     title: "Digital Experiences",
+//     shortTitle: "Digital",
+//     description:
+//       "We design digital experiences that make brands easier to understand, explore and engage with.",
+//     details:
+//       "We combine thoughtful UX with expressive visual design to create websites and digital products that feel as good as they function.",
+//     tags: [
+//       "Website Design",
+//       "UX/UI",
+//       "Digital Direction",
+//       "Prototyping",
+//     ],
+//   },
+//   {
+//     number: "04",
+//     title: "Web Development",
+//     shortTitle: "Development",
+//     description:
+//       "We turn considered designs into fast, responsive and purposeful digital experiences.",
+//     details:
+//       "Using modern technologies, we build websites that are responsive, maintainable and engineered around the needs of the brand and its audience.",
+//     tags: [
+//       "React",
+//       "Responsive Development",
+//       "CMS Integration",
+//       "Performance",
+//     ],
+//   },
+// ];
 
 
 
@@ -242,12 +242,13 @@ export const project = [
 
     services: [
       "Brand Identity Redesign",
-      "Social Media Management",
       "Content Creation",
+      "Social Media Management",
       "Influencer Marketing",
       "Paid Advertising",
     ],
 
+    isSocialMediaDetails: "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     influencerMarketingDetails:
       "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     paidAdvertisingDetails:
@@ -304,12 +305,11 @@ export const project = [
 
     services: [
       "Brand Identity Redesign",
-      "Social Media Management",
       "Content Creation",
+      "Social Media Management",
       "Paid Advertising",
     ],
-    // influencerMarketingDetails:
-    //   "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    isSocialMediaDetails: "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     paidAdvertisingDetails:
       "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
 
@@ -359,11 +359,12 @@ export const project = [
     message: "Explore the vibrant world of Korean lifestyle—from K-beauty and K-pop to snacks and cultural discoveries.",
 
     services: [
-      "Social Media Management",
       "Content Creation",
+      "Social Media Management",
       "Influencer Marketing",
       "Paid Advertising",
     ],
+    isSocialMediaDetails: "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     influencerMarketingDetails:
       "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     paidAdvertisingDetails:
@@ -416,12 +417,12 @@ export const project = [
 
     services: [
       "Brand Guide Design",
-      "Social Media Management",
       "Content Creation",
+      "Social Media Management",
       "Influencer Marketing",
       "Paid Advertising",
     ],
-
+    isSocialMediaDetails: "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     influencerMarketingDetails:
       "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     paidAdvertisingDetails:
@@ -448,7 +449,7 @@ export const project = [
     },
 
     cover: Vamp3,
-    gallery: [
+    gallery2: [
      Vamp1,
     //  Vamp2,
      Vamp3,
@@ -459,6 +460,46 @@ export const project = [
      Vamp8,
      Vamp9,
     ],
+    gallery: [
+    {
+      id: "bla-campaign-01",
+      type: "image",
+      category: "Campaigns",
+      title: "Brand Campaign",
+      src: "/content/bla/campaign-01.webp",
+      alt: "BLA brand campaign visual",
+      aspect: "portrait",
+      featured: true,
+    },
+    {
+      id: "bla-reel-01",
+      type: "video",
+      category: "Reels",
+      title: "Campaign Reel",
+      src: "/content/bla/reel-01.mp4",
+      poster: "/content/bla/reel-01.webp",
+      alt: "BLA campaign reel",
+      aspect: "portrait",
+    },
+    {
+      id: "bla-photo-01",
+      type: "image",
+      category: "Photography",
+      title: "Editorial Photography",
+      src: "/content/bla/editorial-01.webp",
+      alt: "BLA editorial photograph",
+      aspect: "landscape",
+    },
+    {
+      id: "bla-graphic-01",
+      type: "image",
+      category: "Graphics",
+      title: "Social Media Design",
+      src: "/content/bla/graphic-01.webp",
+      alt: "BLA social media graphic",
+      aspect: "square",
+    },
+  ],
   },
 
   {
@@ -511,6 +552,46 @@ export const project = [
       BLA12,
 
     ],
+    contentGallery: [
+    {
+      id: "bla-campaign-01",
+      type: "image",
+      category: "Campaigns",
+      title: "Brand Campaign",
+      src: "/content/bla/campaign-01.webp",
+      alt: "BLA brand campaign visual",
+      aspect: "portrait",
+      featured: true,
+    },
+    {
+      id: "bla-reel-01",
+      type: "video",
+      category: "Reels",
+      title: "Campaign Reel",
+      src: "/content/bla/reel-01.mp4",
+      poster: "/content/bla/reel-01.webp",
+      alt: "BLA campaign reel",
+      aspect: "portrait",
+    },
+    {
+      id: "bla-photo-01",
+      type: "image",
+      category: "Photography",
+      title: "Editorial Photography",
+      src: "/content/bla/editorial-01.webp",
+      alt: "BLA editorial photograph",
+      aspect: "landscape",
+    },
+    {
+      id: "bla-graphic-01",
+      type: "image",
+      category: "Graphics",
+      title: "Social Media Design",
+      src: "/content/bla/graphic-01.webp",
+      alt: "BLA social media graphic",
+      aspect: "square",
+    },
+  ],
   },
 
   {

@@ -407,12 +407,13 @@ const openBrandGuide = (url) => {
                   serviceName.includes("paid advertising") ||
                   serviceName.includes("paid ads");
 
+                
                 const isExpandable =
-                  isInfluencerMarketing || isPaidAdvertising || isMerchandiseDesign;
+                  isSocialMedia || isInfluencerMarketing || isPaidAdvertising || isMerchandiseDesign;
 
                 const isExpanded = expandedService === service;
 
-                const detailText = isInfluencerMarketing
+                const detailText = isSocialMedia ? selectedProject.isSocialMediaDetails : isInfluencerMarketing
                   ? selectedProject.influencerMarketingDetails
                   : isPaidAdvertising
                     ? selectedProject.paidAdvertisingDetails
@@ -424,14 +425,6 @@ const openBrandGuide = (url) => {
                   : isPaidAdvertising
                     ? "Add details about the advertising strategy, campaign creatives, audience targeting, and performance results for this brand."
                     : "Explore the merchandise designed for this brand, including branded apparel, promotional products, creative concepts, and visual identity applications.";
-
-                // const detailText = isInfluencerMarketing
-                //   ? selectedProject.influencerMarketingDetails :
-                //    isPaidAdvertising ? isMerchandiseDesign : selectedProject.paidAvertisingDetails : selectedProject.merchandiseDesignDetails;
-
-                // const detailFallback = isInfluencerMarketing
-                //   ? "Add details about creator partnerships, influencer collaborations, campaign strategy, and results for this brand."
-                //   : "Add details about the advertising strategy, campaign creatives, audience targeting, and performance results for this brand.";
 
                 const rowContent = (
                   <>
@@ -497,7 +490,7 @@ const openBrandGuide = (url) => {
                     )}
 
                     {/* SOCIAL MEDIA: scroll to the outcome */}
-                    {isSocialMedia && (
+                    {/* {isSocialMedia && (
                       <button
                         type="button"
                         onClick={() => {
@@ -513,7 +506,7 @@ const openBrandGuide = (url) => {
                       >
                         {rowContent}
                       </button>
-                    )}
+                    )} */}
 
                     {/* CONTENT CREATION: future gallery page */}
                     {isContentCreation && (
@@ -619,7 +612,7 @@ const openBrandGuide = (url) => {
             THE OUTCOME
         ========================== */}
         <section
-          id="outcome"
+          id=""
           className="px-5 py-20 sm:px-8 md:py-28 lg:px-16"
         >
           <motion.div

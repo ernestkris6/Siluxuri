@@ -392,9 +392,13 @@ export const project = [
     ],
 
     results: [
-      "Professional brand identity redesign",
-      "Increased brand recognition worldwide",
-      "Online sales increase of 164%",
+      "Reported 164% increase in online sales.",
+      "Expanded brand recognition beyond the UK, reaching international audiences.",
+      "Reported 164% increase in online sales.",
+      "Expanded brand visibility and recognition across international markets.",
+      "Increased exposure of the brand’s handcrafted collections to new audiences.",
+      "Supported continued growth in online customer acquisition and engagement.",
+
     ],
 
     theme: {
@@ -506,9 +510,16 @@ contentGallery: [
     metrics: [],
 
     results: [
-      "Increased brand recognition nationwide",
-      "Increased online sales",
-      "Increased in-store foot traffic",
+      "Strengthened brand recognition across Nigeria.",
+      "Increased audience awareness of the brand’s diverse product offering.",
+      "Supported reported growth in online sales and in-store foot traffic.",
+      "Built stronger connections with audiences interested in Korean products and culture.",
+      "Expanded brand visibility and recognition across Nigeria.",
+      "Increased exposure of HARU Africa’s products to relevant audiences.",
+      "Supported reported growth in online sales and in-store foot traffic.",
+      "Strengthened the connection between digital marketing activities and retail performance.",
+
+
     ],
 
     theme: {
@@ -629,9 +640,14 @@ contentGallery: [
     ],
 
     results: [
-      "Increased brand awareness and loyalty",
-      "Increased brand engagement",
-      "Increased online sales and store foot traffic",
+      "Improved brand awareness and audience engagement, alongside reported growth in online sales and in-store foot traffic.",
+      "Expanded brand exposure through relevant creator partnerships.",
+      "Strengthened brand recognition within its target market.",
+      "Supported increased customer interest and complemented the wider digital marketing strategy.",
+      "Increased brand visibility across digital platforms.",
+      "Expanded reach among relevant potential customers.",
+      "Supported stronger audience engagement, with reported growth in online sales and in-store foot traffic.",
+
     ],
 
     theme: {
@@ -871,9 +887,14 @@ contentGallery: [
     metrics: [],
 
     results: [
-      "Professional brand identity design",
-      "Official brand launch",
-      "Merchandise sales",
+      "Developed a distinctive and professional brand identity.",
+      "Established comprehensive brand guidelines for consistent brand communication.",
+      "Created a cohesive visual foundation for the brand’s market introduction and future growth.",
+      "Developed a cohesive merchandise collection for the brand’s first release.",
+      "Translated the brand’s identity into distinctive wearable products.",
+      "Supported BLA’s official market launch and initial merchandise sales.",
+
+
     ],
 
     theme: {
@@ -971,8 +992,11 @@ contentGallery: [
     metrics: [],
 
     results: [
-      "A stylish and clean brand identity",
-      "A timeless visual direction",
+      "Developed a refined and professional brand identity.",
+      "Established a clearer visual direction that better communicates the brand’s expertise and values.",
+      "Strengthened the brand’s visual positioning within the beauty industry.",
+      "Created a more cohesive identity to support future brand communications and marketing activities.",
+
     ],
 
     theme: {

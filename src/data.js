@@ -270,9 +270,15 @@ export const project = [
     ],
 
     results: [
-      "Professional brand identity redesign",
-      "Increased brand recognition nationwide",
-      "Increased sales and in-store foot traffic",
+      "Increased nationwide brand recognition, with reported growth in sales and in-store customer visits.",
+      "Expanded brand exposure through relevant fashion creators.",
+      "Increased awareness among new and existing luxury fashion consumers.",
+      "Supported customer interest and complemented wider efforts to drive engagement and in-store visits.",
+      "Strengthened brand visibility and recognition across Nigeria.",
+      "Reached broader audiences of potential luxury fashion customers.",
+      "Contributed to reported improvements in sales and in-store foot traffic.",
+
+
     ],
 
     //F75D18, F2F2F2F, 242433, 3F3D56, E6E6E6

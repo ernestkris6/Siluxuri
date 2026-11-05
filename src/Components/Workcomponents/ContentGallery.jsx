@@ -683,61 +683,61 @@ export default function ContentGallery() {
           <>
             {/* All content: editorial featured work */}
             
-{isAllContent && !searchQuery.trim() && featuredMedia && (
-  <section className="mb-20 md:mb-28">
-    <div className="mb-7 flex items-end justify-between gap-5">
-      <div>
-        <p className="mb-3 text-xs uppercase tracking-[0.25em] text-[#EB6F38]">
-          Selected project / 01
-        </p>
+            {isAllContent && !searchQuery.trim() && featuredMedia && (
+              <section className="mb-20 md:mb-28">
+                <div className="mb-7 flex items-end justify-between gap-5">
+                  <div>
+                    <p className="mb-3 text-xs uppercase tracking-[0.25em] text-[#EB6F38]">
+                      Selected project / 01
+                    </p>
 
-        <h2 className="text-3xl font-semibold sm:text-4xl md:text-5xl">
-          The standout.
-        </h2>
-      </div>
+                    <h2 className="text-3xl font-semibold sm:text-4xl md:text-5xl">
+                      The standout.
+                    </h2>
+                  </div>
 
-      <span className="hidden text-xs uppercase tracking-widest text-[#2F2E41]/45 sm:block">
-        Featured creative
-      </span>
-    </div>
+                  <span className="hidden text-xs uppercase tracking-widest text-[#2F2E41]/45 sm:block">
+                    Featured creative
+                  </span>
+                </div>
 
-    <button
-      type="button"
-      onClick={() => openMedia(featuredMedia)}
-      className="group relative block w-full overflow-hidden bg-[#2F2E41] text-left"
-    >
-      <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/8]">
-        <img
-          src={
-            ["video", "reel"].includes(featuredMedia.type)
-              ? featuredMedia.poster || ""
-              : featuredMedia.src
-          }
-          alt={featuredMedia.alt || featuredMedia.title || ""}
-          className="size-full object-cover transition-transform duration-1000 group-hover:scale-[1.035]"
-        />
+                <button
+                  type="button"
+                  onClick={() => openMedia(featuredMedia)}
+                  className="group relative block w-full overflow-hidden bg-[#2F2E41] text-left"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[10/5] lg:aspect-[12/4]">
+                    <img
+                      src={
+                        ["video", "reel"].includes(featuredMedia.type)
+                          ? featuredMedia.poster || ""
+                          : featuredMedia.src
+                      }
+                      alt={featuredMedia.alt || featuredMedia.title || ""}
+                      className="size-full object-cover transition-transform duration-1000 group-hover:scale-[1.035]"
+                    />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#171722]/70 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#171722]/70 via-transparent to-transparent" />
 
-        <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 text-white sm:p-10 md:p-14">
-          <div>
-            <p className="mb-3 text-[10px] uppercase tracking-[0.25em] text-[#A0CBD2]">
-              {featuredMedia.category || "Featured creative"}
-            </p>
+                    <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-6 text-white sm:p-10 md:p-14">
+                      <div>
+                        <p className="mb-3 text-[10px] uppercase tracking-[0.25em] text-[#A0CBD2]">
+                          {featuredMedia.category || "Featured creative"}
+                        </p>
 
-            <h3 className="max-w-2xl text-2xl font-semibold sm:text-4xl md:text-5xl">
-              {featuredMedia.title || selectedProject.name}
-            </h3>
-          </div>
+                        <h3 className="max-w-2xl text-2xl font-semibold sm:text-4xl md:text-5xl">
+                          {featuredMedia.title || selectedProject.name}
+                        </h3>
+                      </div>
 
-          <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/50 text-xl transition-all group-hover:bg-white group-hover:text-[#2F2E41]">
-            ↗
-          </span>
-        </div>
-      </div>
-    </button>
-  </section>
-)}
+                      <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/50 text-xl transition-all group-hover:bg-white group-hover:text-[#2F2E41]">
+                        ↗
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </section>
+            )}
 
             {/* {isAllContent && !searchQuery.trim() && featuredMedia && (
               <section className="mb-16 md:mb-20">
@@ -792,12 +792,12 @@ export default function ContentGallery() {
             {/* Reels: horizontal, portrait-friendly carousel */}
             {(isAllContent || activeType === "reel") && (
               <MediaCarousel
-  title="Reels"
-  description="Short-form content, social storytelling and campaign moments."
-  items={reels}
-  onOpenMedia={openMedia}
-  type="reel"
-/>
+                  title="Reels"
+                  description="Short-form content, social storytelling and campaign moments."
+                  items={reels}
+                  onOpenMedia={openMedia}
+                  type="reel"
+                />
               // <MediaCarousel
               //   title="Reels"
               //   description="Short-form stories made to catch attention and keep people watching."
@@ -810,12 +810,12 @@ export default function ContentGallery() {
             {(isAllContent || activeType === "video") && (
 
               <MediaCarousel
-  title="Videos"
-  description="Brand films and longer-form visual storytelling."
-  items={videos}
-  onOpenMedia={openMedia}
-  type="video"
-/>
+                  title="Videos"
+                  description="Brand films and longer-form visual storytelling."
+                  items={videos}
+                  onOpenMedia={openMedia}
+                  type="video"
+                />
               // <MediaCarousel
               //   title="Videos"
               //   description="Brand films, campaign videos and moving-image stories."

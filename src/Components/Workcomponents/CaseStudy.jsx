@@ -549,7 +549,7 @@ const openBrandGuide = (url) => {
                           aria-hidden={!isExpanded}
                         >
                           <div className="pb-7 pl-10 sm:pl-12">
-                            <p className="max-w-2xl text-sm leading-7 opacity-80">
+                            <p className="w-full text-justify text-sm leading-7 opacity-80">
                               {detailText || detailFallback}
                             </p>
                           </div>

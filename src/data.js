@@ -249,16 +249,16 @@ export const project = [
     ],
 
     isSocialMediaDetails: [
-      "RTM Fashion Concierge wanted to establish a strong digital presence that reflected the exclusivity and quality of its designer collections.", 
-      "Siluxri Creative Studio managed the brand’s Facebook, Instagram, and TikTok platforms, producing and publishing 1,248 pieces of content across graphic design, photography, video reels, and motion design.", 
+      "RTM Fashion Concierge wanted to establish a strong digital presence that reflected the exclusivity and quality of its designer collections. ", 
+      "Siluxri Creative Studio managed the brand’s Facebook, Instagram, and TikTok platforms, producing and publishing 1,248 pieces of content across graphic design, photography, video reels, and motion design. ", 
       "Through consistent brand storytelling, refined visual content, and strategic content planning, we strengthened RTM’s digital identity, expanded its online reach, and positioned the brand to connect with a broader audience of luxury fashion consumers.",
     ],
     influencerMarketingDetails: [
-      "To strengthen RTM’s visibility within the luxury fashion market, we managed influencer marketing collaborations with fashion creators whose personal style, audience demographics, and content aligned with the brand’s positioning.",
+      "To strengthen RTM’s visibility within the luxury fashion market, we managed influencer marketing collaborations with fashion creators whose personal style, audience demographics, and content aligned with the brand’s positioning. ",
       "These partnerships showcased RTM’s collections to new audiences, reinforced its luxury appeal, and created additional opportunities for potential customers to discover and engage with the brand.",
     ],
     paidAdvertisingDetails: [
-      "We planned and executed targeted advertising campaigns across Meta and TikTok to increase brand visibility, reach relevant fashion audiences, and support audience growth and physical store visits.",
+      "We planned and executed targeted advertising campaigns across Meta and TikTok to increase brand visibility, reach relevant fashion audiences, and support audience growth and physical store visits. ",
       "By combining creative assets with strategic audience targeting and paid distribution, we extended RTM’s reach beyond its existing community, which helped translate digital exposure into greater customer interest.",
     ],
 
@@ -274,7 +274,7 @@ export const project = [
       "Expanded brand exposure through relevant fashion creators.",
       "Increased awareness among new and existing luxury fashion consumers.",
       "Supported customer interest and complemented wider efforts to drive engagement and in-store visits.",
-      "Strengthened brand visibility and recognition across Nigeria.",
+      "Strengthened brand visibility and recognition across Nigeria. ",
       "Reached broader audiences of potential luxury fashion customers.",
       "Contributed to reported improvements in sales and in-store foot traffic.",
 
@@ -376,12 +376,12 @@ export const project = [
       "Paid Advertising",
     ],
     isSocialMediaDetails: [
-      "D. Sparkles wanted to establish a distinctive digital identity that captured the artistry and individuality behind its handcrafted jewellery.",
-      "After a thorough brand identity redesign, we managed the brand’s social media presence across Facebook, Instagram, and TikTok, producing and publishing over 300 pieces of content across photography, graphic design, video reels, and motion design.",
+      "D. Sparkles wanted to establish a distinctive digital identity that captured the artistry and individuality behind its handcrafted jewellery. ",
+      "After a thorough brand identity redesign, we managed the brand’s social media presence across Facebook, Instagram, and TikTok, producing and publishing over 300 pieces of content across photography, graphic design, video reels, and motion design. ",
       "Our strategy focused on showcasing the craftsmanship behind each piece, communicating the brand’s creative identity, and building a cohesive visual experience across its digital platforms. Through consistent storytelling and strategic content planning, we strengthened the brand’s online presence and helped introduce its collections to a wider audience of jewellery enthusiasts beyond its immediate market.",
     ],
     paidAdvertisingDetails: [
-      "We developed and executed targeted advertising campaigns across Meta and TikTok to increase D. Sparkles’ visibility, expand its audience, and introduce its handcrafted jewellery collections to potential customers in new markets.",
+      "We developed and executed targeted advertising campaigns across Meta and TikTok to increase D. Sparkles’ visibility, expand its audience, and introduce its handcrafted jewellery collections to potential customers in new markets. ",
       "By combining engaging creative assets with strategic audience targeting and paid distribution, we helped showcase the brand’s distinctive designs to a broader audience and strengthen its digital presence.",
     ],
 
@@ -494,13 +494,13 @@ contentGallery: [
     ],
 
     isSocialMediaDetails: [
-      "HARU Africa wanted to build a distinctive digital presence that properly communicated its diverse product offering while connecting with audiences interested in Korean food, beauty, music, and culture.",
-      "Siluxri Creative Studio managed HARU Africa’s Facebook, Instagram, and TikTok platforms, producing and publishing over 420 pieces of content across graphic design, photography, video reels, and motion design.",
+      "HARU Africa wanted to build a distinctive digital presence that properly communicated its diverse product offering while connecting with audiences interested in Korean food, beauty, music, and culture. ",
+      "Siluxri Creative Studio managed HARU Africa’s Facebook, Instagram, and TikTok platforms, producing and publishing over 420 pieces of content across graphic design, photography, video reels, and motion design. ",
       "Our strategy focused on showcasing the brand’s products, introducing audiences to different aspects of Korean culture, and creating engaging content around shared interests. Through consistent storytelling, creative product presentation, and strategic content planning, we strengthened HARU Africa’s digital identity and helped cultivate an online community that supported both online sales and in-store visits.",
     ],
 
-    influencerMarketingDetails:
-      "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
+    // influencerMarketingDetails:
+    //   "We developed custom merchandise concepts for BLA, applying its visual identity across branded products and promotional materials.",
     paidAdvertisingDetails: [
       "We planned and executed targeted advertising campaigns across Meta and TikTok to increase product visibility, expand audience reach, and generate interest in HARU Africa’s diverse range of offerings.",
     ],
@@ -618,18 +618,18 @@ contentGallery: [
       "Paid Advertising",
     ],
     isSocialMediaDetails: [
-      "VAMP needed to establish a recognisable and engaging digital presence that reflected its distinctive brand identity and connected with its niche audience.",
-      "Siluxri Creative Studio managed the brand’s Facebook, Instagram, TikTok, and X (Twitter) platforms, producing and publishing over 200 pieces of content across graphic design, photography, video reels, and motion design.",
+      "VAMP needed to establish a recognisable and engaging digital presence that reflected its distinctive brand identity and connected with its niche audience. ",
+      "Siluxri Creative Studio managed the brand’s Facebook, Instagram, TikTok, and X (Twitter) platforms, producing and publishing over 200 pieces of content across graphic design, photography, video reels, and motion design. ",
       "Our approach focused on developing a consistent visual identity, maintaining an active social media presence, and creating content that resonated with the brand’s target audience. Through strategic content planning and consistent execution, we strengthened VAMP’s online presence, supported its efforts to build a more engaged digital community, and increased online sales and foot traffic.",
 
     ],
     influencerMarketingDetails: [
-      "To expand VAMP’s reach and strengthen its position within its niche market, we facilitated collaborations with content creators and influencers whose audiences aligned with the brand’s target demographic.",
+      "To expand VAMP’s reach and strengthen its position within its niche market, we facilitated collaborations with content creators and influencers whose audiences aligned with the brand’s target demographic. ",
       "Through these partnerships, we increased opportunities for brand discovery, showcased VAMP’s identity to wider audiences, and encouraged meaningful connections with relevant communities. The strategy also helped establish a more recognisable brand presence beyond its traditional retail environment.",
     ],
       
     paidAdvertisingDetails: [
-      "We developed and executed targeted advertising campaigns across Meta and TikTok to increase VAMP’s digital visibility, improve product discovery, and drive engagement among relevant audiences.",
+      "We developed and executed targeted advertising campaigns across Meta and TikTok to increase VAMP’s digital visibility, improve product discovery, and drive engagement among relevant audiences. ",
       "By combining creative advertising assets with strategic audience targeting and paid distribution, we extended the brand’s reach beyond organic social media activity and introduced its products and retail offerings to a wider pool of potential customers.",
     ],
 
@@ -877,10 +877,17 @@ contentGallery: [
     services: [
       "Brand Identity Design",
       "Merchandise Design",
+      "Influencer Marketing",
     ],
     merchandiseDesignDetails: [
-      "To bring BLA’s identity into its physical product range, we designed merchandise for the brand’s inaugural collection, including hoodies, shirts, and caps.",
+      "To bring BLA’s identity into its physical product range, we designed merchandise for the brand’s inaugural collection, including hoodies, shirts, and caps. ",
       "Our creative approach translated the brand’s visual identity into wearable designs. By maintaining consistency across the merchandise range, we helped establish a unified product aesthetic that extended the brand experience beyond its visual identity.",
+      
+    ],
+    influencerMarketingDetails: [
+      "As an emerging fashion brand preparing to enter the market, BLA needed a distinctive and cohesive brand identity that would communicate its positioning and establish a strong foundation for its launch. ",
+      "Siluxri Creative Studio developed the brand’s visual identity and comprehensive brand guidelines, translating its values into a recognisable visual language. ",
+      "Our approach focused on creating a consistent identity that could be applied across the brand’s communications, marketing materials, and future product offerings. This provided BLA with a clear visual direction and a cohesive foundation for introducing itself to its target audience.",
 
     ],
 
@@ -987,6 +994,13 @@ contentGallery: [
 
     services: [
       "Brand Identity Redesign",
+      "Merchandise Design"
+    ],
+
+    merchandiseDesignDetails: [
+      "Chums Beauty sought to refine its visual identity to better communicate the quality of its services, strengthen its market positioning, and establish a more distinctive presence within the beauty industry. ",
+      "Siluxri Creative Studio undertook a brand identity redesign, refining the brand’s visual direction and developing a clean, contemporary identity that communicates professionalism, elegance, and confidence."
+
     ],
 
     metrics: [],
@@ -1053,7 +1067,93 @@ contentGallery: [
   },
 ],
 
+  },
 
+   {
+    slug: "chums-beauty",
+    name: "Chums Beauty",
+    shortName: "CHUMS",
+    category: "Beauty & Hair",
+    location: "Nigeria",
+    description:
+      "A hair styling and beauty brand where elegance meets expertise, celebrating individuality and personal expression.",
+    message: "Celebrate your individuality with hair and beauty experiences shaped by elegance, care, and personal style.",
+    brandGuide: "/brand-guides/chums_brand_guide.pdf",
+
+    services: [
+      "Brand Identity Redesign",
+      "Merchandise Design"
+    ],
+
+    merchandiseDesignDetails: [
+      "Chums Beauty sought to refine its visual identity to better communicate the quality of its services, strengthen its market positioning, and establish a more distinctive presence within the beauty industry. ",
+      "Siluxri Creative Studio undertook a brand identity redesign, refining the brand’s visual direction and developing a clean, contemporary identity that communicates professionalism, elegance, and confidence."
+
+    ],
+
+    metrics: [],
+
+    results: [
+      "Developed a refined and professional brand identity.",
+      "Established a clearer visual direction that better communicates the brand’s expertise and values.",
+      "Strengthened the brand’s visual positioning within the beauty industry.",
+      "Created a more cohesive identity to support future brand communications and marketing activities.",
+
+    ],
+
+    theme: {
+      background: "#C8A2C8",   //background
+      foreground: "#612828",   //Major texts/bottom banner
+      accent: "#F2F2F2",       //Tiny headings
+      secondary: "#FAB1B1",    //Button underline/services-list section 
+      displayFont: "Roboto",  //Texts
+    },
+
+    cover: Chums,
+    gallery: [
+      BEAUTY1,
+      BEAUTY2,
+      Chums,
+      // ChumsLogo,
+    ],
+
+    
+contentGallery: [
+  {
+    id: "chums-identity-01",
+    type: "graphic",
+    category: "Brand Identity",
+    title: "Brand Identity Design",
+    src: "/content/chums/brand-identity-01.webp",
+    alt: "Chums Beauty brand identity design",
+    aspect: "landscape",
+    date: null,
+    tags: ["branding", "identity", "beauty"],
+    featured: true,
+  },
+  {
+    id: "chums-visual-01",
+    type: "image",
+    category: "Brand Identity",
+    title: "Visual Identity Application",
+    src: "/content/chums/visual-identity-01.webp",
+    alt: "Chums Beauty visual identity application",
+    aspect: "portrait",
+    date: null,
+    tags: ["visual identity", "beauty", "branding"],
+  },
+  {
+    id: "chums-graphic-01",
+    type: "graphic",
+    category: "Graphics",
+    title: "Brand Graphic",
+    src: "/content/chums/graphic-01.webp",
+    alt: "Chums Beauty brand graphic",
+    aspect: "square",
+    date: null,
+    tags: ["graphic design", "beauty", "brand"],
+  },
+],
 
   },
 ];

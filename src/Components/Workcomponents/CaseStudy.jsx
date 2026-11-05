@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router";
 import { project } from "../../data";
 import BrandGuideViewer from "./BrandGuideViewer";
@@ -7,7 +8,6 @@ import {
   useInView,
   useReducedMotion,
 } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 
 // Animated project metrics
 function CountUpMetric({ value, label, theme, index }) {

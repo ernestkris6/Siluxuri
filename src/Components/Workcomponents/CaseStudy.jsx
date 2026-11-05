@@ -548,8 +548,8 @@ const openBrandGuide = (url) => {
                           className="overflow-hidden"
                           aria-hidden={!isExpanded}
                         >
-                          <div className="pb-7 pl-10 sm:pl-12">
-                            <p className="w-full text-justify text-sm leading-7 opacity-80">
+                          <div className="pb-7 px-4 sm:px-2">
+                            <p className="w-full text-sm sm:text-base text-justify leading-7 opacity-80">
                               {detailText || detailFallback}
                             </p>
                           </div>

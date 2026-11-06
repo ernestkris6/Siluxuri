@@ -360,7 +360,7 @@ export const project = [
 
   {
     slug: "d-sparkles",
-    name: "D.sparkles",
+    name: "D.Sparkles",
     shortName: "D.SPARKLES",
     category: "Jewellery & Lifestyle",
     location: "Greater London, England",
@@ -489,7 +489,7 @@ contentGallery: [
     services: [
       "Content Creation",
       "Social Media Management",
-      "Influencer Marketing",
+      // "Influencer Marketing",
       "Paid Advertising",
     ],
 
@@ -875,9 +875,9 @@ contentGallery: [
     brandGuide: "/brand-guides/bla_brand_guide.pdf",
 
     services: [
-      "Brand Identity Design",
+      "Brand Guide",
       "Merchandise Design",
-      "Influencer Marketing",
+      "Brand Identity Design",
     ],
     merchandiseDesignDetails: [
       "To bring BLA’s identity into its physical product range, we designed merchandise for the brand’s inaugural collection, including hoodies, shirts, and caps. ",
@@ -993,8 +993,8 @@ contentGallery: [
     brandGuide: "/brand-guides/chums_brand_guide.pdf",
 
     services: [
-      "Brand Identity Redesign",
-      "Merchandise Design"
+      "Brand Guide",
+      "Brand Identity Redesign"
     ],
 
     merchandiseDesignDetails: [

@@ -1087,8 +1087,7 @@ contentGallery: [
   brandGuide: "/brand-guides/orihana_brand_guide.pdf",
 
   services: [
-    "Brand Videos",
-    "Beauty Content",
+    "Content Creation",
     "Merchandise Design"
   ],
 

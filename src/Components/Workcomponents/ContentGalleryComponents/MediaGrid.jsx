@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function MediaGrid({ items = [], onOpenMedia }) {
   if (!items.length) return null;
@@ -92,7 +93,7 @@ export default function MediaGrid({ items = [], onOpenMedia }) {
                 aria-hidden="true"
                 className="shrink-0 pt-0.5 text-sm text-[#007589]"
               >
-                ↗
+                <FiArrowUpRight />
               </span>
             </div>
           </motion.button>

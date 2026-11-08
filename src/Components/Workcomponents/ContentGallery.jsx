@@ -7,6 +7,8 @@ import ContentGalleryHero from "./ContentGalleryComponents/ContentGalleryHero";
 import MediaGrid from "./ContentGalleryComponents/MediaGrid";
 import MediaViewer from "./ContentGalleryComponents/MediaViewer";
 import ContentGalleryCTA from "./ContentGalleryComponents/ContentGalleryCTA";
+import CustomDropdown from "./ContentGalleryComponents/CustomDropdown";
+import { FiArrowLeft, FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 
 const MEDIA_FILTERS = [
   { label: "All content", value: "all" },
@@ -136,7 +138,7 @@ function MediaCard({ item, onOpenMedia, featured = false }) {
 
         <span className="mt-3 inline-flex items-center gap-2 text-xs text-white/75 transition-colors group-hover:text-white">
           View creative
-          <span aria-hidden="true">↗</span>
+          <span aria-hidden="true"><FiArrowUpRight /></span>
         </span>
       </div>
     </motion.button>
@@ -204,18 +206,18 @@ function MediaCarousel({
             type="button"
             onClick={() => scrollCarousel(-1)}
             aria-label={`Scroll ${title} left`}
-            className="flex size-12 items-center justify-center rounded-full border border-[#2F2E41]/20 text-xl transition-all hover:border-[#007589] hover:bg-[#007589] hover:text-white"
+            className="flex size-12 items-center justify-center rounded-full border border-[#2F2E41]/20 text-xl transition-all hover:border-[#007589] hover:bg-[#007589] hover:text-white cursor-pointer"
           >
-            ←
+            <FiArrowLeft />
           </button>
 
           <button
             type="button"
             onClick={() => scrollCarousel(1)}
             aria-label={`Scroll ${title} right`}
-            className="flex size-12 items-center justify-center rounded-full border border-[#2F2E41]/20 text-xl transition-all hover:border-[#007589] hover:bg-[#007589] hover:text-white"
+            className="flex size-12 items-center justify-center rounded-full border border-[#2F2E41]/20 text-xl transition-all hover:border-[#007589] hover:bg-[#007589] hover:text-white cursor-pointer"
           >
-            →
+            <FiArrowRight />
           </button>
         </div>
       </div>
@@ -577,21 +579,29 @@ export default function ContentGallery() {
               htmlFor="content-gallery-sort"
               className="shrink-0 text-xs text-[#2F2E41]/60"
             >
-              Sort by
-            </label>
+            Sort by
+          </label>
 
-            <select
+            <CustomDropdown
+              id="content-gallery-sort"
+              options={SORT_OPTIONS}
+              value={sortBy}
+              onChange={changeSort}
+            />
+
+
+            {/* <select
               id="content-gallery-sort"
               value={sortBy}
               onChange={(event) => changeSort(event.target.value)}
               className="min-w-0 rounded-full border border-[#2F2E41]/10 bg-white px-4 py-3 text-xs text-[#2F2E41] outline-none transition-colors focus:border-[#007589]"
             >
               {SORT_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
+                <option key={option.value} value={option.value} className="rounded">
                   {option.label}
                 </option>
               ))}
-            </select>
+            </select> */}
           </div>
         </div>
 
@@ -681,8 +691,8 @@ export default function ContentGallery() {
                         </h3>
                       </div>
 
-                      <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/50 text-xl transition-all group-hover:bg-white group-hover:text-[#2F2E41]">
-                        ↗
+                      <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/50 text-xl transition-all group-hover:bg-white group-hover:text-[#2F2E41] cursor-pointer">
+                        <FiArrowUpRight />
                       </span>
                     </div>
                   </div>
@@ -1351,7 +1361,7 @@ export default function ContentGallery() {
 //       return sortBy === "oldest"
 //         ? dateA - dateB
 //         : dateB - dateA;
-//     });
+//     });o
 //   }, [gallery, activeType, searchQuery, sortBy]);
 
 //   const selectedMedia = filteredGallery.find(

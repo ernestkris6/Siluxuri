@@ -85,7 +85,7 @@ export default function BrandGuideViewer({
           type="button"
           onClick={onClose}
           aria-label="Close brand guide"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border cursor-pointer border-white/20 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#A0CBD2]"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border cursor-pointer border-white/20 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#A0CBD2] cursor-pointer"
         >
           <FiX size={20} />
         </button>

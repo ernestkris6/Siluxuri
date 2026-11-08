@@ -1,5 +1,6 @@
-
 import { useCallback, useEffect, useState } from "react";
+import { FiX } from "react-icons/fi";
+import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 
 export default function MediaViewer({
   items = [],
@@ -65,9 +66,9 @@ export default function MediaViewer({
         type="button"
         onClick={onClose}
         aria-label="Close media viewer"
-        className="absolute right-4 top-4 z-20 flex size-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7"
+        className="absolute right-4 top-4 z-20 flex size-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7 cursor-pointer"
       >
-        ×
+        <FiX />
       </button>
 
       {items.length > 1 && (
@@ -76,18 +77,18 @@ export default function MediaViewer({
             type="button"
             onClick={() => goTo(-1)}
             aria-label="Previous item"
-            className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12"
+            className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12 cursor-pointer"
           >
-            ‹
+            <LuChevronLeft />
           </button>
 
           <button
             type="button"
             onClick={() => goTo(1)}
             aria-label="Next item"
-            className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12"
+            className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12 cursor-pointer"
           >
-            ›
+            <LuChevronRight />
           </button>
         </>
       )}

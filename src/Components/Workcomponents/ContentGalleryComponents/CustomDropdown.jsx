@@ -116,7 +116,7 @@ export default function CustomDropdown({
         aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-controls={`${id}-options`}
-        className={`flex w-full items-center justify-between gap-5 rounded-full border bg-white px-4 py-3 text-xs font-medium text-[#2F2E41] outline-none transition-all duration-300 ${
+        className={`flex w-full items-center justify-between gap-5 rounded-full border bg-white px-4 py-3 text-xs font-medium text-[#2F2E41] outline-none transition-all duration-300 cursor-pointer ${
           isOpen
             ? "border-[#007589] shadow-[0_0_0_3px_rgba(0,117,137,0.08)]"
             : "border-[#2F2E41]/10 hover:border-[#007589]/50"

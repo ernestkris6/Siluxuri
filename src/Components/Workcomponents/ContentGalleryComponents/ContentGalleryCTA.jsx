@@ -39,9 +39,9 @@ export default function ContentGalleryCTA({ project }) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="flex flex-col items-start gap-5 lg:items-end"
+          className="flex flex-row items-start gap-5 lg:items-end"
         >
-          <Link
+          {/* <Link
              to={`/work/${project.slug}`}
             className="group inline-flex items-center gap-8 rounded-lg bg-[#007589] px-15 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-[#2F2E41]"
           >
@@ -50,13 +50,13 @@ export default function ContentGalleryCTA({ project }) {
             <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
               ↗
             </span>
-          </Link>
+          </Link> */}
 
           <Link
             to="/work"
-            className="text-xs uppercase tracking-[0.17em] text-[#2F2E41]/60 transition-colors hover:text-[#007589]"
+            className="text-xs uppercase tracking-[0.17em] text-[#2F2E41]/60 transition-colors hover:text-[#007589] border-b"
           >
-            Explore more projects →
+            Explore more projects
           </Link>
         </motion.div>
       </div>

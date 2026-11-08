@@ -110,6 +110,15 @@ body {
 }
 
 
+/* .hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+
 
 /* .brand-marquee {
   display: flex;

@@ -296,17 +296,17 @@ function MediaCarousel({
         <button
           type="button"
           onClick={() => scrollCarousel(-1)}
-          className="text-xs font-medium text-[#007589]"
+          className="text-xs font-medium text-[#007589] border rounded-full p-3"
         >
-          ← Previous
+          <FiArrowLeft /> 
         </button>
 
         <button
           type="button"
           onClick={() => scrollCarousel(1)}
-          className="text-xs font-medium text-[#007589]"
+          className="text-xs font-medium text-[#007589]  border rounded-full p-3"
         >
-          Next →
+          <FiArrowRight />
         </button>
       </div>
     </section>

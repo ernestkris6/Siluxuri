@@ -36,6 +36,8 @@ export default function MediaViewer({
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") onClose();
+
+      // Keep keyboard navigation available while the viewer is open.
       if (event.key === "ArrowLeft") goTo(-1);
       if (event.key === "ArrowRight") goTo(1);
     };
@@ -52,32 +54,40 @@ export default function MediaViewer({
 
   if (!selectedMedia) return null;
 
+  const mediaTypeLabels = {
+    image: "Image",
+    graphic: "Graphic",
+    reel: "Reel",
+    video: "Video",
+  };
+
+  const mediaType = mediaTypeLabels[selectedMedia.type] || "Image";
+
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-[#171722]/95 p-3 backdrop-blur-md sm:p-6"
       role="dialog"
       aria-modal="true"
       aria-label={selectedMedia.title || "Media viewer"}
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
     >
+      {/* Close Button */}
       <button
         type="button"
         onClick={onClose}
         aria-label="Close media viewer"
-        className="absolute right-4 top-4 z-20 flex size-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7 cursor-pointer"
+        className="absolute right-4 top-4 z-20 flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7"
       >
         <FiX />
       </button>
 
+      {/* Navigation Buttons */}
       {items.length > 1 && (
         <>
           <button
             type="button"
             onClick={() => goTo(-1)}
             aria-label="Previous item"
-            className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12 cursor-pointer"
+            className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12"
           >
             <LuChevronLeft />
           </button>
@@ -86,13 +96,14 @@ export default function MediaViewer({
             type="button"
             onClick={() => goTo(1)}
             aria-label="Next item"
-            className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12 cursor-pointer"
+            className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12"
           >
             <LuChevronRight />
           </button>
         </>
       )}
 
+      {/* Media Content */}
       <div className="flex max-h-[90vh] w-full max-w-6xl flex-col items-center">
         {isVideo ? (
           <video
@@ -100,9 +111,9 @@ export default function MediaViewer({
             src={selectedMedia.src}
             poster={selectedMedia.poster}
             controls
-            autoPlay
             playsInline
             preload="metadata"
+            aria-label={selectedMedia.title || "Video player"}
             className="max-h-[76vh] max-w-full rounded-lg object-contain"
           >
             Your browser does not support HTML video.
@@ -121,6 +132,7 @@ export default function MediaViewer({
           />
         )}
 
+        {/* Media Information */}
         <div className="mt-5 max-w-2xl px-12 text-center text-white">
           {selectedMedia.title && (
             <h3 className="text-base font-medium sm:text-lg">
@@ -129,22 +141,445 @@ export default function MediaViewer({
           )}
 
           <p className="mt-1 text-xs text-white/60 sm:text-sm">
-            {selectedMedia.category ||
-              (selectedMedia.type === "reel"
-                ? "Reel"
-                : selectedMedia.type === "video"
-                  ? "Video"
-                  : selectedMedia.type === "graphic"
-                    ? "Graphic"
-                    : "Image")}
-            {items.length > 1 &&
-              ` · ${currentIndex + 1} of ${items.length}`}
+            <span className="uppercase">{mediaType}</span>
+
+            {selectedMedia.category && (
+              <> · {selectedMedia.category}</>
+            )}
+
+            {items.length > 1 && currentIndex >= 0 && (
+              <>
+                {" · "}
+                {String(currentIndex + 1).padStart(2, "0")}
+                {" of "}
+                {String(items.length).padStart(2, "0")}
+              </>
+            )}
           </p>
         </div>
       </div>
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ORIGINAL
+// import { useCallback, useEffect, useState } from "react";
+// import { FiX } from "react-icons/fi";
+// import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+
+// export default function MediaViewer({
+//   items = [],
+//   selectedMedia,
+//   onClose,
+//   onSelect,
+// }) {
+//   const [imageZoomed, setImageZoomed] = useState(false);
+
+//   const currentIndex = items.findIndex(
+//     (item) => item.id === selectedMedia?.id
+//   );
+
+//   const isVideo = ["video", "reel"].includes(selectedMedia?.type);
+
+//   const goTo = useCallback(
+//     (direction) => {
+//       if (items.length < 2 || currentIndex < 0) return;
+
+//       const nextIndex =
+//         (currentIndex + direction + items.length) % items.length;
+
+//       setImageZoomed(false);
+//       onSelect(items[nextIndex]);
+//     },
+//     [items, currentIndex, onSelect]
+//   );
+
+//   useEffect(() => {
+//     setImageZoomed(false);
+//   }, [selectedMedia?.id]);
+
+//   useEffect(() => {
+//     const handleKeyDown = (event) => {
+//       if (event.key === "Escape") onClose();
+//       if (event.key === "ArrowLeft") goTo(-1);
+//       if (event.key === "ArrowRight") goTo(1);
+//     };
+
+//     const previousOverflow = document.body.style.overflow;
+//     document.body.style.overflow = "hidden";
+//     window.addEventListener("keydown", handleKeyDown);
+
+//     return () => {
+//       document.body.style.overflow = previousOverflow;
+//       window.removeEventListener("keydown", handleKeyDown);
+//     };
+//   }, [goTo, onClose]);
+
+//   if (!selectedMedia) return null;
+
+//   const mediaTypeLabels = {
+//     image: "Image",
+//     graphic: "Graphic",
+//     reel: "Reel",
+//     video: "Video",
+//   };
+
+//   const mediaType =
+//     mediaTypeLabels[selectedMedia.type] || "Image";
+
+//   return (
+//     <div
+//       className="fixed inset-0 z-[100] flex items-center justify-center bg-[#171722]/95 p-3 backdrop-blur-md sm:p-6"
+//       role="dialog"
+//       aria-modal="true"
+//       aria-label={selectedMedia.title || "Media viewer"}
+//       onMouseDown={(event) => {
+//         if (event.target === event.currentTarget) onClose();
+//       }}
+//     >
+//       {/* Close Button */}
+//       <button
+//         type="button"
+//         onClick={onClose}
+//         aria-label="Close media viewer"
+//         className="absolute right-4 top-4 z-20 flex size-11 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7"
+//       >
+//         <FiX />
+//       </button>
+
+//       {/* Navigation Buttons */}
+//       {items.length > 1 && (
+//         <>
+//           <button
+//             type="button"
+//             onClick={() => goTo(-1)}
+//             aria-label="Previous item"
+//             className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12"
+//           >
+//             <LuChevronLeft />
+//           </button>
+
+//           <button
+//             type="button"
+//             onClick={() => goTo(1)}
+//             aria-label="Next item"
+//             className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12"
+//           >
+//             <LuChevronRight />
+//           </button>
+//         </>
+//       )}
+
+//       {/* Media Content */}
+//       <div className="flex max-h-[90vh] w-full max-w-6xl flex-col items-center">
+//         {isVideo ? (
+//           <video
+//             key={selectedMedia.id}
+//             src={selectedMedia.src}
+//             poster={selectedMedia.poster}
+//             controls
+//             autoPlay
+//             playsInline
+//             preload="metadata"
+//             className="max-h-[76vh] max-w-full rounded-lg object-contain"
+//           >
+//             Your browser does not support HTML video.
+//           </video>
+//         ) : (
+//           <img
+//             key={selectedMedia.id}
+//             src={selectedMedia.src}
+//             alt={selectedMedia.alt || selectedMedia.title || ""}
+//             onClick={() => setImageZoomed((value) => !value)}
+//             className={`max-h-[76vh] max-w-full rounded-lg object-contain transition-transform duration-300 ${
+//               imageZoomed
+//                 ? "cursor-zoom-out scale-[1.05]"
+//                 : "cursor-zoom-in"
+//             }`}
+//           />
+//         )}
+
+//         {/* Media Information */}
+//         <div className="mt-5 max-w-2xl px-12 text-center text-white">
+//           {selectedMedia.title && (
+//             <h3 className="text-base font-medium sm:text-lg">
+//               {selectedMedia.title}
+//             </h3>
+//           )}
+
+//           <p className="mt-1 text-xs text-white/60 sm:text-sm">
+//             <span className="uppercase">
+//               {mediaType}
+//             </span>
+
+//             {selectedMedia.category && (
+//               <> · {selectedMedia.category}</>
+//             )}
+
+//             {items.length > 1 && (
+//               <>
+//                 {" · "}
+//                 {String(currentIndex + 1).padStart(2, "0")}
+//                 {" of "}
+//                 {String(items.length).padStart(2, "0")}
+//               </>
+//             )}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { useCallback, useEffect, useState } from "react";
+// import { FiX } from "react-icons/fi";
+// import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+
+// export default function MediaViewer({
+//   items = [],
+//   selectedMedia,
+//   onClose,
+//   onSelect,
+// }) {
+//   const [imageZoomed, setImageZoomed] = useState(false);
+
+//   const currentIndex = items.findIndex(
+//     (item) => item.id === selectedMedia?.id
+//   );
+
+//   const isVideo = ["video", "reel"].includes(selectedMedia?.type);
+
+//   const goTo = useCallback(
+//     (direction) => {
+//       if (items.length < 2 || currentIndex < 0) return;
+
+//       const nextIndex =
+//         (currentIndex + direction + items.length) % items.length;
+
+//       setImageZoomed(false);
+//       onSelect(items[nextIndex]);
+//     },
+//     [items, currentIndex, onSelect]
+//   );
+
+//   useEffect(() => {
+//     setImageZoomed(false);
+//   }, [selectedMedia?.id]);
+
+//   useEffect(() => {
+//     const handleKeyDown = (event) => {
+//       if (event.key === "Escape") onClose();
+//       if (event.key === "ArrowLeft") goTo(-1);
+//       if (event.key === "ArrowRight") goTo(1);
+//     };
+
+//     const previousOverflow = document.body.style.overflow;
+//     document.body.style.overflow = "hidden";
+//     window.addEventListener("keydown", handleKeyDown);
+
+//     return () => {
+//       document.body.style.overflow = previousOverflow;
+//       window.removeEventListener("keydown", handleKeyDown);
+//     };
+//   }, [goTo, onClose]);
+
+//   if (!selectedMedia) return null;
+
+//   return (
+//     <div
+//       className="fixed inset-0 z-[100] flex items-center justify-center bg-[#171722]/95 p-3 backdrop-blur-md sm:p-6"
+//       role="dialog"
+//       aria-modal="true"
+//       aria-label={selectedMedia.title || "Media viewer"}
+//       onMouseDown={(event) => {
+//         if (event.target === event.currentTarget) onClose();
+//       }}
+//     >
+//       <button
+//         type="button"
+//         onClick={onClose}
+//         aria-label="Close media viewer"
+//         className="absolute right-4 top-4 z-20 flex size-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-7 sm:top-7 cursor-pointer"
+//       >
+//         <FiX />
+//       </button>
+
+//       {items.length > 1 && (
+//         <>
+//           <button
+//             type="button"
+//             onClick={() => goTo(-1)}
+//             aria-label="Previous item"
+//             className="absolute left-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:left-5 sm:size-12 cursor-pointer"
+//           >
+//             <LuChevronLeft />
+//           </button>
+
+//           <button
+//             type="button"
+//             onClick={() => goTo(1)}
+//             aria-label="Next item"
+//             className="absolute right-2 top-1/2 z-20 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition-colors hover:bg-white/20 sm:right-5 sm:size-12 cursor-pointer"
+//           >
+//             <LuChevronRight />
+//           </button>
+//         </>
+//       )}
+
+//       <div className="flex max-h-[90vh] w-full max-w-6xl flex-col items-center">
+//         {isVideo ? (
+//           <video
+//             key={selectedMedia.id}
+//             src={selectedMedia.src}
+//             poster={selectedMedia.poster}
+//             controls
+//             autoPlay
+//             playsInline
+//             preload="metadata"
+//             className="max-h-[76vh] max-w-full rounded-lg object-contain"
+//           >
+//             Your browser does not support HTML video.
+//           </video>
+//         ) : (
+//           <img
+//             key={selectedMedia.id}
+//             src={selectedMedia.src}
+//             alt={selectedMedia.alt || selectedMedia.title || ""}
+//             onClick={() => setImageZoomed((value) => !value)}
+//             className={`max-h-[76vh] max-w-full rounded-lg object-contain transition-transform duration-300 ${
+//               imageZoomed
+//                 ? "cursor-zoom-out scale-[1.05]"
+//                 : "cursor-zoom-in"
+//             }`}
+//           />
+//         )}
+
+//         <div className="mt-5 max-w-2xl px-12 text-center text-white">
+//           {selectedMedia.title && (
+//             <h3 className="text-base font-medium sm:text-lg">
+//               {selectedMedia.title}
+//             </h3>
+//           )}
+
+//           <p className="mt-1 text-xs text-white/60 sm:text-sm">
+//             {selectedMedia.category ||
+//               (selectedMedia.type === "reel"
+//                 ? "Reel"
+//                 : selectedMedia.type === "video"
+//                   ? "Video"
+//                   : selectedMedia.type === "graphic"
+//                     ? "Graphic"
+//                     : "Image")}
+//             {items.length > 1 &&
+//               ` · ${currentIndex + 1} of ${items.length}`}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 

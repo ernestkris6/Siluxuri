@@ -82,6 +82,8 @@ import Vamp9 from "./assets/Vamp9.jpg"
 
 import Orihana from "./assets/Orihana.jpg"
 
+import videoss from "./assets/vid2_web.mp4";
+
 
 
 
@@ -729,7 +731,8 @@ contentGallery: [
     type: "video",
     category: "Brand Films",
     title: "Lifestyle Brand Film",
-    src: "/content/vamp/brand-film-01.mp4",
+    src: videoss,
+    // src: "/content/vamp/brand-film-01.mp4",
     poster: "/content/vamp/brand-film-01.webp",
     alt: "VAMP lifestyle brand video",
     aspect: "landscape",

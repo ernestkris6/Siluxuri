@@ -13,8 +13,8 @@ import RTM5 from "./assets/RTM5.jpg";
 import RTM6 from "./assets/RTM6.jpg";
 import RTM7 from "./assets/RTM7.jpg";
 import RTM8 from "./assets/RTM8.jpg";
-// import RTM9 from "./assets/RTM9.jpg";
-// import RTM10 from "./assets/RTM10.jpg";
+import RTM9 from "./assets/RTM9.jpg";
+import RTM10 from "./assets/RTM10.jpg";
 
 
 //BEAUTY
@@ -58,12 +58,12 @@ import Haru8 from "./assets/Haru8.jpg";
 //SPARKLES
 import SpaHero from "./assets/SparklesHeroImg.webp";
 import SPA1 from "./assets/SPA1.jpg";
-// import SPA2 from "./assets/SPA2.jpg";
+import SPA2 from "./assets/SPA2.jpg";
 import SPA3 from "./assets/SPA3.jpg";
 import SPA4 from "./assets/SPA4.jpg";
 import SPA5 from "./assets/SPA5.jpg";
 import SPA6 from "./assets/SPA6.jpg";
-// import SPA7 from "./assets/SPA7.jpg";
+import SPA7 from "./assets/SPA7.jpg";
 import SPA8 from "./assets/SPA8.jpg";
 import SPA9 from "./assets/SPA9.jpg";
 import SPA10 from "./assets/SPA10.jpg";
@@ -71,7 +71,7 @@ import SPA10 from "./assets/SPA10.jpg";
 
 //VAMP
 import Vamp1 from "./assets/Vamp1.jpg"
-// import Vamp2 from "./assets/Vamp2.jpg"
+import Vamp2 from "./assets/Vamp2.jpg"
 import Vamp3 from "./assets/Vamp3.jpg"
 import Vamp4 from "./assets/Vamp4.jpg"
 import Vamp5 from "./assets/Vamp5.jpg"
@@ -360,6 +360,78 @@ export const project = [
         tags: ["fashion", "luxury", "campaign"],
         featured: true,
       },
+      {
+        id: "rtm-campaign-05",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM5,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-06",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM6,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-07",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM7,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-08",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM8,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-09",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM9,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-10",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM10,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
       //reel
       {
         id: "rtm-reel-01",
@@ -438,7 +510,6 @@ export const project = [
     results: [
       "Reported 164% increase in online sales.",
       "Expanded brand recognition beyond the UK, reaching international audiences.",
-      "Reported 164% increase in online sales.",
       "Expanded brand visibility and recognition across international markets.",
       "Increased exposure of the brand’s handcrafted collections to new audiences.",
       "Supported continued growth in online customer acquisition and engagement.",
@@ -475,7 +546,115 @@ contentGallery: [
     type: "image",
     category: "Campaigns",
     title: "Jewellery Campaign",
-    src: "/content/sparkles/campaign-01.webp",
+    src: SPA1,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-02",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA2,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-03",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA3,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-04",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA4,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-05",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA5,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-06",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA6,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-07",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA7,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-08",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA8,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-09",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA9,
+    alt: "D.sparkles handmade jewellery campaign",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "handmade", "campaign"],
+    featured: true,
+  },
+  {
+    id: "sparkles-campaign-10",
+    type: "image",
+    category: "Campaigns",
+    title: "Jewellery Campaign",
+    src: SPA10,
     alt: "D.sparkles handmade jewellery campaign",
     aspect: "portrait",
     date: null,

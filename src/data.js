@@ -311,18 +311,56 @@ export const project = [
 
     
     contentGallery: [
+      //image
       {
         id: "rtm-campaign-01",
         type: "image",
         category: "Campaigns",
         title: "Luxury Fashion Campaign",
-        src: "/content/rtm/campaign-01.webp",
+        src: RTM1,
         alt: "RTM Fashion Concierge luxury fashion campaign",
         aspect: "portrait",
         date: null,
         tags: ["fashion", "luxury", "campaign"],
         featured: true,
       },
+      {
+        id: "rtm-campaign-02",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM2,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-03",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM3,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-04",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM4,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      //reel
       {
         id: "rtm-reel-01",
         type: "reel",
@@ -335,6 +373,7 @@ export const project = [
         date: null,
         tags: ["fashion", "reel", "social media"],
       },
+      //video
       {
         id: "rtm-video-01",
         type: "video",
@@ -347,6 +386,7 @@ export const project = [
         date: null,
         tags: ["luxury", "brand film", "fashion"],
       },
+      //graphic
       {
         id: "rtm-graphic-01",
         type: "graphic",
@@ -429,6 +469,7 @@ export const project = [
 
     
 contentGallery: [
+  //image
   {
     id: "sparkles-campaign-01",
     type: "image",
@@ -441,6 +482,7 @@ contentGallery: [
     tags: ["jewellery", "handmade", "campaign"],
     featured: true,
   },
+  //reels
   {
     id: "sparkles-reel-01",
     type: "reel",
@@ -453,6 +495,7 @@ contentGallery: [
     date: null,
     tags: ["jewellery", "product", "reel"],
   },
+  //video
   {
     id: "sparkles-video-01",
     type: "video",
@@ -465,6 +508,7 @@ contentGallery: [
     date: null,
     tags: ["craft", "jewellery", "brand story"],
   },
+  //graphic
   {
     id: "sparkles-graphic-01",
     type: "graphic",
@@ -552,6 +596,7 @@ contentGallery: [
 
     
 contentGallery: [
+  //image
   {
     id: "haru-campaign-01",
     type: "image",
@@ -564,6 +609,7 @@ contentGallery: [
     tags: ["Korean lifestyle", "campaign", "products"],
     featured: true,
   },
+  //reel
   {
     id: "haru-reel-01",
     type: "reel",
@@ -576,6 +622,7 @@ contentGallery: [
     date: null,
     tags: ["K-beauty", "products", "reel"],
   },
+  //video
   {
     id: "haru-video-01",
     type: "video",
@@ -588,6 +635,7 @@ contentGallery: [
     date: null,
     tags: ["Korean culture", "lifestyle", "brand"],
   },
+  //graphic
   {
     id: "haru-graphic-01",
     type: "graphic",
@@ -677,6 +725,7 @@ contentGallery: [
 
     
 contentGallery: [
+  //image
   {
     id: "vamp-campaign-01",
     type: "image",
@@ -689,6 +738,7 @@ contentGallery: [
     tags: ["lifestyle", "retail", "campaign"],
     featured: true,
   },
+  //reel
   {
     id: "vamp-reel-01",
     type: "reel",
@@ -726,6 +776,7 @@ contentGallery: [
     tags: ["products", "lifestyle", "reel"],
   },
   
+  //video
   {
     id: "vamp-video-01",
     type: "video",
@@ -763,6 +814,7 @@ contentGallery: [
     date: '12-11-2006',
     tags: ["brand", "lifestyle", "video"],
   },
+  //graphic
   {
     id: "vamp-graphic-01",
     type: "graphic",
@@ -936,6 +988,7 @@ contentGallery: [
 
     
 contentGallery: [
+  //image
   {
     id: "bla-campaign-01",
     type: "image",
@@ -948,6 +1001,7 @@ contentGallery: [
     tags: ["fashion", "campaign", "brand"],
     featured: true,
   },
+  //reel
   {
     id: "bla-reel-01",
     type: "reel",
@@ -960,6 +1014,7 @@ contentGallery: [
     date: null,
     tags: ["fashion", "reel", "social"],
   },
+  //video
   {
     id: "bla-video-01",
     type: "video",
@@ -972,6 +1027,7 @@ contentGallery: [
     date: null,
     tags: ["fashion", "brand story", "video"],
   },
+  //graphic
   {
     id: "bla-graphic-01",
     type: "graphic",
@@ -1036,39 +1092,56 @@ contentGallery: [
 
     
 contentGallery: [
+  //image
   {
-    id: "chums-identity-01",
-    type: "graphic",
-    category: "Brand Identity",
-    title: "Brand Identity Design",
-    src: "/content/chums/brand-identity-01.webp",
-    alt: "Chums Beauty brand identity design",
-    aspect: "landscape",
-    date: null,
-    tags: ["branding", "identity", "beauty"],
-    featured: true,
-  },
-  {
-    id: "chums-visual-01",
+    id: "chums-campaign-01",
     type: "image",
-    category: "Brand Identity",
-    title: "Visual Identity Application",
-    src: "/content/chums/visual-identity-01.webp",
-    alt: "Chums Beauty visual identity application",
+    category: "Campaigns",
+    title: "Brand Campaign",
+    src: "/content/chums/campaign-01.webp",
+    alt: "Chums brand campaign visual",
     aspect: "portrait",
     date: null,
-    tags: ["visual identity", "beauty", "branding"],
+    tags: ["fashion", "campaign", "brand"],
+    featured: true,
   },
+  //reel
+  {
+    id: "chums-reel-01",
+    type: "reel",
+    category: "Campaigns",
+    title: "Fashion Campaign Reel",
+    src: "/content/chums/reel-01.mp4",
+    poster: "/content/chums/reel-01.webp",
+    alt: "Chums fashion campaign reel",
+    aspect: "portrait",
+    date: null,
+    tags: ["fashion", "reel", "social"],
+  },
+  //video
+  {
+    id: "chums-video-01",
+    type: "video",
+    category: "Brand Films",
+    title: "Brand Story",
+    src: "/content/chums/brand-film-01.mp4",
+    poster: "/content/chums/brand-film-01.webp",
+    alt: "Chums brand story video",
+    aspect: "landscape",
+    date: null,
+    tags: ["fashion", "brand story", "video"],
+  },
+  //graphic
   {
     id: "chums-graphic-01",
     type: "graphic",
     category: "Graphics",
-    title: "Brand Graphic",
+    title: "Social Media Design",
     src: "/content/chums/graphic-01.webp",
-    alt: "Chums Beauty brand graphic",
+    alt: "Chums social media graphic",
     aspect: "square",
     date: null,
-    tags: ["graphic design", "beauty", "brand"],
+    tags: ["social media", "design", "campaign"],
   },
 ],
 
@@ -1126,40 +1199,57 @@ contentGallery: [
   ],
 
   contentGallery: [
-    {
-      id: "orihana-identity-01",
-      type: "graphic",
-      category: "Brand Identity",
-      title: "Brand Identity Design",
-      src: "/content/orihana/brand-identity-01.webp",
-      alt: "Orihana Beauty brand identity design",
-      aspect: "landscape",
-      date: null,
-      tags: ["branding", "identity", "beauty"],
-      featured: true,
-    },
-    {
-      id: "orihana-visual-01",
-      type: "image",
-      category: "Brand Identity",
-      title: "Visual Identity Application",
-      src: "/content/orihana/visual-identity-01.webp",
-      alt: "Orihana Beauty visual identity application",
-      aspect: "portrait",
-      date: null,
-      tags: ["visual identity", "beauty", "branding"],
-    },
-    {
-      id: "orihana-graphic-01",
-      type: "graphic",
-      category: "Graphics",
-      title: "Brand Graphic",
-      src: "/content/orihana/graphic-01.webp",
-      alt: "Orihana Beauty brand graphic",
-      aspect: "square",
-      date: null,
-      tags: ["graphic design", "beauty", "brand"],
-    },
+    //image
+  {
+    id: "Orihana-campaign-01",
+    type: "image",
+    category: "Campaigns",
+    title: "Brand Campaign",
+    src: "/content/Orihana/campaign-01.webp",
+    alt: "Orihana brand campaign visual",
+    aspect: "portrait",
+    date: null,
+    tags: ["fashion", "campaign", "brand"],
+    featured: true,
+  },
+  //reel
+  {
+    id: "orihana-reel-01",
+    type: "reel",
+    category: "Campaigns",
+    title: "Fashion Campaign Reel",
+    src: "/content/orihana/reel-01.mp4",
+    poster: "/content/orihana/reel-01.webp",
+    alt: "Orihana fashion campaign reel",
+    aspect: "portrait",
+    date: null,
+    tags: ["fashion", "reel", "social"],
+  },
+  //video
+  {
+    id: "orihana-video-01",
+    type: "video",
+    category: "Brand Films",
+    title: "Brand Story",
+    src: "/content/orihana/brand-film-01.mp4",
+    poster: "/content/orihana/brand-film-01.webp",
+    alt: "Orihana brand story video",
+    aspect: "landscape",
+    date: null,
+    tags: ["fashion", "brand story", "video"],
+  },
+  //graphic
+  {
+    id: "orihana-graphic-01",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Design",
+    src: "/content/orihana/graphic-01.webp",
+    alt: "Orihana social media graphic",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "campaign"],
+  },
   ],
 
   socialContent: [

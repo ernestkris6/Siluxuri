@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 // import heroMobile from "../../assets/hero-mobile.mp4";
+import HomePoster from "../../assets/HomePoster.jpg"
 import digi from "../../assets/servicesvideo.mp4";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
 
@@ -19,6 +20,7 @@ export default function HeroSection() {
         muted
         loop
         playsInline
+        poster={HomePoster}
         controls={false}
         className="absolute inset-0 h-full w-full object-cover"
       />

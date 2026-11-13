@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
+import ServicesPoster from "../../assets/ServicesPoster.jpg";
 import serviesvideo from "../../assets/homevideo.mp4";
 
 export default function ServicesHero() {
@@ -14,6 +15,7 @@ export default function ServicesHero() {
           autoPlay
           muted
           loop
+          poster={ServicesPoster}
           playsInline
           controls={false}
           className="h-full w-full object-cover"

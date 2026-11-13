@@ -98,6 +98,26 @@ import SPA8 from "./assets/SPA8.jpg";
 import SPA9 from "./assets/SPA9.jpg";
 import SPA10 from "./assets/SPA10.jpg";
 
+import SPA_REELPOSTER1 from "./assets/SPA_REELPOSTER1.jpg";
+import SPA_REELPOSTER2 from "./assets/SPA_REELPOSTER2.jpg";
+import SPA_REELPOSTER3 from "./assets/SPA_REELPOSTER3.jpg";
+
+import SPA_REEL1 from "./assets/SPA_REEL1.mp4";
+import SPA_REEL2 from "./assets/SPA_REEL2.mp4";
+import SPA_REEL3 from "./assets/SPA_REEL3.mp4";
+
+import SPA_VIDPOSTER1 from "./assets/SPA_VIDPOSTER1.jpg";
+import SPA_VIDPOSTER2 from "./assets/SPA_VIDPOSTER2.jpg";
+import SPA_VIDPOSTER3 from "./assets/SPA_VIDPOSTER3.jpg";
+import SPA_VIDPOSTER4 from "./assets/SPA_VIDPOSTER4.jpg";
+import SPA_VIDPOSTER5 from "./assets/SPA_VIDPOSTER5.jpg";
+
+import SPA_VID1 from "./assets/SPA_VID1.mp4"
+import SPA_VID2 from "./assets/SPA_VID2.mp4"
+import SPA_VID3 from "./assets/SPA_VID3.mp4"
+import SPA_VID4 from "./assets/SPA_VID4.mp4"
+import SPA_VID5 from "./assets/SPA_VID1.mp4"
+
 
 //VAMP
 import Vamp1 from "./assets/Vamp1.jpg"
@@ -837,8 +857,32 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "Jewellery Showcase",
-    src: "/content/sparkles/reel-01.mp4",
-    poster: "/content/sparkles/reel-01.webp",
+    src: SPA_REEL1,
+    poster: SPA_REELPOSTER1,
+    alt: "D.sparkles jewellery showcase reel",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "product", "reel"],
+  },
+  {
+    id: "sparkles-reel-02",
+    type: "reel",
+    category: "Product Showcases",
+    title: "Jewellery Showcase",
+    src: SPA_REEL2,
+    poster: SPA_REELPOSTER2,
+    alt: "D.sparkles jewellery showcase reel",
+    aspect: "portrait",
+    date: null,
+    tags: ["jewellery", "product", "reel"],
+  },
+  {
+    id: "sparkles-reel-03",
+    type: "reel",
+    category: "Product Showcases",
+    title: "Jewellery Showcase",
+    src: SPA_REEL3,
+    poster: SPA_REELPOSTER3,
     alt: "D.sparkles jewellery showcase reel",
     aspect: "portrait",
     date: null,
@@ -850,8 +894,56 @@ contentGallery: [
     type: "video",
     category: "Brand Films",
     title: "Behind the Craft",
-    src: "/content/sparkles/brand-film-01.mp4",
-    poster: "/content/sparkles/brand-film-01.webp",
+    src: SPA_VID1,
+    poster: SPA_VIDPOSTER1,
+    alt: "D.sparkles jewellery brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["craft", "jewellery", "brand story"],
+  },
+  {
+    id: "sparkles-video-02",
+    type: "video",
+    category: "Brand Films",
+    title: "Behind the Craft",
+    src: SPA_VID2,
+    poster: SPA_VIDPOSTER2,
+    alt: "D.sparkles jewellery brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["craft", "jewellery", "brand story"],
+  },
+  {
+    id: "sparkles-video-03",
+    type: "video",
+    category: "Brand Films",
+    title: "Behind the Craft",
+    src: SPA_VID3,
+    poster: SPA_VIDPOSTER3,
+    alt: "D.sparkles jewellery brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["craft", "jewellery", "brand story"],
+  },
+  {
+    id: "sparkles-video-04",
+    type: "video",
+    category: "Brand Films",
+    title: "Behind the Craft",
+    src: SPA_VID4,
+    poster: SPA_VIDPOSTER4,
+    alt: "D.sparkles jewellery brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["craft", "jewellery", "brand story"],
+  },
+  {
+    id: "sparkles-video-05",
+    type: "video",
+    category: "Brand Films",
+    title: "Behind the Craft",
+    src: SPA_VID5,
+    poster: SPA_VIDPOSTER5,
     alt: "D.sparkles jewellery brand video",
     aspect: "landscape",
     date: null,

@@ -16,6 +16,18 @@ import RTM8 from "./assets/RTM8.jpg";
 import RTM9 from "./assets/RTM9.jpg";
 import RTM10 from "./assets/RTM10.jpg";
 
+import RTM_REELS1 from "./assets/RTM_REELS1.mp4"
+import RTM_REELS2 from "./assets/RTM_REELS2.mp4"
+import RTM_REELS3 from "./assets/RTM_REELS3.mp4"
+import RTM_REELS4 from "./assets/RTM_REELS4.mov"
+
+import RTMGRA1 from "./assets/RTM_GRA1.png";
+import RTMGRA2 from "./assets/RTM_GRA2.jpg";
+import RTMGRA3 from "./assets/RTM_GRA3.jpg";
+import RTMGRA4 from "./assets/RTM_GRA4.jpg";
+import RTMGRA5 from "./assets/RTM_GRA5.jpg";
+import RTMGRA6 from "./assets/RTM_GRA6.gif";
+
 
 //BEAUTY
 import BEAUTY1 from "./assets/BEAUTY1.jpg";
@@ -50,9 +62,9 @@ import Haru6 from "./assets/Haru6.jpg";
 import Haru7 from "./assets/Haru7.jpg";
 import Haru8 from "./assets/Haru8.jpg";
 import Haru9 from "./assets/Haru9.jpg";
-import Haru10 from "./assets/Haru10.jpg";
-import Haru11 from "./assets/Haru11.jpg";
-import Haru12 from "./assets/Haru12.jpg";
+// import Haru10 from "./assets/Haru10.jpg";
+// import Haru11 from "./assets/Haru11.jpg";
+// import Haru12 from "./assets/Haru12.jpg";
 
 
 //SPARKLES
@@ -439,7 +451,43 @@ export const project = [
         type: "reel",
         category: "Campaigns",
         title: "Fashion Campaign Reel",
-        src: "/content/rtm/reel-01.mp4",
+        src: RTM_REELS1,
+        poster: "/content/rtm/reel-01.webp",
+        alt: "RTM fashion campaign reel",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "reel", "social media"],
+      },
+      {
+        id: "rtm-reel-02",
+        type: "reel",
+        category: "Campaigns",
+        title: "Fashion Campaign Reel",
+        src: RTM_REELS2,
+        poster: "/content/rtm/reel-01.webp",
+        alt: "RTM fashion campaign reel",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "reel", "social media"],
+      },
+      {
+        id: "rtm-reel-03",
+        type: "reel",
+        category: "Campaigns",
+        title: "Fashion Campaign Reel",
+        src: RTM_REELS3,
+        poster: "/content/rtm/reel-01.webp",
+        alt: "RTM fashion campaign reel",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "reel", "social media"],
+      },
+      {
+        id: "rtm-reel-04",
+        type: "reel",
+        category: "Campaigns",
+        title: "Fashion Campaign Reel",
+        src: RTM_REELS4,
         poster: "/content/rtm/reel-01.webp",
         alt: "RTM fashion campaign reel",
         aspect: "portrait",
@@ -465,7 +513,62 @@ export const project = [
         type: "graphic",
         category: "Graphics",
         title: "Social Media Creative",
-        src: "/content/rtm/graphic-01.webp",
+        src: RTMGRA1,
+        alt: "RTM social media campaign graphic",
+        aspect: "square",
+        date: null,
+        tags: ["design", "social media", "campaign"],
+      },
+      {
+        id: "rtm-graphic-02",
+        type: "graphic",
+        category: "Graphics",
+        title: "Social Media Creative",
+        src: RTMGRA2,
+        alt: "RTM social media campaign graphic",
+        aspect: "square",
+        date: null,
+        tags: ["design", "social media", "campaign"],
+      },
+      {
+        id: "rtm-graphic-03",
+        type: "graphic",
+        category: "Graphics",
+        title: "Social Media Creative",
+        src: RTMGRA3,
+        alt: "RTM social media campaign graphic",
+        aspect: "square",
+        date: null,
+        tags: ["design", "social media", "campaign"],
+      },
+      {
+        id: "rtm-graphic-04",
+        type: "graphic",
+        category: "Graphics",
+        title: "Social Media Creative",
+        src: RTMGRA4,
+        alt: "RTM social media campaign graphic",
+        aspect: "square",
+        date: null,
+        tags: ["design", "social media", "campaign"],
+      },
+      {
+        id: "rtm-graphic-05",
+        type: "graphic",
+        category: "Graphics",
+        title: "Social Media Creative",
+        src: RTMGRA5,
+        alt: "RTM social media campaign graphic",
+        aspect: "square",
+        date: null,
+        tags: ["design", "social media", "campaign"],
+      },
+      {
+        id: "rtm-graphic-06",
+        type: "graphic",
+        category: "Graphics",
+        title: "Social Media Creative",
+        src: RTMGRA6,
         alt: "RTM social media campaign graphic",
         aspect: "square",
         date: null,

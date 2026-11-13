@@ -16,6 +16,11 @@ import RTM8 from "./assets/RTM8.jpg";
 import RTM9 from "./assets/RTM9.jpg";
 import RTM10 from "./assets/RTM10.jpg";
 
+import RTM_POSTER1 from "./assets/RTM_POSTER1.jpg"
+import RTM_POSTER2 from "./assets/RTM_POSTER2.jpg"
+import RTM_POSTER3 from "./assets/RTM_POSTER3.jpg"
+import RTM_POSTER4 from "./assets/RTM_POSTER4.jpg"
+
 import RTM_REELS1 from "./assets/RTM_REELS1.mp4"
 import RTM_REELS2 from "./assets/RTM_REELS2.mp4"
 import RTM_REELS3 from "./assets/RTM_REELS3.mp4"
@@ -452,7 +457,7 @@ export const project = [
         category: "Campaigns",
         title: "Fashion Campaign Reel",
         src: RTM_REELS1,
-        poster: "/content/rtm/reel-01.webp",
+        poster: RTM_POSTER1,
         alt: "RTM fashion campaign reel",
         aspect: "portrait",
         date: null,
@@ -464,7 +469,7 @@ export const project = [
         category: "Campaigns",
         title: "Fashion Campaign Reel",
         src: RTM_REELS2,
-        poster: "/content/rtm/reel-01.webp",
+        poster: RTM_POSTER2,
         alt: "RTM fashion campaign reel",
         aspect: "portrait",
         date: null,
@@ -476,7 +481,7 @@ export const project = [
         category: "Campaigns",
         title: "Fashion Campaign Reel",
         src: RTM_REELS3,
-        poster: "/content/rtm/reel-01.webp",
+        poster: RTM_POSTER3,
         alt: "RTM fashion campaign reel",
         aspect: "portrait",
         date: null,
@@ -488,7 +493,7 @@ export const project = [
         category: "Campaigns",
         title: "Fashion Campaign Reel",
         src: RTM_REELS4,
-        poster: "/content/rtm/reel-01.webp",
+        poster:RTM_POSTER4,
         alt: "RTM fashion campaign reel",
         aspect: "portrait",
         date: null,

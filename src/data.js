@@ -118,6 +118,14 @@ import SPA_VID3 from "./assets/SPA_VID3.mp4"
 import SPA_VID4 from "./assets/SPA_VID4.mp4"
 import SPA_VID5 from "./assets/SPA_VID1.mp4"
 
+import SPA_GRA1 from "./assets/SPA_GRA1.jpg"
+import SPA_GRA2 from "./assets/SPA_GRA2.jpg"
+import SPA_GRA3 from "./assets/SPA_GRA3.jpg"
+import SPA_GRA4 from "./assets/SPA_GRA4.jpg"
+import SPA_GRA5 from "./assets/SPA_GRA5.jpg"
+import SPA_GRA6 from "./assets/SPA_GRA6.jpg"
+import SPA_GRA7 from "./assets/SPA_GRA7.jpg"
+
 
 //VAMP
 import Vamp1 from "./assets/Vamp1.jpg"
@@ -955,7 +963,73 @@ contentGallery: [
     type: "graphic",
     category: "Graphics",
     title: "Jewellery Promotion",
-    src: "/content/sparkles/graphic-01.webp",
+    src: SPA_GRA1,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-02",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA2,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-03",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA3,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-04",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA4,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-05",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA5,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-06",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA6,
+    alt: "D.sparkles promotional graphic",
+    aspect: "square",
+    date: null,
+    tags: ["promotion", "design", "jewellery"],
+  },
+    {
+    id: "sparkles-graphic-07",
+    type: "graphic",
+    category: "Graphics",
+    title: "Jewellery Promotion",
+    src: SPA_GRA7,
     alt: "D.sparkles promotional graphic",
     aspect: "square",
     date: null,

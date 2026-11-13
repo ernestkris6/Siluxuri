@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 // import heroMobile from "../../assets/hero-mobile.mp4";
-import HomePoster from "../../assets/HomePoster.jpg"
 import digi from "../../assets/servicesvideo.mp4";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
+import HomePoster from "../../assets/HomePoster.jpg"
 
 //
 //

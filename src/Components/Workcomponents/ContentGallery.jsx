@@ -7,7 +7,7 @@ import ContentGalleryHero from "./ContentGalleryComponents/ContentGalleryHero";
 import MediaViewer from "./ContentGalleryComponents/MediaViewer";
 import ContentGalleryCTA from "./ContentGalleryComponents/ContentGalleryCTA";
 import CustomDropdown from "./ContentGalleryComponents/CustomDropdown";
-import { FiArrowLeft, FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import { FiArrowLeft, FiArrowRight, FiArrowUpRight, FiPlay } from "react-icons/fi";
 
 const MEDIA_FILTERS = [
   { label: "All content", value: "all" },
@@ -273,7 +273,7 @@ function MediaCarousel({
               </span>
 
               <span className="absolute left-1/2 top-1/2 flex size-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/15 text-white backdrop-blur-md transition-transform duration-300 group-hover:scale-110">
-                ▶
+                <FiPlay />
               </span>
 
               <div className="absolute inset-x-0 bottom-0 p-5 text-white">

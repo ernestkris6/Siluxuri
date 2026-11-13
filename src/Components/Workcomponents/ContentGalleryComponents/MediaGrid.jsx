@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiPlay } from "react-icons/fi";
 
 export default function MediaGrid({ items = [], onOpenMedia }) {
   if (!items.length) return null;
@@ -68,7 +68,9 @@ export default function MediaGrid({ items = [], onOpenMedia }) {
               {isVideo && (
                 <span className="absolute inset-0 flex items-center justify-center">
                   <span className="flex size-11 items-center justify-center rounded-full border border-white/80 bg-black/25 text-white backdrop-blur-sm transition-transform duration-300 group-hover:scale-110 sm:size-14">
-                    <span className="ml-1 text-lg">▶</span>
+                    <span className="ml-1 text-lg">
+                      <FiPlay />
+                    </span>
                   </span>
                 </span>
               )}

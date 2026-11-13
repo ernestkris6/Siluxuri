@@ -26,6 +26,19 @@ import RTM_REELS2 from "./assets/RTM_REELS2.mp4"
 import RTM_REELS3 from "./assets/RTM_REELS3.mp4"
 import RTM_REELS4 from "./assets/RTM_REELS4.mov"
 
+import RTM_VIDPOSTER1 from "./assets/RTM_VIDPOSTER1.jpg"
+import RTM_VIDPOSTER2 from "./assets/RTM_VIDPOSTER2.jpg"
+import RTM_VIDPOSTER3 from "./assets/RTM_VIDPOSTER3.jpg"
+import RTM_VIDPOSTER4 from "./assets/RTM_VIDPOSTER4.jpg"
+import RTM_VIDPOSTER5 from "./assets/RTM_VIDPOSTER5.jpg"
+
+import RTM_VID1 from "./assets/RTM_VID1.mp4"
+import RTM_VID2 from "./assets/RTM_VID2.mp4"
+import RTM_VID3 from "./assets/RTM_VID3.mp4"
+import RTM_VID4 from "./assets/RTM_VID4.mp4"
+import RTM_VID5 from "./assets/RTM_VID5.mp4"
+
+
 import RTMGRA1 from "./assets/RTM_GRA1.png";
 import RTMGRA2 from "./assets/RTM_GRA2.jpg";
 import RTMGRA3 from "./assets/RTM_GRA3.jpg";
@@ -505,8 +518,56 @@ export const project = [
         type: "video",
         category: "Brand Films",
         title: "Luxury Brand Film",
-        src: "/content/rtm/brand-film-01.mp4",
-        poster: "/content/rtm/brand-film-01.webp",
+        src: RTM_VID1,
+        poster: RTM_VIDPOSTER1,
+        alt: "RTM Fashion Concierge brand film",
+        aspect: "landscape",
+        date: null,
+        tags: ["luxury", "brand film", "fashion"],
+      },
+      {
+        id: "rtm-video-02",
+        type: "video",
+        category: "Brand Films",
+        title: "Luxury Brand Film",
+        src: RTM_VID2,
+        poster: RTM_VIDPOSTER2,
+        alt: "RTM Fashion Concierge brand film",
+        aspect: "landscape",
+        date: null,
+        tags: ["luxury", "brand film", "fashion"],
+      },
+      {
+        id: "rtm-video-03",
+        type: "video",
+        category: "Brand Films",
+        title: "Luxury Brand Film",
+        src: RTM_VID3,
+        poster: RTM_VIDPOSTER3,
+        alt: "RTM Fashion Concierge brand film",
+        aspect: "landscape",
+        date: null,
+        tags: ["luxury", "brand film", "fashion"],
+      },
+      {
+        id: "rtm-video-04",
+        type: "video",
+        category: "Brand Films",
+        title: "Luxury Brand Film",
+        src: RTM_VID4,
+        poster: RTM_VIDPOSTER4,
+        alt: "RTM Fashion Concierge brand film",
+        aspect: "landscape",
+        date: null,
+        tags: ["luxury", "brand film", "fashion"],
+      },
+      {
+        id: "rtm-video-05",
+        type: "video",
+        category: "Brand Films",
+        title: "Luxury Brand Film",
+        src: RTM_VID5,
+        poster: RTM_VIDPOSTER5,
         alt: "RTM Fashion Concierge brand film",
         aspect: "landscape",
         date: null,

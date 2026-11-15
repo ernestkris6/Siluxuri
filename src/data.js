@@ -138,10 +138,51 @@ import Vamp7 from "./assets/Vamp7.jpg"
 import Vamp8 from "./assets/Vamp8.jpg"
 import Vamp9 from "./assets/Vamp9.jpg"
 
+import VAMP_REEL1 from "./assets/VAMP_REEL1.mp4"
+import VAMP_REEL2 from "./assets/VAMP_REEL2.mp4"
+import VAMP_REEL3 from "./assets/VAMP_REEL3.mp4"
+import VAMP_REEL4 from "./assets/VAMP_REEL4.mp4"
+import VAMP_REEL5 from "./assets/VAMP_REEL5.mp4"
+import VAMP_REEL6 from "./assets/VAMP_REEL6.mp4"
+
+import VAMP_REELPOSTER1 from "./assets/VAMP_REELPOSTER1.jpg"
+import VAMP_REELPOSTER2 from "./assets/VAMP_REELPOSTER2.jpg"
+import VAMP_REELPOSTER3 from "./assets/VAMP_REELPOSTER3.jpg"
+import VAMP_REELPOSTER4 from "./assets/VAMP_REELPOSTER4.jpg"
+import VAMP_REELPOSTER5 from "./assets/VAMP_REELPOSTER5.jpg"
+import VAMP_REELPOSTER6 from "./assets/VAMP_REELPOSTER6.jpg"
+
+import VAMP_VIDPOSTER1 from "./assets/VAMP_VIDPOSTER1.jpg"
+import VAMP_VIDPOSTER2 from "./assets/VAMP_VIDPOSTER2.jpg"
+import VAMP_VIDPOSTER3 from "./assets/VAMP_VIDPOSTER3.jpg"
+import VAMP_VIDPOSTER4 from "./assets/VAMP_VIDPOSTER4.jpg"
+import VAMP_VIDPOSTER5 from "./assets/VAMP_VIDPOSTER5.jpg"
+import VAMP_VIDPOSTER6 from "./assets/VAMP_VIDPOSTER6.jpg"
+import VAMP_VIDPOSTER7 from "./assets/VAMP_VIDPOSTER7.jpg"
+
+import VAMP_VID1 from "./assets/VAMP_VID1.mp4"
+import VAMP_VID2 from "./assets/VAMP_VID2.mp4"
+import VAMP_VID3 from "./assets/VAMP_VID3.mp4"
+import VAMP_VID4 from "./assets/VAMP_VID4.mp4"
+import VAMP_VID5 from "./assets/VAMP_VID5.mp4"
+import VAMP_VID6 from "./assets/VAMP_VID6.mp4"
+import VAMP_VID7 from "./assets/VAMP_VID7.mp4"
+
+import VAMP_GRA1 from "./assets/VAMP_GRA1.jpg"
+import VAMP_GRA2 from "./assets/VAMP_GRA2.jpg"
+import VAMP_GRA3 from "./assets/VAMP_GRA3.jpg"
+import VAMP_GRA4 from "./assets/VAMP_GRA4.jpg"
+import VAMP_GRA5 from "./assets/VAMP_GRA5.jpg"
+import VAMP_GRA6 from "./assets/VAMP_GRA6.jpg"
+import VAMP_GRA7 from "./assets/VAMP_GRA7.jpg"
+import VAMP_GRA8 from "./assets/VAMP_GRA8.jpg"
+import VAMP_GRA9 from "./assets/VAMP_GRA9.jpg"
+
+
 import Orihana from "./assets/Orihana.jpg"
 import Orihana2 from "./assets/Orihana2.jpg";
 
-import videoss from "./assets/vid2_web.mp4";
+
 
 
 
@@ -1463,8 +1504,8 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "Product Showcase Reel",
-    src: "/content/vamp/reel-01.mp4",
-    poster: "/content/vamp/reel-01.webp",
+    src: VAMP_REEL1,
+    poster: VAMP_REELPOSTER1,
     alt: "VAMP product showcase reel",
     aspect: "portrait",
     date: '12-11-2005',
@@ -1475,8 +1516,8 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "Product Showcase Reel",
-    src: "/content/vamp/reel-02.mp4",
-    poster: "/content/vamp/reel-02.webp",
+    src: VAMP_REEL2,
+    poster: VAMP_REELPOSTER2,
     alt: "VAMP product showcase reel",
     aspect: "portrait",
     date: '12-11-2024',
@@ -1487,11 +1528,47 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "Product Showcase Reel",
-    src: "/content/vamp/reel-03.mp4",
-    poster: "/content/vamp/reel-03.webp",
+    src: VAMP_REEL3,
+    poster: VAMP_REELPOSTER3,
     alt: "VAMP product showcase reel",
     aspect: "portrait",
     date: '12-11-2026',
+    tags: ["products", "lifestyle", "reel"],
+  },
+    {
+    id: "vamp-reel-04",
+    type: "reel",
+    category: "Product Showcases",
+    title: "Product Showcase Reel",
+    src: VAMP_REEL4,
+    poster: VAMP_REELPOSTER4,
+    alt: "VAMP product showcase reel",
+    aspect: "portrait",
+    date: '12-11-2005',
+    tags: ["products", "lifestyle", "reel"],
+  },
+    {
+    id: "vamp-reel-05",
+    type: "reel",
+    category: "Product Showcases",
+    title: "Product Showcase Reel",
+    src: VAMP_REEL5,
+    poster: VAMP_REELPOSTER5,
+    alt: "VAMP product showcase reel",
+    aspect: "portrait",
+    date: '12-11-2005',
+    tags: ["products", "lifestyle", "reel"],
+  },
+    {
+    id: "vamp-reel-06",
+    type: "reel",
+    category: "Product Showcases",
+    title: "Product Showcase Reel",
+    src: VAMP_REEL6,
+    poster: VAMP_REELPOSTER6,
+    alt: "VAMP product showcase reel",
+    aspect: "portrait",
+    date: '12-11-2005',
     tags: ["products", "lifestyle", "reel"],
   },
   
@@ -1501,33 +1578,81 @@ contentGallery: [
     type: "video",
     category: "Brand Films",
     title: "Lifestyle Brand Film",
-    src: videoss,
+    src: VAMP_VID1,
     // src: "/content/vamp/brand-film-01.mp4",
-    poster: "/content/vamp/brand-film-01.webp",
+    poster: VAMP_VIDPOSTER1,
     alt: "VAMP lifestyle brand video",
     aspect: "landscape",
     date: '12-11-2020',
     tags: ["brand", "lifestyle", "video"],
   },
-    {
+  {
     id: "vamp-video-02",
     type: "video",
     category: "Brand Films",
     title: "Lifestyle Brand Film",
-    src: "/content/vamp/brand-film-02.mp4",
-    poster: "/content/vamp/brand-film-02.webp",
+    src: VAMP_VID2,
+    poster: VAMP_VIDPOSTER2,
     alt: "VAMP lifestyle brand video",
     aspect: "landscape",
     date: '12-11-2008',
     tags: ["brand", "lifestyle", "video"],
   },
-    {
+  {
     id: "vamp-video-03",
     type: "video",
     category: "Brand Films",
     title: "Lifestyle Brand Film",
-    src: "/content/vamp/brand-film-03.mp4",
-    poster: "/content/vamp/brand-film-03.webp",
+    src: VAMP_VID3,
+    poster: VAMP_VIDPOSTER3,
+    alt: "VAMP lifestyle brand video",
+    aspect: "landscape",
+    date: '12-11-2006',
+    tags: ["brand", "lifestyle", "video"],
+  },
+  {
+    id: "vamp-video-04",
+    type: "video",
+    category: "Brand Films",
+    title: "Lifestyle Brand Film",
+    src: VAMP_VID4,
+    poster: VAMP_VIDPOSTER4,
+    alt: "VAMP lifestyle brand video",
+    aspect: "landscape",
+    date: '12-11-2006',
+    tags: ["brand", "lifestyle", "video"],
+  },
+  {
+    id: "vamp-video-05",
+    type: "video",
+    category: "Brand Films",
+    title: "Lifestyle Brand Film",
+    src: VAMP_VID5,
+    poster: VAMP_VIDPOSTER5,
+    alt: "VAMP lifestyle brand video",
+    aspect: "landscape",
+    date: '12-11-2006',
+    tags: ["brand", "lifestyle", "video"],
+  },
+  {
+    id: "vamp-video-06",
+    type: "video",
+    category: "Brand Films",
+    title: "Lifestyle Brand Film",
+    src: VAMP_VID6,
+    poster: VAMP_VIDPOSTER6,
+    alt: "VAMP lifestyle brand video",
+    aspect: "landscape",
+    date: '12-11-2006',
+    tags: ["brand", "lifestyle", "video"],
+  },
+  {
+    id: "vamp-video-07",
+    type: "video",
+    category: "Brand Films",
+    title: "Lifestyle Brand Film",
+    src: VAMP_VID7,
+    poster: VAMP_VIDPOSTER7,
     alt: "VAMP lifestyle brand video",
     aspect: "landscape",
     date: '12-11-2006',
@@ -1539,12 +1664,102 @@ contentGallery: [
     type: "graphic",
     category: "Graphics",
     title: "Social Media Creative",
-    src: "/content/vamp/graphic-01.webp",
+    src: VAMP_GRA1,
     alt: "VAMP social media creative",
     aspect: "square",
     date: null,
     tags: ["social media", "design", "promotion"],
   },
+  {
+    id: "vamp-graphic-02",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA2,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-03",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA3,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-04",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA4,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-05",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA5,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-06",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA6,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-07",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA7,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-08",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA8,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+   {
+    id: "vamp-graphic-09",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: VAMP_GRA9,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+
+
 ],
 
     
@@ -2045,93 +2260,4 @@ contentGallery: [
     },
   ],
 },
-
-//    {
-//     slug: "orihana",
-//     name: "ORIHANA",
-//     shortName: "ORIHANA",
-//     category: "Beauty & skin Care ",
-//     location: "Nigeria",
-//     description:
-//       "A hair styling and beauty brand where elegance meets expertise, celebrating individuality and personal expression.",
-//     message: "Celebrate your individuality with hair and beauty experiences shaped by elegance, care, and personal style.",
-//     brandGuide: "/brand-guides/orihana_brand_guide.pdf",
-
-//     services: [
-//       "Brand Videos",
-//       "Beauty Content"
-//     ],
-
-//     merchandiseDesignDetails: [
-//       "Orihana Beauty sought to refine its visual identity to better communicate the quality of its services, strengthen its market positioning, and establish a more distinctive presence within the beauty industry. ",
-//       "Siluxri Creative Studio undertook a brand identity redesign, refining the brand’s visual direction and developing a clean, contemporary identity that communicates professionalism, elegance, and confidence."
-
-//     ],
-
-//     metrics: [],
-
-//     results: [
-//       "Developed a refined and professional brand identity.",
-//       "Established a clearer visual direction that better communicates the brand’s expertise and values.",
-//       "Strengthened the brand’s visual positioning within the beauty industry.",
-//       "Created a more cohesive identity to support future brand communications and marketing activities.",
-
-//     ],
-
-//     theme: {
-//       background: "#BCDFA5",   //background
-//       foreground: "#6B352A",   //Major texts/bottom banner
-//       accent: "6B352A",       //Tiny headings
-//       secondary: "#FFF",    //Button underline/services-list section 
-//       displayFont: "Roboto",  //Texts
-//     },
-
-//     cover: Orihana,
-//     gallery: [
-//       // BEAUTY1,
-//       // BEAUTY2,
-//       // orihana,
-//       // orihanaLogo,
-//     ],
-
-    
-// contentGallery: [
-//   {
-//     id: "orihana-identity-01",
-//     type: "graphic",
-//     category: "Brand Identity",
-//     title: "Brand Identity Design",
-//     src: "/content/orihana/brand-identity-01.webp",
-//     alt: "orihana Beauty brand identity design",
-//     aspect: "landscape",
-//     date: null,
-//     tags: ["branding", "identity", "beauty"],
-//     featured: true,
-//   },
-//   {
-//     id: "orihana-visual-01",
-//     type: "image",
-//     category: "Brand Identity",
-//     title: "Visual Identity Application",
-//     src: "/content/orihana/visual-identity-01.webp",
-//     alt: "orihana Beauty visual identity application",
-//     aspect: "portrait",
-//     date: null,
-//     tags: ["visual identity", "beauty", "branding"],
-//   },
-//   {
-//     id: "orihana-graphic-01",
-//     type: "graphic",
-//     category: "Graphics",
-//     title: "Brand Graphic",
-//     src: "/content/orihana/graphic-01.webp",
-//     alt: "orihana Beauty brand graphic",
-//     aspect: "square",
-//     date: null,
-//     tags: ["graphic design", "beauty", "brand"],
-//   },
-// ],
-
-//   },
-];
-
+]

@@ -188,6 +188,7 @@ import SPA_GRA7 from "./assets/SPA_GRA7.jpg"
 
 
 //VAMP
+import Vamp from "./assets/Vamp.webp"
 import Vamp1 from "./assets/Vamp1.jpg"
 import Vamp2 from "./assets/Vamp2.jpg"
 import Vamp3 from "./assets/Vamp3.jpg"
@@ -1763,7 +1764,7 @@ contentGallery: [
     type: "image",
     category: "Campaigns",
     title: "Lifestyle Campaign",
-    src:Vamp2,
+    src:Vamp,
     alt: "VAMP lifestyle retail campaign",
     aspect: "portrait",
     date: null,
@@ -2114,6 +2115,18 @@ contentGallery: [
     date: null,
     tags: ["social media", "design", "promotion"],
   },
+    {
+    id: "vamp-graphic-09",
+    type: "graphic",
+    category: "Graphics",
+    title: "Social Media Creative",
+    src: Vamp2,
+    alt: "VAMP social media creative",
+    aspect: "square",
+    date: null,
+    tags: ["social media", "design", "promotion"],
+  },
+
 
 
 ],

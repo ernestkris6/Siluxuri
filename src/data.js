@@ -94,7 +94,14 @@ import Haru9 from "./assets/Haru9.jpg";
 // import HARU_REEL8 from "./assets/HARU_REEL8.mp4"
 
 import HAR_REEL1 from "./assets/HAR_REEL1.mp4";
-import HAR_REEL2 from "./assets/HAR_REEL2.mp4"
+import HAR_REEL2 from "./assets/HAR_REEL2.mp4";
+import HAR_REEL3 from "./assets/HAR_REEL3.mp4"
+import HAR_REEL4 from "./assets/HAR_REEL4.mp4"
+import HAR_REEL5 from "./assets/HAR_REEL5.mp4"
+import HAR_REEL6 from "./assets/HAR_REEL6.mp4"
+import HAR_REEL7 from "./assets/HAR_REEL7.mp4"
+import HAR_REEL8 from "./assets/HAR_REEL8.mp4"
+
 
 import HARU_REELPOSTER1  from "./assets/HARU_REELPOSTER1.jpg"
 import HARU_REELPOSTER2  from "./assets/HARU_REELPOSTER2.jpg"
@@ -1326,7 +1333,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL2,
+    src: HAR_REEL3,
     poster: HARU_REELPOSTER3,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",
@@ -1338,7 +1345,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL3,
+    src: HAR_REEL4,
     poster: HARU_REELPOSTER4,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",
@@ -1350,7 +1357,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL4,
+    src: HAR_REEL5,
     poster: HARU_REELPOSTER5,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",
@@ -1362,7 +1369,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL5,
+    src: HAR_REEL6,
     poster: HARU_REELPOSTER6,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",
@@ -1374,7 +1381,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL6,
+    src: HAR_REEL7,
     poster: HARU_REELPOSTER7,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",
@@ -1386,7 +1393,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL7,
+    src: HAR_REEL8,
     poster: HARU_REELPOSTER8,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",

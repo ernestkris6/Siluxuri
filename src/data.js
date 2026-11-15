@@ -84,7 +84,7 @@ import Haru9 from "./assets/Haru9.jpg";
 // import Haru11 from "./assets/Haru11.jpg";
 // import Haru12 from "./assets/Haru12.jpg";
 
-// import HARU_REEL1 from "./assets/HARU_REEL1.mp4"
+import HARU_REEL1 from "./assets/HARU_REEL1.mp4"
 // import HARU_REEL2 from "./assets/HARU_REEL2.mp4"
 // import HARU_REEL3 from "./assets/HARU_REEL3.mp4"
 // import HARU_REEL4 from "./assets/HARU_REEL4.mp4"
@@ -93,7 +93,7 @@ import Haru9 from "./assets/Haru9.jpg";
 // import HARU_REEL7 from "./assets/HARU_REEL7.mp4"
 // import HARU_REEL8 from "./assets/HARU_REEL8.mp4"
 
-// import HARU_REELPOSTER1  from "./assets/HARU_REELPOSTER1.jpg"
+import HARU_REELPOSTER1  from "./assets/HARU_REELPOSTER1.jpg"
 // import HARU_REELPOSTER2  from "./assets/HARU_REELPOSTER2.jpg"
 // import HARU_REELPOSTER3  from "./assets/HARU_REELPOSTER3.jpg"
 // import HARU_REELPOSTER4  from "./assets/HARU_REELPOSTER4.jpg"
@@ -1292,6 +1292,20 @@ contentGallery: [
     featured: true,
   },
   //reel
+
+  {
+    id: "haru-reel-01",
+    type: "reel",
+    category: "Product Showcases",
+    title: "K-Beauty Product Reel",
+    src: HARU_REEL1,
+    poster: HARU_REELPOSTER1,
+    alt: "HARU Africa K-beauty product reel",
+    aspect: "portrait",
+    date: null,
+    tags: ["K-beauty", "products", "reel"],
+  },
+
   // {
   //   id: "haru-reel-01",
   //   type: "reel",

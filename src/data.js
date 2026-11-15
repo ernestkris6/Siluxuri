@@ -88,7 +88,7 @@ import HARU_REEL1 from "./assets/HARU_REEL1.mp4"
 import HARU_REEL2 from "./assets/HARU_REEL2.mp4"
 import HARU_REEL3 from "./assets/HARU_REEL3.mp4"
 import HARU_REEL4 from "./assets/HARU_REEL4.mp4"
-import HARU_REEL5 from "./assets/HARU_REEL5.mp4"
+// import HARU_REEL5 from "./assets/HARU_REEL5.mp4"
 import HARU_REEL6 from "./assets/HARU_REEL6.mp4"
 import HARU_REEL7 from "./assets/HARU_REEL7.mp4"
 import HARU_REEL8 from "./assets/HARU_REEL8.mp4"
@@ -97,7 +97,7 @@ import HARU_REELPOSTER1  from "./assets/HARU_REELPOSTER1.jpg"
 import HARU_REELPOSTER2  from "./assets/HARU_REELPOSTER2.jpg"
 import HARU_REELPOSTER3  from "./assets/HARU_REELPOSTER3.jpg"
 import HARU_REELPOSTER4  from "./assets/HARU_REELPOSTER4.jpg"
-import HARU_REELPOSTER5  from "./assets/HARU_REELPOSTER5.jpg"
+// import HARU_REELPOSTER5  from "./assets/HARU_REELPOSTER5.jpg"
 import HARU_REELPOSTER6  from "./assets/HARU_REELPOSTER6.jpg"
 import HARU_REELPOSTER7  from "./assets/HARU_REELPOSTER7.jpg"
 import HARU_REELPOSTER8  from "./assets/HARU_REELPOSTER8.jpg"
@@ -1340,18 +1340,18 @@ contentGallery: [
     date: null,
     tags: ["K-beauty", "products", "reel"],
   },
-  {
-    id: "haru-reel-05",
-    type: "reel",
-    category: "Product Showcases",
-    title: "K-Beauty Product Reel",
-    src: HARU_REEL5,
-    poster: HARU_REELPOSTER5,
-    alt: "HARU Africa K-beauty product reel",
-    aspect: "portrait",
-    date: null,
-    tags: ["K-beauty", "products", "reel"],
-  },
+  // {
+  //   id: "haru-reel-05",
+  //   type: "reel",
+  //   category: "Product Showcases",
+  //   title: "K-Beauty Product Reel",
+  //   src: HARU_REEL5,
+  //   poster: HARU_REELPOSTER5,
+  //   alt: "HARU Africa K-beauty product reel",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["K-beauty", "products", "reel"],
+  // },
   {
     id: "haru-reel-06",
     type: "reel",

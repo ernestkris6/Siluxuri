@@ -112,6 +112,28 @@ import HARU_REELPOSTER6  from "./assets/HARU_REELPOSTER6.jpg"
 import HARU_REELPOSTER7  from "./assets/HARU_REELPOSTER7.jpg"
 import HARU_REELPOSTER8  from "./assets/HARU_REELPOSTER8.jpg"
 
+import HAR_VID1 from "./assets/HAR_VID1.mp4"
+import HAR_VID2 from "./assets/HAR_VID2.mp4"
+import HAR_VID3 from "./assets/HAR_VID3.mp4"
+import HAR_VID4 from "./assets/HAR_VID4.mp4"
+import HAR_VID5 from "./assets/HAR_VID5.mp4"
+import HAR_VID6 from "./assets/HAR_VID6.mp4"
+import HAR_VID7 from "./assets/HAR_VID7.mp4"
+import HAR_VID8 from "./assets/HAR_VID8.mp4"
+import HAR_VID9 from "./assets/HAR_VID9.mp4"
+import HAR_VID10 from "./assets/HAR_VID10.mp4"
+
+import HAR_VIDPOSTER1 from "./assets/HAR_VIDPOSTER1.jpg";
+import HAR_VIDPOSTER2 from "./assets/HAR_VIDPOSTER2.jpg";
+import HAR_VIDPOSTER3 from "./assets/HAR_VIDPOSTER3.jpg";
+import HAR_VIDPOSTER4 from "./assets/HAR_VIDPOSTER4.jpg";
+import HAR_VIDPOSTER5 from "./assets/HAR_VIDPOSTER5.jpg";
+import HAR_VIDPOSTER6 from "./assets/HAR_VIDPOSTER6.jpg";
+import HAR_VIDPOSTER7 from "./assets/HAR_VIDPOSTER7.jpg";
+import HAR_VIDPOSTER8 from "./assets/HAR_VIDPOSTER8.jpg";
+import HAR_VIDPOSTER9 from "./assets/HAR_VIDPOSTER9.jpg";
+import HAR_VIDPOSTER10 from "./assets/HAR_VIDPOSTER10.jpg";
+
 
 //SPARKLES
 import SpaHero from "./assets/SparklesHeroImg.webp";
@@ -1400,32 +1422,129 @@ contentGallery: [
     date: null,
     tags: ["K-beauty", "products", "reel"],
   },
-  // {
-  //   id: "haru-reel-08",
-  //   type: "reel",
-  //   category: "Product Showcases",
-  //   title: "K-Beauty Product Reel",
-  //   // src: HARU_REEL8,
-  //   poster: HARU_REELPOSTER8,
-  //   alt: "HARU Africa K-beauty product reel",
-  //   aspect: "portrait",
-  //   date: null,
-  //   tags: ["K-beauty", "products", "reel"],
-  // },
-  
+
   //video
   {
     id: "haru-video-01",
     type: "video",
     category: "Brand Films",
     title: "Discover Korean Lifestyle",
-    src: "/content/haru/brand-film-01.mp4",
-    poster: "/content/haru/brand-film-01.webp",
+    src: HAR_VID1,
+    poster: HAR_VIDPOSTER1,
     alt: "HARU Africa Korean lifestyle brand video",
     aspect: "landscape",
     date: null,
     tags: ["Korean culture", "lifestyle", "brand"],
   },
+  {
+    id: "haru-video-02",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID2,
+    poster: HAR_VIDPOSTER2,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-03",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID3,
+    poster: HAR_VIDPOSTER3,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-04",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID4,
+    poster: HAR_VIDPOSTER4,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-05",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID5,
+    poster: HAR_VIDPOSTER5,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-06",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID6,
+    poster: HAR_VIDPOSTER6,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-07",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID7,
+    poster: HAR_VIDPOSTER7,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-08",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID8,
+    poster: HAR_VIDPOSTER8,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-09",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID9,
+    poster: HAR_VIDPOSTER9,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+  {
+    id: "haru-video-10",
+    type: "video",
+    category: "Brand Films",
+    title: "Discover Korean Lifestyle",
+    src: HAR_VID10,
+    poster: HAR_VIDPOSTER10,
+    alt: "HARU Africa Korean lifestyle brand video",
+    aspect: "landscape",
+    date: null,
+    tags: ["Korean culture", "lifestyle", "brand"],
+  },
+
   //graphic
   {
     id: "haru-graphic-01",

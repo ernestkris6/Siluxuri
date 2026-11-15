@@ -188,7 +188,7 @@ import SPA_GRA7 from "./assets/SPA_GRA7.jpg"
 
 
 //VAMP
-import Vamp from "./assets/Vamp.webp"
+import Vamp from "./assets/vamp.webp"
 import Vamp1 from "./assets/Vamp1.jpg"
 import Vamp2 from "./assets/Vamp2.jpg"
 import Vamp3 from "./assets/Vamp3.jpg"
@@ -1734,7 +1734,7 @@ contentGallery: [
     cover: Vamp3,
     gallery: [
      Vamp1,
-    //  Vamp2,
+     Vamp2,
      Vamp3,
      Vamp4,
      Vamp5,

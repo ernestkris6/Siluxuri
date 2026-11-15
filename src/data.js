@@ -94,6 +94,7 @@ import Haru9 from "./assets/Haru9.jpg";
 // import HARU_REEL8 from "./assets/HARU_REEL8.mp4"
 
 import HAR_REEL1 from "./assets/HAR_REEL1.mp4";
+import HAR_REEL2 from "./assets/HAR_REEL2.mp4"
 
 import HARU_REELPOSTER1  from "./assets/HARU_REELPOSTER1.jpg"
 import HARU_REELPOSTER2  from "./assets/HARU_REELPOSTER2.jpg"
@@ -1313,7 +1314,7 @@ contentGallery: [
     type: "reel",
     category: "Product Showcases",
     title: "K-Beauty Product Reel",
-    // src: HARU_REEL1,
+    src: HAR_REEL2,
     poster: HARU_REELPOSTER2,
     alt: "HARU Africa K-beauty product reel",
     aspect: "portrait",

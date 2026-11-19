@@ -1226,126 +1226,126 @@ contentGallery: [
     
 contentGallery: [
   //image
-  {
-    id: "haru-campaign-01",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru0,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-02",
-    type: "image",
-    category: "Campaigns",
-    title: "Campaigns",
-    src: Haru1,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-03",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru2,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-04",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru3,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-05",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru4,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-06",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru5,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-07",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru6,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-08",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru7,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-09",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru8,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
-  {
-    id: "haru-campaign-10",
-    type: "image",
-    category: "Campaigns",
-    title: "Korean Lifestyle Campaign",
-    src: Haru9,
-    alt: "HARU Africa Korean lifestyle campaign",
-    aspect: "portrait",
-    date: null,
-    tags: ["Korean lifestyle", "campaign", "products"],
-    featured: true,
-  },
+  // {
+  //   id: "haru-campaign-01",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru0,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-02",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Campaigns",
+  //   src: Haru1,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-03",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru2,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-04",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru3,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-05",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru4,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-06",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru5,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-07",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru6,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-08",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru7,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-09",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru8,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
+  // {
+  //   id: "haru-campaign-10",
+  //   type: "image",
+  //   category: "Campaigns",
+  //   title: "Korean Lifestyle Campaign",
+  //   src: Haru9,
+  //   alt: "HARU Africa Korean lifestyle campaign",
+  //   aspect: "portrait",
+  //   date: null,
+  //   tags: ["Korean lifestyle", "campaign", "products"],
+  //   featured: true,
+  // },
   //reel
 
   {
@@ -2357,7 +2357,6 @@ contentGallery: [
     brandGuide: "/brand-guides/chums_brand_guide.pdf",
 
     services: [
-      "Brand Guide",
       "Brand Identity Redesign"
     ],
 
@@ -2450,183 +2449,183 @@ contentGallery: [
 
   },
 
-  {
-  slug: "orihana",
-  name: "ORIHANA",
-  shortName: "ORIHANA",
-  category: "Skincare",
-  location: "Nigeria",
+//   {
+//   slug: "orihana",
+//   name: "ORIHANA",
+//   shortName: "ORIHANA",
+//   category: "Skincare",
+//   location: "Nigeria",
 
-  description:
-    "An African-made, Korean-inspired skincare brand focused on science-backed skincare for melanin-rich skin.",
+//   description:
+//     "An African-made, Korean-inspired skincare brand focused on science-backed skincare for melanin-rich skin.",
 
-  message:
-    "A thoughtful skincare experience inspired by Korean beauty principles and created with melanin-rich skin in mind.",
+//   message:
+//     "A thoughtful skincare experience inspired by Korean beauty principles and created with melanin-rich skin in mind.",
 
-  brandGuide: "/brand-guides/orihana_brand_guide.pdf",
+//   brandGuide: "/brand-guides/orihana_brand_guide.pdf",
 
-  services: [
-    "Content Creation",
-    "Merchandise Design"
-  ],
+//   services: [
+//     "Content Creation",
+//     "Merchandise Design"
+//   ],
 
-  merchandiseDesignDetails: [
-    "Orihana Beauty sought to refine its visual identity to better communicate the quality of its services, strengthen its market positioning, and establish a more distinctive presence within the beauty industry.",
-    "Siluxri Creative Studio undertook a brand identity redesign, refining the brand’s visual direction and developing a clean, contemporary identity that communicates professionalism, elegance, and confidence."
-  ],
+//   merchandiseDesignDetails: [
+//     "Orihana Beauty sought to refine its visual identity to better communicate the quality of its services, strengthen its market positioning, and establish a more distinctive presence within the beauty industry.",
+//     "Siluxri Creative Studio undertook a brand identity redesign, refining the brand’s visual direction and developing a clean, contemporary identity that communicates professionalism, elegance, and confidence."
+//   ],
 
-  metrics: [],
+//   metrics: [],
 
-  results: [
-    "Developed a refined and professional brand identity.",
-    "Established a clearer visual direction that better communicates the brand’s expertise and values.",
-    "Strengthened the brand’s visual positioning within the beauty industry.",
-    "Created a more cohesive identity to support future brand communications and marketing activities."
-  ],
+//   results: [
+//     "Developed a refined and professional brand identity.",
+//     "Established a clearer visual direction that better communicates the brand’s expertise and values.",
+//     "Strengthened the brand’s visual positioning within the beauty industry.",
+//     "Created a more cohesive identity to support future brand communications and marketing activities."
+//   ],
 
-  theme: {
-    background: "#BCDFA5",
-    foreground: "#6B352A",
-    accent: "#6B352A",
-    secondary: "#FFF",
-    displayFont: "Roboto",
-  },
+//   theme: {
+//     background: "#BCDFA5",
+//     foreground: "#6B352A",
+//     accent: "#6B352A",
+//     secondary: "#FFF",
+//     displayFont: "Roboto",
+//   },
 
-  cover: Orihana,
+//   cover: Orihana,
 
-  gallery: [
-    // BEAUTY1,
-    // BEAUTY2,
-    // orihana,
-    // orihanaLogo,
-  ],
+//   gallery: [
+//     // BEAUTY1,
+//     // BEAUTY2,
+//     // orihana,
+//     // orihanaLogo,
+//   ],
 
-  contentGallery: [
-    //image
-  {
-    id: "Orihana-campaign-01",
-    type: "image",
-    category: "Campaigns",
-    title: "Brand Campaign",
-    src: Orihana,
-    alt: "Orihana brand campaign visual",
-    aspect: "portrait",
-    date: null,
-    tags: ["fashion", "campaign", "brand"],
-    featured: true,
-  },
-  {
-    id: "Orihana-campaign-02",
-    type: "image",
-    category: "Campaigns",
-    title: "Brand Campaign",
-    src: Orihana2,
-    alt: "Orihana brand campaign visual",
-    aspect: "portrait",
-    date: null,
-    tags: ["fashion", "campaign", "brand"],
-    featured: true,
-  },
-  //reel
-  {
-    id: "orihana-reel-01",
-    type: "reel",
-    category: "Campaigns",
-    title: "Fashion Campaign Reel",
-    src: "/content/orihana/reel-01.mp4",
-    poster: "/content/orihana/reel-01.webp",
-    alt: "Orihana fashion campaign reel",
-    aspect: "portrait",
-    date: null,
-    tags: ["fashion", "reel", "social"],
-  },
-  //video
-  {
-    id: "orihana-video-01",
-    type: "video",
-    category: "Brand Films",
-    title: "Brand Story",
-    src: "/content/orihana/brand-film-01.mp4",
-    poster: "/content/orihana/brand-film-01.webp",
-    alt: "Orihana brand story video",
-    aspect: "landscape",
-    date: null,
-    tags: ["fashion", "brand story", "video"],
-  },
-  //graphic
-  {
-    id: "orihana-graphic-01",
-    type: "graphic",
-    category: "Graphics",
-    title: "Social Media Design",
-    src: "/content/orihana/graphic-01.webp",
-    alt: "Orihana social media graphic",
-    aspect: "square",
-    date: null,
-    tags: ["social media", "design", "campaign"],
-  },
-  ],
+//   contentGallery: [
+//     //image
+//   {
+//     id: "Orihana-campaign-01",
+//     type: "image",
+//     category: "Campaigns",
+//     title: "Brand Campaign",
+//     src: Orihana,
+//     alt: "Orihana brand campaign visual",
+//     aspect: "portrait",
+//     date: null,
+//     tags: ["fashion", "campaign", "brand"],
+//     featured: true,
+//   },
+//   {
+//     id: "Orihana-campaign-02",
+//     type: "image",
+//     category: "Campaigns",
+//     title: "Brand Campaign",
+//     src: Orihana2,
+//     alt: "Orihana brand campaign visual",
+//     aspect: "portrait",
+//     date: null,
+//     tags: ["fashion", "campaign", "brand"],
+//     featured: true,
+//   },
+//   //reel
+//   {
+//     id: "orihana-reel-01",
+//     type: "reel",
+//     category: "Campaigns",
+//     title: "Fashion Campaign Reel",
+//     src: "/content/orihana/reel-01.mp4",
+//     poster: "/content/orihana/reel-01.webp",
+//     alt: "Orihana fashion campaign reel",
+//     aspect: "portrait",
+//     date: null,
+//     tags: ["fashion", "reel", "social"],
+//   },
+//   //video
+//   {
+//     id: "orihana-video-01",
+//     type: "video",
+//     category: "Brand Films",
+//     title: "Brand Story",
+//     src: "/content/orihana/brand-film-01.mp4",
+//     poster: "/content/orihana/brand-film-01.webp",
+//     alt: "Orihana brand story video",
+//     aspect: "landscape",
+//     date: null,
+//     tags: ["fashion", "brand story", "video"],
+//   },
+//   //graphic
+//   {
+//     id: "orihana-graphic-01",
+//     type: "graphic",
+//     category: "Graphics",
+//     title: "Social Media Design",
+//     src: "/content/orihana/graphic-01.webp",
+//     alt: "Orihana social media graphic",
+//     aspect: "square",
+//     date: null,
+//     tags: ["social media", "design", "campaign"],
+//   },
+//   ],
 
-  socialContent: [
-    {
-      id: "orihana-social-01",
-      category: "Brand Introduction",
-      title: "Meet ORIHANA",
-      headline: "A new kind of skincare experience. Made with you in mind.",
-      caption:
-        "Meet ORIHANA — where African beauty meets Korean-inspired skincare.\n\nCreated with melanin-rich skin in mind, ORIHANA brings together thoughtful skincare, science-backed principles and a fresh approach to everyday skin care.\n\nWe're here to make your skincare journey more intentional, informed and enjoyable.\n\nA new chapter in skin care begins here. 🌿\n\nWelcome to ORIHANA.",
-      hashtags: ["#OrihanaGlow", "#OrihanaSkin", "#MelaninRichSkin"],
-    },
+//   socialContent: [
+//     {
+//       id: "orihana-social-01",
+//       category: "Brand Introduction",
+//       title: "Meet ORIHANA",
+//       headline: "A new kind of skincare experience. Made with you in mind.",
+//       caption:
+//         "Meet ORIHANA — where African beauty meets Korean-inspired skincare.\n\nCreated with melanin-rich skin in mind, ORIHANA brings together thoughtful skincare, science-backed principles and a fresh approach to everyday skin care.\n\nWe're here to make your skincare journey more intentional, informed and enjoyable.\n\nA new chapter in skin care begins here. 🌿\n\nWelcome to ORIHANA.",
+//       hashtags: ["#OrihanaGlow", "#OrihanaSkin", "#MelaninRichSkin"],
+//     },
 
-    {
-      id: "orihana-social-02",
-      category: "Brand Philosophy",
-      title: "African-made. Korean-inspired.",
-      headline: "African roots. Korean inspiration. Your skin at the centre.",
-      caption:
-        "Different skin journeys deserve thoughtful care.\n\nORIHANA draws inspiration from Korean skincare while embracing its African identity. Our approach is built around the belief that skincare should be intentional, informed and considerate of the needs of melanin-rich skin.\n\nBecause good skincare is not about following every trend. It's about understanding your skin and giving it the care it deserves.\n\nAfrican-made. Korean-inspired. Made with intention.",
-      hashtags: ["#OrihanaGlow", "#AfricanMade", "#KoreanInspiredSkincare"],
-    },
+//     {
+//       id: "orihana-social-02",
+//       category: "Brand Philosophy",
+//       title: "African-made. Korean-inspired.",
+//       headline: "African roots. Korean inspiration. Your skin at the centre.",
+//       caption:
+//         "Different skin journeys deserve thoughtful care.\n\nORIHANA draws inspiration from Korean skincare while embracing its African identity. Our approach is built around the belief that skincare should be intentional, informed and considerate of the needs of melanin-rich skin.\n\nBecause good skincare is not about following every trend. It's about understanding your skin and giving it the care it deserves.\n\nAfrican-made. Korean-inspired. Made with intention.",
+//       hashtags: ["#OrihanaGlow", "#AfricanMade", "#KoreanInspiredSkincare"],
+//     },
 
-    {
-      id: "orihana-social-03",
-      category: "Skin Education",
-      title: "Know Your Skin",
-      headline: "Your skin is unique. Your skincare should reflect that.",
-      caption:
-        "Have you ever wondered why a skincare product works wonderfully for someone else but doesn't give you the same experience?\n\nYour skin has its own needs, characteristics and responses. That's why understanding your skin is an important part of building a skincare routine.\n\nBefore adding another product to your shelf, take a moment to understand what your skin needs.\n\nSkincare begins with awareness. 💗",
-      hashtags: ["#SkinEducation", "#KnowYourSkin", "#OrihanaGlow"],
-    },
+//     {
+//       id: "orihana-social-03",
+//       category: "Skin Education",
+//       title: "Know Your Skin",
+//       headline: "Your skin is unique. Your skincare should reflect that.",
+//       caption:
+//         "Have you ever wondered why a skincare product works wonderfully for someone else but doesn't give you the same experience?\n\nYour skin has its own needs, characteristics and responses. That's why understanding your skin is an important part of building a skincare routine.\n\nBefore adding another product to your shelf, take a moment to understand what your skin needs.\n\nSkincare begins with awareness. 💗",
+//       hashtags: ["#SkinEducation", "#KnowYourSkin", "#OrihanaGlow"],
+//     },
 
-    {
-      id: "orihana-social-04",
-      category: "Skincare Tips",
-      title: "Consistency Matters",
-      headline: "A little care, consistently.",
-      caption:
-        "Skincare doesn't have to be complicated.\n\nBuilding a routine starts with understanding your skin, choosing products suited to its needs and being consistent with your care.\n\nYou don't need to do everything at once. Start with the basics, pay attention to how your skin responds and make room for a routine you can maintain.\n\nYour skin deserves patience, not pressure.\n\nTake your skincare journey one day at a time.",
-      hashtags: ["#SkincareRoutine", "#OrihanaGlow", "#SkinCareJourney"],
-    },
+//     {
+//       id: "orihana-social-04",
+//       category: "Skincare Tips",
+//       title: "Consistency Matters",
+//       headline: "A little care, consistently.",
+//       caption:
+//         "Skincare doesn't have to be complicated.\n\nBuilding a routine starts with understanding your skin, choosing products suited to its needs and being consistent with your care.\n\nYou don't need to do everything at once. Start with the basics, pay attention to how your skin responds and make room for a routine you can maintain.\n\nYour skin deserves patience, not pressure.\n\nTake your skincare journey one day at a time.",
+//       hashtags: ["#SkincareRoutine", "#OrihanaGlow", "#SkinCareJourney"],
+//     },
 
-    {
-      id: "orihana-social-05",
-      category: "Melanin-rich Skin",
-      title: "Celebrate Your Melanin",
-      headline: "Melanin is beautiful. Give your skin thoughtful care.",
-      caption:
-        "Every complexion deserves to be understood, appreciated and cared for.\n\nAt ORIHANA, we believe skincare conversations should recognise the diversity of skin experiences, especially the needs and considerations of melanin-rich skin.\n\nOur goal is to contribute to a more thoughtful skincare experience — one that celebrates your skin while encouraging informed care.\n\nHere's to feeling comfortable, confident and intentional in your skin. 🌿",
-      hashtags: ["#MelaninRichSkin", "#OrihanaGlow", "#SkinConfidence"],
-    },
+//     {
+//       id: "orihana-social-05",
+//       category: "Melanin-rich Skin",
+//       title: "Celebrate Your Melanin",
+//       headline: "Melanin is beautiful. Give your skin thoughtful care.",
+//       caption:
+//         "Every complexion deserves to be understood, appreciated and cared for.\n\nAt ORIHANA, we believe skincare conversations should recognise the diversity of skin experiences, especially the needs and considerations of melanin-rich skin.\n\nOur goal is to contribute to a more thoughtful skincare experience — one that celebrates your skin while encouraging informed care.\n\nHere's to feeling comfortable, confident and intentional in your skin. 🌿",
+//       hashtags: ["#MelaninRichSkin", "#OrihanaGlow", "#SkinConfidence"],
+//     },
 
-    {
-      id: "orihana-social-06",
-      category: "Brand Story",
-      title: "The ORIHANA Connection",
-      headline: "From the HARU Africa family, meet ORIHANA.",
-      caption:
-        "Every great journey creates room for something new.\n\nIntroducing ORIHANA, a new addition to the HARU Africa family, bringing a fresh focus to skincare.\n\nWhile HARU Africa celebrates Korean-inspired lifestyle, ORIHANA takes that inspiration into the world of skincare — with an African identity and a focus on melanin-rich skin.\n\nTwo distinct expressions. One shared appreciation for thoughtful beauty and lifestyle experiences.\n\nWelcome to the ORIHANA journey. 💗",
-      hashtags: ["#OrihanaGlow", "#HaruAfrica", "#OrihanaSkin"],
-    },
-  ],
-},
+//     {
+//       id: "orihana-social-06",
+//       category: "Brand Story",
+//       title: "The ORIHANA Connection",
+//       headline: "From the HARU Africa family, meet ORIHANA.",
+//       caption:
+//         "Every great journey creates room for something new.\n\nIntroducing ORIHANA, a new addition to the HARU Africa family, bringing a fresh focus to skincare.\n\nWhile HARU Africa celebrates Korean-inspired lifestyle, ORIHANA takes that inspiration into the world of skincare — with an African identity and a focus on melanin-rich skin.\n\nTwo distinct expressions. One shared appreciation for thoughtful beauty and lifestyle experiences.\n\nWelcome to the ORIHANA journey. 💗",
+//       hashtags: ["#OrihanaGlow", "#HaruAfrica", "#OrihanaSkin"],
+//     },
+//   ],
+// },
 ]

@@ -15,6 +15,7 @@ import RTM7 from "./assets/RTM7.jpg";
 import RTM8 from "./assets/RTM8.jpg";
 import RTM9 from "./assets/RTM9.jpg";
 import RTM10 from "./assets/RTM10.jpg";
+import RTM from "./assets/rtm.webp";
 
 import RTM_POSTER1 from "./assets/RTM_POSTER1.jpg"
 import RTM_POSTER2 from "./assets/RTM_POSTER2.jpg"
@@ -240,8 +241,8 @@ import VAMP_GRA8 from "./assets/VAMP_GRA8.jpg"
 import VAMP_GRA9 from "./assets/VAMP_GRA9.jpg"
 
 
-import Orihana from "./assets/Orihana.jpg"
-import Orihana2 from "./assets/Orihana2.jpg";
+// import Orihana from "./assets/Orihana.jpg"
+// import Orihana2 from "./assets/Orihana2.jpg";
 
 
 
@@ -599,6 +600,18 @@ export const project = [
         category: "Campaigns",
         title: "Luxury Fashion Campaign",
         src: RTM8,
+        alt: "RTM Fashion Concierge luxury fashion campaign",
+        aspect: "portrait",
+        date: null,
+        tags: ["fashion", "luxury", "campaign"],
+        featured: true,
+      },
+      {
+        id: "rtm-campaign-12",
+        type: "image",
+        category: "Campaigns",
+        title: "Luxury Fashion Campaign",
+        src: RTM,
         alt: "RTM Fashion Concierge luxury fashion campaign",
         aspect: "portrait",
         date: null,

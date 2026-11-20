@@ -42,15 +42,14 @@ export default function ContentGalleryCTA({ project }) {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="flex flex-row items-start gap-5 lg:items-end"
         >
-          <Link
-             to={`/work/${project.slug}`}
-            className="text-xs uppercase tracking-[0.17em] text-[#2F2E41]/60 transition-colors text-[#007589] hover:text-orange border-b"
-          >
-            
-              Back to {project.name}
-            {/* <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
-            </span> */}
-          </Link>
+
+                <Link
+                  to={`/work/${project.slug}`}
+                  className="my-8 text-[#2F2E41]/60 transition-colors text-[#007589] hover:text-orange inline-flex items-center gap-2 border-b pb-2 text-xs font-semibold uppercase tracking-[0.2em] opacity-70  hover:opacity-100"
+                >
+                  <FiArrowLeft />
+                  Back to {project.name}
+                </Link>
 
           {/* <Link
             to="/work"
